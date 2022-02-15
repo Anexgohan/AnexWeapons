@@ -1,0 +1,48 @@
+{
+	"id":"anexweapons_achuk_mrm_projectile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/achuk_missile_mrm/anexweapons_achuk_mrm_missile.png",
+	"onHitEffect":"data.scripts.weapons.OnHit.anexweapons_achuk_mrm_OnHit",
+	"size":[8,20],	
+	"center":[4,10],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,100,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"fadeTime":1, # fadeout duration
+	#"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":2.0, # time spent without the engine glow being rendered
+	#"armingTime":0.3,
+	#"maxFlightTime":5,
+	#"glowColor":[125,125,100,255],
+	#"glowRadius":25,
+	"engineSpec":{
+				  "turnAcc":75,		# accuracy of missile turn rate less value makes missile sine wave.
+				  "turnRate":105,	# rate of turning to achieve bearing can over shoot if turnAcc is low.
+				  "acc":250,		# how fast missile ramps up speed after starting its engines
+				  "dec":50,			# how fast it will slow down to catch a missed target. 0 cannot slow down.
+				  "maxSpeed":1200	#probably does not work
+				  },
+	"engineSlots":[{"id":"ES1",
+					"loc":[-13, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,125,0,255],
+						"contrailDuration":2,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":15, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.75, # how far away from engine it starts
+						"contrailColor":[180,150,100,150],
+						"glowSizeMult":3,
+						#"glowAlternateColor":[0,200,0,255],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":40.0,
+				    "angle":180.0}],
+}

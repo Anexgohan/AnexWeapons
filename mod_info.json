@@ -1,0 +1,23 @@
+{
+    "id": "anexweapons",
+    "name": "Anex Weapons",
+    "author": "Anexgohan",
+    "utility": "false",
+    "version": { "major":"1", "minor": "0", "patch": "0" },
+    "description": "Weapons for Starsector.",
+    "gameVersion": "0.95.1a-RC6",
+    "dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib",
+            #"version": "2.6"
+        },
+        {
+            "id": "MagicLib",
+            "name": "MagicLib",
+            #"version": "2.6"
+        }
+    ],
+    "jars":["jars/anexweapons.jar"],
+    "modPlugin":"data.scripts.anexweapons_ModPlugin"
+}

@@ -1,0 +1,20 @@
+{
+	"anexweapons_achuk_mrm_sound_fire":
+	[
+		{"file":"sounds/anexweapons/weapons/reaper_fire_01.ogg","pitch":1.0,"volume":1.0},
+	],
+	
+	"anexweapons_achuk_mrm_sound_onhit":
+	[
+		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":0.95,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":0.9,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":1.05,"volume":1.0},
+	],
+	
+	"anexweapons_emp_2sec_01":
+	[
+		{"file":"sounds/anexweapons/fx/emp/emp_2sec_01.ogg","pitch":1.0,"volume":1.0},
+	],
+}
+

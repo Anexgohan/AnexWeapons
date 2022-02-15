@@ -1,0 +1,167 @@
+Step 1. Copy paste a vanilla missile weapon .wpn and it's respective missile .proj
+Step 2. Change the names and IDs of your copies
+Step 3. Change other stuff if needed
+Step 4. Add the entry to your weapon .csv
+Literally that simple
+
+
+AxleMC131 — Today at 2:34 AM
+Weapons can have up to four sprite layers:
+“base” renders under everything and (IIRC) doesn’t rotate with the rest of the weapon. 
+“recoil” is the gun barrels, any bit of the weapon you want to visually recoil when firing. 
+“_” the main weapon sprite sits above the recoil sprite, doesn’t move but can be given frame by frame animation. 
+“glow” gives a glow effect when the weapon fires.
+The main weapon sprite is usually the one without a suffix, hence why it’s easy to get confused with “_base” which is different.
+Most vanilla weapons use at least two of these layers, some use more or less. Missile launchers tend to only use a main sprite, because they don’t need recoil or glows (though you can absolutely use them for your own content!)
+The game also allows to specify two completely separate sprite SETS for each turret and hardpoint mountings, so your weapon can appear differently when mounted in a turret or hardpoint slot. That might be what the wiki is referring to. You don’t actually NEED two different sprites, if you’re just starting you can just have one and reference it in the .wpn file as both turret and hardpoint appearances.
+
+
+
+
+AxleMC131
+wisp
+Histidine
+
+EMP Bolt - The missile starts an unstable Nuclear reaction as soon as armed surrounded by billions of coils, A simple concept with devastating results. The EMP blast generated is effective at knocking both shields and engines.
+
+
+
+
+"renderHints":[RENDER_LOADED_MISSILES, RENDER_BARREL_BELOW],
+
+tahlan_emptorpedo_ai.java -> nice missile script.
+-----------------
+Large Missiles
+-----------------
+Reality Disruptor			30	-	holy shit, effect and what are shields
+Rift torpido launcher 		30	-	rift effects and trails
+Clestials Blossom 			28	-	Crimson beautiful trails
+Hekaton Repeater			26	-	beautiful smokey trails
+Kriegsmesser Launcher		26	-	crimson trails with wavy trails, eco's on explode
+Onager MIRV Launcher 		26	-	MIRV which continues to hit target even after sub munitions discharge
+Curvy Laser					25	-	Mirv that spawns a ball that lanches guided projectile with long beam like effect
+Hurricane MIRV Launcher		25	-	Sexy no bs MIRV warhead dissapears after munitions launcher
+Trebuchet LRM Launcher		24	-	EMP arcs
+Heavy Ballista Launcher		24	-	Missiles accelerate after launch after a few seconds also controls	*****
+Jongleur ESAD Barrage		18	-	blue long trails
+
+-----------------
+Medium Missiles
+-----------------
+Smart plasmid mortar 			- violet trails and exp effects
+Luzna Incapacitator Missile 14	-	MIRV Anti engine, long green trails
+Traceur MRM					12	-	Anti engine
+
+
+-----------------
+MissileType in game
+-----------------
+		FLARE,
+		FLARE_SEEKER,
+		FLARE_JAMMER,
+		ROCKET,
+		MISSILE,
+		MISSILE_TWO_STAGE_SECOND_UNGUIDED,
+		HEATSEEKER,
+		MIRV,
+		TORPEDO,
+		BOMB,
+		BOMB_WITH_SLOW,
+		BOMB_WITH_ACCEL,
+		PHASE_CHARGE,
+		PHASE_MINE,
+		NO_AI,
+		
+-----------------
+AIHints {
+-----------------
+		PD,
+		PD_ONLY,
+		PD_ALSO, // PD, but only if there are no other targets
+		USE_VS_FRIGATES,
+		STRIKE,
+		DANGEROUS, /** like STRIKE but only for when the enemy ship is considering it, not for its own weapon use */
+		BOMB,
+		GUIDED_POOR,
+		DO_NOT_AIM,
+		ANTI_FTR,
+		HEATSEEKER,
+		SYSTEM,
+		SHOW_IN_CODEX,
+		AUTOZOOM,
+		DO_NOT_CONSERVE,
+		CONSERVE_1,
+		CONSERVE_2,
+		CONSERVE_3,
+		CONSERVE_4,
+		CONSERVE_5,
+		CONSERVE_ALL,
+		CONSERVE_FOR_ANTI_ARMOR,
+		FIRE_WHEN_INEFFICIENT,
+		EXTRA_RANGE_ON_FIGHTER,
+		
+		IGNORES_FLARES,
+		
+		GROUP_LINKED,
+		GROUP_ALTERNATING,
+		
+		MISSILE_SPREAD,
+		DIRECT_AIM,
+		NO_TURN_RATE_BOOST_WHEN_IDLE,
+		RESET_BARREL_INDEX_ON_BURST,
+		
+
+
+-----------------
+WeaponType {
+-----------------
+		BALLISTIC("Ballistic"),
+		ENERGY("Energy"),
+		MISSILE("Missile"),
+		LAUNCH_BAY("Launch Bay"),
+		UNIVERSAL("Universal"),
+		HYBRID("Hybrid"),
+		SYNERGY("Synergy"),
+		COMPOSITE("Composite"),
+		BUILT_IN("Built in"),
+		DECORATIVE("Decorative"),
+		SYSTEM("System"),
+		STATION_MODULE("Station Module");
+		
+	
+-----------------	
+SYSTEM 				- The weapon will not spawn in markets, not drop as loot from killing a ship carrying it, and not show up in the Codex.
+
+SHOW_IN_CODEX 		- Forces a "SYSTEM" weapon to show up in the Codex anyway. (See: Thermal Pulse Cannon)
+
+
+PD 					- Makes the weapon target and prioritize missiles. (Weapons without this tag can always target fighters.)
+
+PD_ALSO 			- Unknown, seems to only be used by the Devastator Cannon.
+
+PD_ONLY 			- Unsure. Perhaps means the weapon will not be fired offensively against ships. Seems to only be used by the frag bombs launched by Wasp Interceptor Drones.
+
+ANTI_FTR 			- Unsure. Perhaps prioritizes aiming at fighter craft instead of warships.
+
+
+STRIKE 				- Use this weapon as a strike tool. Possibly changes what situations the AI uses the weapon in combat. Usually applies to missiles.
+
+USE_VS_FRIGATES 	- Forces a "STRIKE" weapon to be fired against frigates.
+
+DO_NOT_AIM			- Don't bother to point at your target while firing this weapon. Applies to guided missiles.
+
+GUIDED_POOR 		- In contrast to "DO_NOT_AIM", suggests that while it is not vital to aim before firing, it is preferable if circumstances allow it.
+
+HEATSEEKER 			- The weapon is a heatseeking missile. Only used by Salamander MRM launchers (small and medium).
+
+BOMB 				- Unsure. Perhaps tells the game the weapon is unpowered and requires momentum to be delivered.
+
+
+DO_NOT_CONSERVE 	- Fire the weapon whenever you have the opportunity, don't bother to save ammo. Applies to missiles/finite ammo weapons.
+
+CONSERVE_1 / CONSERVE_3 / CONSERVE_5 	- Presumeably the ship will attempt to save ammunition so it doesn't run out of shots right at the start of a battle. Numbers perhaps represent necessity to conserve?
+
+EXTRA_RANGE_ON_FIGHTER 					- Unsure. Perhaps makes fighter craft fire this weapon from a longer range than a warship would. Seems to only be used on single-shot Sabot.
+
+FIRE_WHEN_INEFFICIENT 					- Unsure. Used on some beam weapons.
+-----------------
