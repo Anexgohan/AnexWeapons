@@ -35,7 +35,7 @@ public class anexweapons_sudarshan_mrm_OnHit implements OnHitEffectPlugin {
     private static final String ARC_SOUND = "anexweapons_emp_2sec_01";
     //private static final float FLUXRAISE = 1000f; //depreciated
     // -- explosion graphics -------------------------------------------------
-    private static final Color NEBULA_COLOR = new Color(209, 22, 255,255);
+    private static final Color NEBULA_COLOR = new Color(200, 25, 255,255);
     private static final float NEBULA_SIZE = 10f * (0.75f + (float) Math.random() * 0.5f);
     private static final float NEBULA_SIZE_MULT = 50f;
     private static final float NEBULA_DUR = 3.5f;
