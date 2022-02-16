@@ -10,11 +10,13 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import data.scripts.weapons.ai.anexweapons_achuk_mrm_AI;
 import data.scripts.weapons.ai.anexweapons_vajra_mrm_AI;
 import data.scripts.weapons.ai.anexweapons_sudarshan_mrm_AI;
+import data.scripts.weapons.ai.anexweapons_bhairav_mrm_AI;
 
 public class anexweapons_ModPlugin extends BaseModPlugin {
     public static final String achuk_projectile_ID = "anexweapons_achuk_mrm_projectile";
     public static final String vajra_projectile_ID = "anexweapons_vajra_mrm_projectile";
     public static final String sudarshan_projectile_ID = "anexweapons_sudarshan_mrm_projectile";
+    public static final String bhairav_projectile_ID = "anexweapons_bhairav_mrm_projectile";
 
     ////////////////////////////////////////
     //                                    //
@@ -31,6 +33,8 @@ public class anexweapons_ModPlugin extends BaseModPlugin {
                 //return new PluginPick<MissileAIPlugin>(new anexweapons_vajra_mrm_AI(missile, launchingShip), CampaignPlugin.PickPriority.MOD_SPECIFIC);
             case sudarshan_projectile_ID:
                 return new PluginPick<MissileAIPlugin>(new anexweapons_sudarshan_mrm_AI(missile, launchingShip), CampaignPlugin.PickPriority.MOD_SPECIFIC);
+            case bhairav_projectile_ID:
+                return new PluginPick<MissileAIPlugin>(new anexweapons_bhairav_mrm_AI(missile, launchingShip), CampaignPlugin.PickPriority.MOD_SPECIFIC);
             default:
         }
         return null;
