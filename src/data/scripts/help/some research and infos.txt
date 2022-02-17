@@ -44,7 +44,7 @@ Hurricane MIRV Launcher		25	-	Sexy no bs MIRV warhead dissapears after munitions
 Trebuchet LRM Launcher		24	-	EMP arcs
 Heavy Ballista Launcher		24	-	Missiles accelerate after launch after a few seconds also controls	*****
 Jongleur ESAD Barrage		18	-	blue long trails
-
+Squall							-	Turn once and unguided rest
 -----------------
 Medium Missiles
 -----------------

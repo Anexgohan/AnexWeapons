@@ -30,7 +30,21 @@
 	[
 		{"file":"sounds/anexweapons/weapons/rocket_hit_bass_01.ogg","pitch":1.0,"volume":1.0},
 	],
-	
+
+	"anexweapons_metal_away_sound_01":
+	[
+		{"file":"sounds/anexweapons/weapons/metal_away_01.ogg","pitch":0.75,"volume":0.75},
+		{"file":"sounds/anexweapons/weapons/metal_away_02.ogg","pitch":0.75,"volume":0.75},
+		{"file":"sounds/anexweapons/weapons/metal_away_03.ogg","pitch":0.75,"volume":0.75},
+	],
+
+	"anexweapons_metal_hit_sound_01":
+	[
+		{"file":"sounds/anexweapons/weapons/metal_hit_01.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/metal_hit_02.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/metal_hit_03.ogg","pitch":1.0,"volume":1.0},
+	],
+
 	"anexweapons_emp_2sec_01":
 	[
 		{"file":"sounds/anexweapons/fx/emp/emp_2sec_01.ogg","pitch":1.0,"volume":1.0},

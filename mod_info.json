@@ -3,7 +3,7 @@
     "name": "Anex Weapons",
     "author": "Anexgohan",
     "utility": "false",
-    "version": { "major":"0", "minor": "1", "patch": "1" },
+    "version": { "major":"0", "minor": "1", "patch": "2" },
     "description": "Weapons for Starsector.",
     "gameVersion": "0.95.1a-RC6",
     "dependencies": [
