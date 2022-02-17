@@ -1,27 +1,19 @@
 # Anex-Weapons
-Weapons mod for Starsector made in IntelliJ
 
-headover to starsector forums for mods main page:
-
-https://fractalsoftworks.com/forum/index.php?topic=24084.msg358416#msg358416
-
-contact me on discord by tagging me @Anexgohan
-
-
-[center][url=https://github.com/Anexgohan/Anex-Weapons/releases/latest/][img]https://i.imgur.com/Lztn7qM.png[/img][/url][/center]
-[center][url=https://github.com/Anexgohan/Anex-Weapons/releases/latest/][b]Download Link click Image Above[/b][/url][/center]
+[![Download Link click Image Above](https://i.imgur.com/Lztn7qM.png)](https://github.com/Anexgohan/Anex-Weapons/releases/latest/)
+### Click Image above to download the latest version
 
 The Mod is in Development
 
-[b]Requirement:[/b]
+# Requirement:
 Need balance testers for weapons 
 Need help writing interesting details for those weapons
 
-[b] What the mod is about:[/b]
+# What the mod is about:
 I felt the need to add Weapons to the game specially Missiles for now and needed to learn how to make mods so here we are.
 I have a background in graphics and 3d and being a fan of SS since its start so this is my contribution to the game I love so much other than throwing money at Alex.
 
-[b]What's the vision/lore :[/b]
+# What's the vision/lore :
 Arjuna Industries started as a subsidiary of the Tri-Tachyon supplying them with low-end materials in the beginning to recent high-tech parts manufacturing, mostly stealth tech and missile weapons design, as the company grew so did its ambitions strategically acquiring and merging with other smaller manufacturers Arjuna Industries supplies the bulk of Tri-Tachyon weapon components, with such a monopoly over weapons manufacture the uneasy Tri-Tachyon tried to diversify and move past this long and fruitful alliance.
 
 Things did not turn out well for Arjuna Industries as one sanction after another and mostly one client and that too turn hostile Arjuna Industries nearly lost most of its advantages over its competing rival companies. The final push came when Tri-Tachyon tried to gain a hostile takeover of Arjuna Industries via its own rival company. 
@@ -33,64 +25,69 @@ But recently across the black boards some agents can be seen selling brand new A
 Only time will tell if Arjuna Industries has made a comeback or some pretender has claimed its name instead.
 For now, purchase these weapons keeping in mind the risks involved.
 
-[b]More missiles why:[/b]
+# More missiles why:
 Starsector has some very decent weapons but I feel missiles are not given the justice they need, look at the current world around you it is held peacefully with the fear of missiles, not tanks, not infantry and not guns. So it's strange to me that missiles in SS are not the same mayhem causing fear-inducing war machines that they really are in a future where armoured ships are flying and not just cylindrical tin cans.
 
-[b]Balance:[/b]
+# Balance:
 Balance is an ongoing process I the mod maker will always be biased to my creations, so I need your help in bringing sanity to my insanity, test it for me and report back either here or discord, if on discord please tag @Anexgohan
 
-[b]The Weapons of Arjuna Industries:[/b]
+# The Weapons of Arjuna Industries:
 
 
-[b]Achuk Missile[/b] - Slow Firing and tracking Barrage that pack a punch both on hull and shields.
-Racking and loading missiles with animation.
-[img]https://media.giphy.com/media/Vbhr5LHGTxfIKskMTn/giphy-downsized-large.gif[/img]
+### Achuk Missile 
+Slow Firing and tracking Barrage that pack a punch both on hull and shields. Racking and loading missiles with animation.
 
-[b]Sudarshan Missile[/b] - Slow Firing and tracking Barrage that eats shields and EMP's the target on hitting Hull does no damage.
-[img]https://media.giphy.com/media/AIQoWuumMWysVdTEEY/giphy-downsized-large.gif[/img]
+![Achuk Missile](https://media.giphy.com/media/Vbhr5LHGTxfIKskMTn/giphy-downsized-large.gif)
 
-[b]Vajra Missile[/b] - good tracking fast Barrage that disables target engines does no damage.
-[img]https://media.giphy.com/media/gXGSmTjAMxtkxpyYeo/giphy-downsized-large.gif[/img]
+### Sudarshan Missile
+Slow Firing and tracking Barrage that eats shields and EMP's the target on hitting Hull does no damage.
 
-[b]Achuk , Sudarshan & Vajra[/b] - together make a deadly package
-[img]https://media.giphy.com/media/2ZWFXyXwcch9IxDM46/giphy-downsized-large.gif[/img]
+![Sudarshan Missile](https://media.giphy.com/media/AIQoWuumMWysVdTEEY/giphy-downsized-large.gif)
 
-[b]Bhairav Torpedoe Launcher[/b] - Long range slow torpedo with barrel animation
-[img]https://media.giphy.com/media/0utrSdNcnAHAWdiyOT/giphy-downsized-large.gif[/img]
+### Vajra Missile
+Good tracking fast Barrage that disables target engines does no damage.
 
-[b]Lakshay Anti-Fighter Missile[/b] - Medium range low speed tracking swarm missile built for anti fighter operations
-[img]https://media.giphy.com/media/yV0fgstw58m1CDva1A/giphy-downsized-large.gif[/img]
+![Vajra Missile](https://media.giphy.com/media/gXGSmTjAMxtkxpyYeo/giphy-downsized-large.gif)
 
-[spoiler]
-More to follow
-[/spoiler]
+### Achuk , Sudarshan & Vajra
+Together make a deadly package
 
-[b]Thankyou Note:[/b]
-[list]
-[li]First off this very forum[/li]
-[li]Everyone over at Starsector Discord who helped specially AxleMC131, wisp, Histidine, Tartiflette[/li]
-[li]Various modders whose script I salvaged, credits are commented in the respective files[/li]
-[/list]
+![Achuk , Sudarshan & Vajra](https://media.giphy.com/media/2ZWFXyXwcch9IxDM46/giphy-downsized-large.gif)
 
-[b]Changelogs:[/b]
-[spoiler]
-v0.1.2
-Lakshay Anti-Fighter Missile added, Medium range low speed tracking swarm missile built for anti fighter operations
-Fixed scaling issues
-Added few new sounds
-Increased variety of launch and hit sounds and randomization
-reduced screen effects for low end machines
+### Bhairav Torpedoe Launcher
+Long range slow torpedo with barrel animation
 
-v0.1.1a Pre-release
-Bhairav Missile added
-Long rang slow torpedo with barrel animation
-did some balancing on other missiles reduced dps and fire rate
+![Bhairav Torpedoe Launcher](https://media.giphy.com/media/0utrSdNcnAHAWdiyOT/giphy-downsized-large.gif)
 
-v0.1.1
-Fixed launch bug
+### Lakshay Anti-Fighter Missile
+Medium range low speed tracking swarm missile built for anti fighter operations
 
-v0.1.0
-First Release
-3 Missiles added 
-Achuk, Vajra & Sudarshan
-[/spoiler]
+![Lakshay Anti-Fighter Missile](https://media.giphy.com/media/yV0fgstw58m1CDva1A/giphy-downsized-large.gif)
+
+<details>
+  <summary>Spoiler</summary>
+  
+  ```
+  More to follow
+  ```
+</details>
+
+## Thankyou Note:
+
+* First off Starsector forum, Alex and everyone involved with modding there[/li]
+* Everyone over at Starsector Discord who helped specially AxleMC131, wisp, Histidine, Tartiflette[/li]
+* Various modders whose script I salvaged, credits are commented in the respective files[/li]
+
+
+### Weapons mod for Starsector made in IntelliJ
+
+Headover to starsector forums for mods main page:
+
+### [Anex Weapons Mods - Starsector Forum Link](https://fractalsoftworks.com/forum/index.php?topic=24084.0)
+
+### [Download Latest Mod Version](https://github.com/Anexgohan/Anex-Weapons/releases/latest/)
+
+### contact me on discord by tagging me @Anexgohan
+
+
+
