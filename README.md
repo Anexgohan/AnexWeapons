@@ -85,9 +85,11 @@ Hybrid torpedo with limited targeting but huge punch and has a chance to bypass 
 
 ## Thankyou Note:
 
-* First off Starsector forum, Alex and everyone involved with modding there[/li]
-* Everyone over at Starsector Discord who helped specially AxleMC131, wisp, Histidine, Tartiflette[/li]
-* Various modders whose script I salvaged, credits are commented in the respective files[/li]
+* First off Starsector forum, Alex and everyone involved with modding there.
+* Everyone over at Starsector Discord who helped specially AxleMC131, wisp, Histidine, Tartiflette.
+* Special thankyou to Nia Tahl, Harmful Mechanic, ruddygreat and "PureTilt, Freelance Vtuber Waifu" for tolerating my noobie ass and pestering them with thousand questions.
+* Various modders whose script I salvaged, credits are commented in the respective files.
+* If i forgot to mention anyone please let me know and im greatful towards you aswell.
 
 
 ### Weapons mod for Starsector made in IntelliJ
