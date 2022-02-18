@@ -60,7 +60,7 @@ Together make a deadly package
 
 ![Achuk , Sudarshan & Vajra](https://media.giphy.com/media/2ZWFXyXwcch9IxDM46/giphy-downsized-large.gif)
 
-### Bhairav Torpedoe Launcher
+### Bhairav Heavy Torpedoe Launcher
 Long range slow torpedo with barrel animation
 
 ![Bhairav Torpedoe Launcher](https://media.giphy.com/media/0utrSdNcnAHAWdiyOT/giphy-downsized-large.gif)
@@ -70,9 +70,9 @@ Medium range low speed tracking swarm missile built for anti fighter operations
 
 ![Lakshay Anti-Fighter Missile](https://media.giphy.com/media/yV0fgstw58m1CDva1A/giphy-downsized-large.gif)
 
-Trishul Torpedo to the arsenal
+Trishul Hybrid Torpedo
 Hybrid torpedo with limited targeting but huge punch and has a chance to bypass shields
-![Trishul Torpedo to the arsenal](https://media.giphy.com/media/b3N4UmtejzGqIXGyvr/giphy-downsized-large.gif[/img)
+![Trishul Hybrid Torpedo](https://media.giphy.com/media/b3N4UmtejzGqIXGyvr/giphy-downsized-large.gif)
 
 <details>
   <summary>Spoiler</summary>
