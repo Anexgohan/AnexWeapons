@@ -70,9 +70,11 @@ Medium range low speed tracking swarm missile built for anti fighter operations
 
 ![Lakshay Anti-Fighter Missile](https://media.giphy.com/media/yV0fgstw58m1CDva1A/giphy-downsized-large.gif)
 
-Trishul Hybrid Torpedo
+### Trishul Hybrid Torpedo
 Hybrid torpedo with limited targeting but huge punch and has a chance to bypass shields
+
 ![Trishul Hybrid Torpedo](https://media.giphy.com/media/b3N4UmtejzGqIXGyvr/giphy-downsized-large.gif)
+
 
 <details>
   <summary>Spoiler</summary>
