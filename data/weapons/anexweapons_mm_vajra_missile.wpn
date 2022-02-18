@@ -1,0 +1,83 @@
+{
+  "id": "anexweapons_mm_vajra_missile",
+  "specClass": "projectile",
+  "projectileSpecId": "anexweapons_mm_vajra_missile_projectile",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "visualRecoil": 12,	# the gun sprites are only used if this is non-0
+  "renderHints":[RENDER_LOADED_MISSILES],  # RENDER_BARREL_BELOW, RENDER_LOADED_MISSILES, RENDER_LOADED_MISSILES_UNLESS_HIDDEN, SUSPEND_RECOIL, RENDER_ADDITIVE
+  #"everyFrameEffect": "data.scripts.weapons.utility.anexweapons_hide_on_lowAmmo",
+  "turretSprite": "graphics/weapons/anexweapons_mm_vajra_missile/anexweapons_mm_vajra_missile_base.png",
+  #"turretGunSprite": "graphics/weapons/.png",
+  "turretGlowSprite": "graphics/weapons/anexweapons_mm_vajra_missile/anexweapons_mm_vajra_missile_base_glow.png",
+  "hardpointSprite": "graphics/weapons/anexweapons_mm_vajra_missile/anexweapons_mm_vajra_missile_hardpoint_base.png",
+  #"hardpointGunSprite": "graphics/weapons/.png",
+  "hardpointGlowSprite": "graphics/weapons/anexweapons_mm_vajra_missile/anexweapons_mm_vajra_missile_hardpoint_glow.png",
+  "glowColor": [
+    0,
+    255,
+    175,
+    150
+  ],
+  "turretOffsets": [
+    9.5,
+    0,
+    5,
+    -6,
+    5,
+    6,
+    -2.5,
+    -6,
+    -2.5,
+    6,
+    -8,
+    0
+  ],
+  "turretAngleOffsets": [
+    0,
+    -15,
+    15,
+    -25,
+    25,
+    0
+  ],
+  "hardpointOffsets": [
+    16.5,
+    0,
+    12,
+    -6,
+    12,
+    6,
+    4.5,
+    -6,
+    4.5,
+    6,
+    -1,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    -15,
+    15,
+    -25,
+    25,
+    0
+  ],
+  "barrelMode": "ALTERNATING",	# LINKED or ALTERNATING, whether barrels fire at the same time or alternate.
+  "animationType": "GLOW_AND_FLASH",	# NONE, GLOW, MUZZLE_FLASH, GLOW_AND_FLASH, SMOKE
+  "muzzleFlashSpec": {
+    "length": 10,
+    "spread": 25,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      100,
+      100,
+      255
+    ]
+  },
+  "fireSoundTwo": "anexweapons_mm_sound_fire_01"
+}

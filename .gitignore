@@ -158,13 +158,6 @@ gradle-app.setting
 .idea/codeStyles/codeStyleConfig.xml
 .idea/Anex Weapons.iml
 .idea/.name
-.github/workflows/zipMod.sh
-.github/workflows/teaser.png
-.github/workflows/runner.sh
-.github/workflows/release.yml
-.github/workflows/ReadMe.md
-.github/workflows/mod-folder-name.txt
-.github/workflows/blacklist.txt
 build.gradle.kts
 gradle.properties
 gradle/wrapper/gradle-wrapper.jar

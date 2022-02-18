@@ -24,7 +24,9 @@ Histidine
 
 EMP Bolt - The missile starts an unstable Nuclear reaction as soon as armed surrounded by billions of coils, A simple concept with devastating results. The EMP blast generated is effective at knocking both shields and engines.
 
-
+cheat start testing:
+addcredits 5000000;allhullmods;addship onslaught_xiv;addship swp_conquest_xiv;addweapon anexweapons_mm_achuk_missile 25;addweapon anexweapons_mm_bhairav_missile 25;addweapon anexweapons_mm_lakshya_missile 25;addweapon anexweapons_mm_trishul_missile 25;addweapon anexweapons_mm_sudarshan_missile 25;addweapon anexweapons_mm_vajra_missile 25
+addweapon anexweapons_mm_bhairav_missile 25
 
 
 "renderHints":[RENDER_LOADED_MISSILES, RENDER_BARREL_BELOW],
@@ -45,6 +47,7 @@ Trebuchet LRM Launcher		24	-	EMP arcs
 Heavy Ballista Launcher		24	-	Missiles accelerate after launch after a few seconds also controls	*****
 Jongleur ESAD Barrage		18	-	blue long trails
 Squall							-	Turn once and unguided rest
+Devestator Cannon				-	fire flash in front of cannon 
 -----------------
 Medium Missiles
 -----------------

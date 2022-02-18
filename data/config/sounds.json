@@ -1,10 +1,10 @@
 {
-	"anexweapons_achuk_mrm_sound_fire":
+	"anexweapons_mm_sound_fire_01":
 	[
 		{"file":"sounds/anexweapons/weapons/reaper_fire_01.ogg","pitch":1.0,"volume":1.0},
 	],
 	
-	"anexweapons_achuk_mrm_sound_onhit":
+	"anexweapons_mm_sound_onhit_01":
 	[
 		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":1.0,"volume":1.0},
 		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":0.95,"volume":1.0},
@@ -33,9 +33,9 @@
 
 	"anexweapons_metal_away_sound_01":
 	[
-		{"file":"sounds/anexweapons/weapons/metal_away_01.ogg","pitch":0.75,"volume":0.75},
-		{"file":"sounds/anexweapons/weapons/metal_away_02.ogg","pitch":0.75,"volume":0.75},
-		{"file":"sounds/anexweapons/weapons/metal_away_03.ogg","pitch":0.75,"volume":0.75},
+		{"file":"sounds/anexweapons/weapons/metal_away_01.ogg","pitch":0.05,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/metal_away_02.ogg","pitch":0.05,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/metal_away_03.ogg","pitch":0.05,"volume":0.15},
 	],
 
 	"anexweapons_metal_hit_sound_01":
