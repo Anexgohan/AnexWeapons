@@ -3,7 +3,7 @@ name: GitHub Release
 on:
   # Triggers the workflow on pushing a tag only
   push:
-    tags: "v*"
+    tags: "*"
     branches:
       - "!*"
 
