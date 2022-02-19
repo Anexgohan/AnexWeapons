@@ -32,6 +32,8 @@ addweapon anexweapons_mm_bhairav_missile 25
 "renderHints":[RENDER_LOADED_MISSILES, RENDER_BARREL_BELOW],
 
 tahlan_emptorpedo_ai.java -> nice missile script.
+
+Weapon Name					OP	-	Effect																								Image Resolution Height X Width				Canvas Resolution Height X Width
 -----------------
 Large Missiles
 -----------------
@@ -51,9 +53,25 @@ Devestator Cannon				-	fire flash in front of cannon
 -----------------
 Medium Missiles
 -----------------
-Smart plasmid mortar 			- violet trails and exp effects
+Smart plasmid mortar 			-	violet trails and exp effects
 Luzna Incapacitator Missile 14	-	MIRV Anti engine, long green trails
 Traceur MRM					12	-	Anti engine
+
+-----------------
+Medium Turrets
+-----------------
+Heavy Autocannon			10	-	standard 3 turret with muzzle flash																		- 24x22									42x42
+Heavy Mauler				12	-	standard 1 turret cannon with muzzle flash																- 33x24									44x44
+Assault Chaingun			10	-	rotary turret with muzzle flash																			- 32x22									40x40
+Dual Flack Cannon			12	-	2 turret cannon with yellow muzzle flash																- 29x28									40x40
+
+-----------------
+Large Turrets
+-----------------
+Mjolnir Cannon				14	-	energy type projectile with muzzle flash
+Hephaestus Assault Gun		10	-	balistic type projectile with muzzle flash
+Mark IX Autocannon			8	-	3 quick fire dual turret fast fire
+Volatile Particle Driver	30	-	energy type projectile with cool firing flashes like charging.
 
 
 -----------------
