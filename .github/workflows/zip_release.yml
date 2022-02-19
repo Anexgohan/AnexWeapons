@@ -1,4 +1,4 @@
-name: Create Archive
+name: create zip Archive
 on: [push]
 jobs:
   build:
@@ -9,5 +9,5 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         type: 'zip'
-        filename: 'Anex Weapons.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig .github .gradle .idea/ .gitignore *README.md'
+        filename: 'Anex_Weapons.zip'
+        exclusions: '*.git* /*node_modules/* .editorconfig .github .gradle .idea/* .idea .gitignore *README.md'
