@@ -10,4 +10,4 @@ jobs:
       with:
         type: 'zip'
         filename: 'Anex_Weapons.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig .github .gradle .idea/* .idea .gitignore *README.md'
+        exclusions: '*.git* /*node_modules/* .editorconfig'
