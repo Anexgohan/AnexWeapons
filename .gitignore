@@ -158,6 +158,10 @@ gradle-app.setting
 .idea/codeStyles/codeStyleConfig.xml
 .idea/Anex Weapons.iml
 .idea/.name
+.git
+.gradle
+.idea
+.run
 build.gradle.kts
 gradle.properties
 gradle/wrapper/gradle-wrapper.jar
