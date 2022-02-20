@@ -6,3 +6,6 @@
 .run export-ignore
 .src export-ignore
 .github export-ignore
+*LICENSE export-ignore
+*license.txt export-ignore
+*README.md export-ignore
