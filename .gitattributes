@@ -1,0 +1,9 @@
+# ignore from source code zip
+
+.git export-ignore
+.gradle export-ignore
+.run export-ignore
+.src export-ignore
+src export-ignore
+src export-ignore
+src export-ignore
