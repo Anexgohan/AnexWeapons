@@ -4,6 +4,6 @@
 .gradle export-ignore
 .run export-ignore
 .src export-ignore
-src export-ignore
+.github export-ignore
 src export-ignore
 src export-ignore
