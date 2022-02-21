@@ -7,14 +7,14 @@
   "visualRecoil": 12,	# the gun sprites are only used if this is non-0
   "renderHints":[RENDER_BARREL_BELOW],  # RENDER_BARREL_BELOW, RENDER_LOADED_MISSILES, RENDER_LOADED_MISSILES_UNLESS_HIDDEN, SUSPEND_RECOIL, RENDER_ADDITIVE
   "everyFrameEffect": "data.scripts.weapons.utility.anexweapons_hide_on_lowAmmo",
-  "turretSprite": "graphics/weapons/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_base.png",
-  "turretGunSprite": "graphics/weapons/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_barrel.png",
-  "turretGlowSprite": "graphics/weapons/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_base_glow.png",
-  "hardpointSprite": "graphics/weapons/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_hardpoint_base.png",
-  "hardpointGunSprite": "graphics/weapons/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_hardpoint_barrel.png",
-  "hardpointGlowSprite": "graphics/weapons/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_hardpoint_glow.png",
-  #"turretUnderSprite":"graphics/weapons/.png",
-  #"hardpointUnderSprite":"graphics/weapons/.png",
+  "turretSprite": "graphics/weapons/missile/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_base.png",
+  "turretGunSprite": "graphics/weapons/missile/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_barrel.png",
+  "turretGlowSprite": "graphics/weapons/missile/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_base_glow.png",
+  "hardpointSprite": "graphics/weapons/missile/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/missile/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_hardpoint_barrel.png",
+  "hardpointGlowSprite": "graphics/weapons/missile/anexweapons_mm_trishul_missile/anexweapons_mm_trishul_missile_hardpoint_glow.png",
+  #"turretUnderSprite":"graphics/weapons/missile/.png",
+  #"hardpointUnderSprite":"graphics/weapons/missile/.png",
   "glowColor": [
     0,
     255,

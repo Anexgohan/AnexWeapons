@@ -1,0 +1,64 @@
+{
+  "id": "anexweapons_mtb_dhwij_turret",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  #"mountTypeOverride":"COMPOSITE",
+  "specClass": "projectile",
+  "projectileSpecId": "anexweapons_mtb_dhwij_turret_projectile",
+  "everyFrameEffect": "data.scripts.weapons.guided.anexweapons_mtb_dhwij_turret_guided",
+  "turretSprite": "graphics/weapons/turret/anexweapons_mt_dhwij_turret/anexweapons_mtb_dhwij_turret_base.png",
+  "turretGunSprite": "graphics/weapons/turret/anexweapons_mt_dhwij_turret/anexweapons_mtb_dhwij_turret_base_barrel.png",
+  #"turretGlowSprite": "graphics/weapons/turret/anexweapons_mt_dhwij_turret/.png",
+  "hardpointSprite": "graphics/weapons/turret/anexweapons_mt_dhwij_turret/anexweapons_mtb_dhwij_turret_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/turret/anexweapons_mt_dhwij_turret/anexweapons_mtb_dhwij_turret_hardpoint_barrel.png",
+  #"hardpointGlowSprite": "graphics/weapons/turret/anexweapons_mt_dhwij_turret/.png",
+  #"turretUnderSprite":"graphics/weapons/turret/anexweapons_mt_dhwij_turret/.png",
+  #"hardpointUnderSprite":"graphics/weapons/turret/anexweapons_mt_dhwij_turret/.png",
+  "visualRecoil": 12,	# the gun sprites are only used if this is non-0
+  "renderHints":[RENDER_BARREL_BELOW],  # RENDER_BARREL_BELOW, RENDER_LOADED_MISSILES, RENDER_LOADED_MISSILES_UNLESS_HIDDEN, SUSPEND_RECOIL, RENDER_ADDITIVE
+  "displayArcRadius": 800,
+  "renderAboveAllWeapons": 0,
+  "glowColor": [0,255,0,255],
+  #"numFrames":4,
+  #"frameRate":20,
+  "turretOffsets": [
+    10,
+    -4.5,
+    10,
+    4.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    -0
+  ],
+  "hardpointOffsets": [
+    18,
+    -4.5,
+    18,
+    4.5
+  ],
+  "hardpointAngleOffsets": [
+    -0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",  # LINKED, ALTERNATING, ALTERNATING_BURST, DUAL, whether barrels fire at the same time or alternate.
+  "separateRecoilForLinkedBarrels":"TRUE",
+  #"interruptibleBurst": true,
+  #"autocharge": true,	# whether the weapon will continue charging and fire if the LMB is tapped instead of held
+  "animationType": "SMOKE",    # NONE, GLOW, MUZZLE_FLASH, GLOW_AND_FLASH, SMOKE
+  "smokeSpec":{
+    "particleSizeMin":5.0,       # size of particle leaving barrel
+    "particleSizeRange":5.0,     # radius of how far they are thrown
+    "cloudParticleCount":10,     # cloud generated at barrel
+    "cloudDuration":0.35,
+    "cloudRadius":15;            # radius of how far they are thrown
+    "blowbackParticleCount":10,  # particle leaving barrel after shot
+    "blowbackDuration":0.75,
+    "blowbackLength":-25.0,      # direction of particle + behind barrel or - in front of barrel
+    "blowbackSpread":10.0,
+    "particleColor":[200,175,135,75]
+  },
+  #"textureType": ROUGH,
+  #"fireSoundOne": "anexweapons_wraith_weapon_fire_sound_01", # continuous sound played during firing like beam
+  "fireSoundTwo": "anexweapons_wraith_weapon_fire_sound_01"	# sound played only when shot fired
+}

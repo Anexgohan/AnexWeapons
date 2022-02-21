@@ -49,5 +49,35 @@
 	[
 		{"file":"sounds/anexweapons/fx/emp/emp_2sec_01.ogg","pitch":1.0,"volume":1.0},
 	],
+
+	"anexweapons_sci_fi_weapon_fire_sound_01":
+	[
+		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_01.ogg","pitch":0.25,"volume":0.65},
+		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_02.ogg","pitch":0.25,"volume":0.65},
+		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_03.ogg","pitch":0.25,"volume":0.65},
+		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_04.ogg","pitch":0.25,"volume":0.65},
+	],
+
+	"anexweapons_sci_fi_sw_weapon_fire_sound_01":
+	[
+		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_01.ogg","pitch":0.75,"volume":0.5},
+		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_02.ogg","pitch":0.75,"volume":0.5},
+		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_03.ogg","pitch":0.75,"volume":0.5},
+		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_04.ogg","pitch":0.75,"volume":0.5},
+		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_05.ogg","pitch":0.75,"volume":0.5},
+	],
+
+	"anexweapons_wraith_weapon_fire_sound_01":
+	[
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.90,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.75,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.85,"volume":0.15},
+	],
+
+	"anexweapons_wraith_weapon_fire_sound_02":
+	[
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_02.ogg","pitch":0.95,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_02.ogg","pitch":0.85,"volume":0.15},
+	],
 }
 

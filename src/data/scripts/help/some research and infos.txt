@@ -62,7 +62,8 @@ Medium Turrets
 -----------------
 Heavy Autocannon			10	-	standard 3 turret with muzzle flash																		- 24x22									42x42
 Heavy Mauler				12	-	standard 1 turret cannon with muzzle flash																- 33x24									44x44
-Assault Chaingun			10	-	rotary turret with muzzle flash																			- 32x22									40x40
+Assault Chaingun			10	-	rotary turret with muzzle flash, check for frame animation												- 32x22									40x40
+Vic Zlydzen						-	rotary turret with muzzle flash, check for frame animation, cool coloured glow							- 32x22									40x40
 Dual Flack Cannon			12	-	2 turret cannon with yellow muzzle flash																- 29x28									40x40
 
 -----------------

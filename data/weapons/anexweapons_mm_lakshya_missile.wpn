@@ -7,12 +7,12 @@
   #"visualRecoil": 12,	# the gun sprites are only used if this is non-0
   "renderHints":[RENDER_LOADED_MISSILES],  # RENDER_BARREL_BELOW, RENDER_LOADED_MISSILES, RENDER_LOADED_MISSILES_UNLESS_HIDDEN, SUSPEND_RECOIL, RENDER_ADDITIVE
   #"everyFrameEffect": "data.scripts.weapons.utility.anexweapons_hide_on_lowAmmo",
-  "turretSprite": "graphics/weapons/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_base.png",
-  #"turretGunSprite": "graphics/weapons/.png",
-  "turretGlowSprite": "graphics/weapons/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_base_glow.png",
-  "hardpointSprite": "graphics/weapons/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_hardpoint_base.png",
-  #"hardpointGunSprite": "graphics/weapons/.png",
-  "hardpointGlowSprite": "graphics/weapons/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_hardpoint_glow.png",
+  "turretSprite": "graphics/weapons/missile/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_base.png",
+  #"turretGunSprite": "graphics/weapons/missile/.png",
+  "turretGlowSprite": "graphics/weapons/missile/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_base_glow.png",
+  "hardpointSprite": "graphics/weapons/missile/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_hardpoint_base.png",
+  #"hardpointGunSprite": "graphics/weapons/missile/.png",
+  "hardpointGlowSprite": "graphics/weapons/missile/anexweapons_mm_lakshya_missile/anexweapons_mm_lakshya_missile_hardpoint_glow.png",
   "glowColor": [
     0,
     255,
