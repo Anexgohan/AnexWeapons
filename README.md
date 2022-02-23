@@ -75,6 +75,18 @@ Hybrid torpedo with limited targeting but huge punch and has a chance to bypass 
 
 ![Trishul Hybrid Torpedo](https://media.giphy.com/media/yAXncn3v70YmENGaJv/giphy-downsized.gif)
 
+Turrets:
+### Pinaka PD smart
+Flak turret with dual barrels and unprecedented rate of fire.
+High DPS homing flak shells that mimic actual CIWS in sound and feel.
+
+![Pinaka PD smart](https://media.giphy.com/media/GxKiiiaEPRGzMs3D2u/giphy-downsized.gif)
+
+### Dhwij Dual Cannon
+Medium range low speed tracking swarm missile built for anti fighter operations
+
+![Dhwij Dual Cannon](https://media.giphy.com/media/bgepwKiaUG7jrSO9OV/giphy-downsized.gif)
+
 <details>
   <summary>Spoiler</summary>
   
