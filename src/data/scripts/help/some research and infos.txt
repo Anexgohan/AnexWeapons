@@ -15,6 +15,12 @@ The main weapon sprite is usually the one without a suffix, hence why it’s eas
 Most vanilla weapons use at least two of these layers, some use more or less. Missile launchers tend to only use a main sprite, because they don’t need recoil or glows (though you can absolutely use them for your own content!)
 The game also allows to specify two completely separate sprite SETS for each turret and hardpoint mountings, so your weapon can appear differently when mounted in a turret or hardpoint slot. That might be what the wiki is referring to. You don’t actually NEED two different sprites, if you’re just starting you can just have one and reference it in the .wpn file as both turret and hardpoint appearances.
 
+PureTilt, Freelance Vtuber Waifu:
+How to animate Hatch opening closing and weapon coming in and out of it:
+
+draw whole animation: going from hatch, firing cycle, going back to hatch,
+write EveryFrameWeaponEffectPlugin which manually goes trough frames, set amount of frames per animation phase, play go from hatch animation on charge up or stall charge up while animation play (you can set current charge up) play firing cycle when firing, play back to hatch animation after 30 second of not firing
+for manually changing frames check VIC's Zlydzen or Vodyanoy (or any other manually animated weapon i cant remember any other)
 
 
 
@@ -25,8 +31,8 @@ Histidine
 EMP Bolt - The missile starts an unstable Nuclear reaction as soon as armed surrounded by billions of coils, A simple concept with devastating results. The EMP blast generated is effective at knocking both shields and engines.
 
 cheat start testing:
-addcredits 5000000;allhullmods;addship onslaught_xiv;addship swp_conquest_xiv;addweapon anexweapons_mm_achuk_missile 25;addweapon anexweapons_mm_bhairav_missile 25;addweapon anexweapons_mm_lakshya_missile 25;addweapon anexweapons_mm_trishul_missile 25;addweapon anexweapons_mm_sudarshan_missile 25;addweapon anexweapons_mm_vajra_missile 25
-addweapon anexweapons_mm_bhairav_missile 25
+addcredits 5000000;allhullmods;addship onslaught_xiv;addship swp_conquest_xiv
+addweapon anexweapons_mm_achuk_missile 25;addweapon anexweapons_mm_sudarshan_missile 25;addweapon anexweapons_mm_vajra_missile 25;addweapon anexweapons_mm_lakshya_missile 25;addweapon anexweapons_mm_bhairav_missile 25;addweapon anexweapons_mm_trishul_missile 25;addweapon anexweapons_mtb_dhwij_turret 25;addweapon anexweapons_mtb_pinaka_turret 25
 
 
 "renderHints":[RENDER_LOADED_MISSILES, RENDER_BARREL_BELOW],
@@ -50,6 +56,7 @@ Heavy Ballista Launcher		24	-	Missiles accelerate after launch after a few secon
 Jongleur ESAD Barrage		18	-	blue long trails
 Squall							-	Turn once and unguided rest
 Devestator Cannon				-	fire flash in front of cannon 
+NovaX							-	PD missile with splash damage
 -----------------
 Medium Missiles
 -----------------

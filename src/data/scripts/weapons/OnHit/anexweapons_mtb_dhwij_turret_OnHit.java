@@ -14,9 +14,9 @@ import java.awt.Color;
 
 public class anexweapons_mtb_dhwij_turret_OnHit implements OnHitEffectPlugin {
 
-    private static final int NUM_PARTICLES = 150;
-    private static final Color EXPLOSION_COLOR = new Color(0, 205, 20, 255);
-    private static final Color PARTICLE_COLOR = new Color(165, 0, 189, 255);
+    private static final int NUM_PARTICLES = 75;
+    private static final Color EXPLOSION_COLOR = new Color(100, 255, 100, 100);
+    private static final Color PARTICLE_COLOR = new Color(165, 0, 189, 100);
 
     @Override
     public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit,

@@ -25,7 +25,7 @@ import org.lwjgl.util.vector.Vector2f;
 import java.util.ArrayList;
 import java.util.List;
 
-public class anexweapons_mtb_dhwij_turret_projectile_AI extends BaseEveryFrameCombatPlugin {
+public class anexweapons_mtb_pinaka_turret_projectile_AI extends BaseEveryFrameCombatPlugin {
     //---Settings: adjust to fill the needs of your implementation---
     //Sets guidance mode for the projectile when a target is fed to the script (or, in the case of ONE_TURN_DUMB, always).
     //Note that interceptor-style projectiles use notably more memory than the other types (as they practically run missile AI), so they should be used sparingly
@@ -36,7 +36,7 @@ public class anexweapons_mtb_dhwij_turret_projectile_AI extends BaseEveryFrameCo
     //	- "DUMBCHASER_SWARM" : As DUMBCHASER, but targets a random point on the target instead of the center, determined at target acquisition
     //	- "INTERCEPT" : Heads for an approximate intercept point of the target at all times. Becomes more accurate as distance to target decreases
     //	- "INTERCEPT_SWARM" : As INTERCEPT, but targets a random point on the target instead of the center, determined at target acquisition
-    private static final String GUIDANCE_MODE_PRIMARY = "DUMBCHASER_SWARM";
+    private static final String GUIDANCE_MODE_PRIMARY = "DUMBCHASER";
 
     //Sets behaviour when the original target is lost; if this is a target re-acquiring method, GUIDANCE_MODE_PRIMARY takes effect again with the new target.
     //Note that if there is no target within TARGET_REACQUIRE_RANGE, "NONE" is the default behaviour for re-acquires until a target is found
@@ -60,35 +60,35 @@ public class anexweapons_mtb_dhwij_turret_projectile_AI extends BaseEveryFrameCo
     //	- "CAPITAL"
     private static final List<String> VALID_TARGET_TYPES = new ArrayList<>();
     static {
+        VALID_TARGET_TYPES.add("FIGHTER");
+        VALID_TARGET_TYPES.add("MISSILE");
+        VALID_TARGET_TYPES.add("ASTEROID");
         VALID_TARGET_TYPES.add("FRIGATE");
-        VALID_TARGET_TYPES.add("DESTROYER");
-        VALID_TARGET_TYPES.add("CRUISER");
-        VALID_TARGET_TYPES.add("CAPITAL");
     }
 
     //The maximum range a target can be re-acquired at, in SU.
     //Note that this is counted from the *original* target by default, not the projectile itself (use _PROJ) for that behaviour
-    private static final float TARGET_REACQUIRE_RANGE = 1250f;
+    private static final float TARGET_REACQUIRE_RANGE = 600f;
 
     //The maximum angle a target can be re-acquired at, in degrees.
     //90 means 90 degrees to either side, I.E. a hemisphere in front of the projectile. Values 180 and above turns off the limitation altogether
-    private static final float TARGET_REACQUIRE_ANGLE = 90f;
+    private static final float TARGET_REACQUIRE_ANGLE = 30f;
 
     //How fast the projectile is allowed to turn, in degrees/second
-    private static final float TURN_RATE = 7f;
+    private static final float TURN_RATE = 70f;
 
     //If non-zero, the projectile will sway back-and-forth by this many degrees during its guidance (with a sway period determined by SWAY_PERIOD).
     //High values, as one might expect, give very poor tracking. Also, high values will decrease effective range (as the projectiles travel further) so be careful
     //Secondary and primary sway both run in parallel, allowing double-sine swaying if desired
-    private static final float SWAY_AMOUNT_PRIMARY = 6f;
-    private static final float SWAY_AMOUNT_SECONDARY = 3f;
+    private static final float SWAY_AMOUNT_PRIMARY = 0f;
+    private static final float SWAY_AMOUNT_SECONDARY = 0f;
 
     //Used together with SWAY_AMOUNT, determines how fast the swaying happens
     //1f means an entire sway "loop" (max sway right -> min sway -> max sway left -> min sway again) per second, 2f means 2 loops etc.
     //Projectiles start at a random position in their sway loop on spawning
     //Secondary and primary sway both run in parallel, allowing double-sine swaying if desired
-    private static final float SWAY_PERIOD_PRIMARY = 1.4f;
-    private static final float SWAY_PERIOD_SECONDARY = 3f;
+    private static final float SWAY_PERIOD_PRIMARY = 0f;
+    private static final float SWAY_PERIOD_SECONDARY = 0f;
 
     //How fast, if at all, sway falls off with the projectile's lifetime.
     //At 1f, it's a linear falloff, at 2f it's quadratic. At 0f, there is no falloff
@@ -104,7 +104,7 @@ public class anexweapons_mtb_dhwij_turret_projectile_AI extends BaseEveryFrameCo
 
     //Only used for the INTERCEPT targeting types: number of iterations to run for calculations.
     //At 0 it's indistinguishable from a dumbchaser, at 15 it's frankly way too high. 4-7 recommended for slow weapons, 2-3 for weapons with more firerate/lower accuracy
-    private static final int INTERCEPT_ITERATIONS = 4;
+    private static final int INTERCEPT_ITERATIONS = 2;
 
     //Only used for the INTERCEPT targeting type: a factor for how good the AI judges target leading
     //At 1f it tries to shoot the "real" intercept point, while at 0f it's indistinguishable from a dumbchaser.
@@ -112,14 +112,14 @@ public class anexweapons_mtb_dhwij_turret_projectile_AI extends BaseEveryFrameCo
 
     //Delays the activation of the script by a random amount of seconds between this MIN and MAX.
     //Note that ONE_TURN shots will still decide on target angle/point at spawn-time, not when this duration is up
-    private static final float GUIDANCE_DELAY_MAX = 3f;
-    private static final float GUIDANCE_DELAY_MIN = 0f;
+    private static final float GUIDANCE_DELAY_MAX = 0.3f;
+    private static final float GUIDANCE_DELAY_MIN = 0.1f;
 
     //Whether phased ships are ignored for targeting (and an already phased target counts as "lost" and procs secondary targeting)
     private static final boolean BROKEN_BY_PHASE = true;
 
     //Whether the projectile switches to a new target if the current one becomes an ally
-    private static final boolean RETARGET_ON_SIDE_SWITCH = true;
+    private static final boolean RETARGET_ON_SIDE_SWITCH = false;
 
     //---Internal script variables: don't touch!---
     private DamagingProjectileAPI proj; //The projectile itself
@@ -146,7 +146,7 @@ public class anexweapons_mtb_dhwij_turret_projectile_AI extends BaseEveryFrameCo
      * The target missile/asteroid/ship for the script's guidance.
      * Can be null, if the script does not follow a target ("ONE_TURN_DUMB") or to instantly activate secondary guidance mode.
      */
-    public anexweapons_mtb_dhwij_turret_projectile_AI(@NotNull DamagingProjectileAPI proj, CombatEntityAPI target) {
+    public anexweapons_mtb_pinaka_turret_projectile_AI(@NotNull DamagingProjectileAPI proj, CombatEntityAPI target) {
         this.proj = proj;
         this.target = target;
         lastTargetPos = target != null ? target.getLocation() : new Vector2f(proj.getLocation());

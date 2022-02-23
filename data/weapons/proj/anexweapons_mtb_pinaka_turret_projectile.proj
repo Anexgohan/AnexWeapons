@@ -1,0 +1,43 @@
+{
+	"id":"anexweapons_mtb_pinaka_turret_projectile",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",	# BALLISTIC_AS_BEAM
+	"collisionClass":"PROJECTILE_FF",	# RAY,
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	# RAY_FIGHTER
+	#"passThroughMissiles":true,
+	"onHitEffect":"data.scripts.weapons.OnHit.anexweapons_mtb_pinaka_turret_OnHit",
+	#"onFireEffect":"data.scripts.weapons.",
+	"bulletSprite":"graphics/missiles/shell_large_yellow.png",
+	"length":7.0,
+	"width":2.0,
+	#"coreWidthMult":0.5,
+	"fadeTime":0.2,
+	"fringeColor":[255,200,70,225],
+	"coreColor":[255,200,200,180],
+	"glowColor":[155,135,100,75],
+	"glowRadius":12,
+	"hitGlowRadius":12,
+	#"textureType":"ROUGH",  # only needed for BEAM and BALLISTIC_AS_BEAM spawnType, "SMOOTH", "ROUGH"
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"], # this or above not both
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"behaviorSpec": {
+        "behavior": "PROXIMITY_FUSE",
+        "range": 0,
+        "vsMissileRange": 25, # by Alex "Added "vsMissileRange" to the shot behavior spec, goes on the same level as "range". So in your case you'd set that to whatever, and set "range" to 0 to make the proximity fuse not get triggered by ships."
+        "explosionSpec": {
+            "duration": 0.15f,
+            "radius": 70,       # 65
+            "coreRadius": 50,       # 45  # also full damage within core radius - also equal to proximity fuse range
+            "collisionClass": PROJECTILE_FF,
+            "collisionClassByFighter": PROJECTILE_FIGHTER,
+            "particleSizeMin": 3.0,
+            "particleSizeRange": 3.0,
+            "particleDuration": 1,
+            "particleCount": 25,
+            "particleColor": [167,181,188,255],      # particle color of proximity detonated shell, this is only used for when shell explodes on proximity
+            "explosionColor":[134,126,34,15],       # core color of proximity detonated shell, this is only used for when shell explodes on proximity
+            "sound": "anexweapons_canister_flak_explosion_sound_01"
+        }
+    }
+}
