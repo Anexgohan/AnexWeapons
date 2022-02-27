@@ -83,12 +83,13 @@ High DPS homing flak shells that mimic actual CIWS in sound and feel.
 ![Pinaka PD smart](https://media.giphy.com/media/GxKiiiaEPRGzMs3D2u/giphy-downsized.gif)
 
 ### Dhwij Dual Cannon
-Medium range low speed tracking swarm missile built for anti fighter operations
+Medium range low speed tracking swarm missile built for anti fighter operations.
 
 ![Dhwij Dual Cannon](https://media.giphy.com/media/bgepwKiaUG7jrSO9OV/giphy-downsized.gif)
 
 ### Parashu Twin Mag Rail
-Medium range low speed tracking swarm missile built for anti fighter operations
+Advanced EM Rail propelled solid tungsten carbide shell.
+Upto 3 times the raw kinetic impact are inherently more accurate than any ballistic weapon.
 
 ![Parashu Twin Mag Rail](https://media.giphy.com/media/tYU45OgJkK9SPZavXI/giphy-downsized-large.gif)
 
