@@ -87,6 +87,11 @@ Medium range low speed tracking swarm missile built for anti fighter operations
 
 ![Dhwij Dual Cannon](https://media.giphy.com/media/bgepwKiaUG7jrSO9OV/giphy-downsized.gif)
 
+### Parashu Twin Mag Rail
+Medium range low speed tracking swarm missile built for anti fighter operations
+
+![Parashu Twin Mag Rail](https://media.giphy.com/media/tYU45OgJkK9SPZavXI/giphy-downsized-large.gif)
+
 <details>
   <summary>Spoiler</summary>
   
