@@ -1,0 +1,27 @@
+{
+	"id":"anexweapons_ltb_parashu_turret_projectile",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",	# BEAM, BALLISTIC, BALLISTIC_AS_BEAM
+	"collisionClass":"RAY",	# RAY, PROJECTILE_FF
+	"collisionClassByFighter":"RAY_FIGHTER",	# RAY_FIGHTER, PROJECTILE_FIGHTER
+	"passThroughMissiles":true,
+	"onHitEffect":"data.scripts.weapons.OnHit.anexweapons_ltb_parashu_turret_OnHit",
+	#"onFireEffect":"data.scripts.weapons.",
+	"bulletSprite":"graphics/missiles/anexweapons_ltb_parashu_turret_projectile/anexweapons_ltb_parashu_turret_projectile.png",
+	"length":750.0,
+	"width":20.0,
+	"coreWidthMult":2.0,
+	"fadeTime":0.5,
+	"fringeColor":[175,255,200,100],  # trail color
+	#"coreColor":[0,255,0,180],
+	"glowColor":[100,100,255,100],
+	"glowRadius":35,
+	"hitGlowRadius":25,
+	#"textureType":"ROUGH",     # only needed for BEAM and BALLISTIC_AS_BEAM spawnType, "SMOOTH", "ROUGH"
+	"textureType":[             # this or above not both
+	"graphics/effects/fx/beam/beamfringec.png",
+	"graphics/effects/fx/beam/projbody.png"
+	],
+	"textureScrollSpeed":200.0,
+	"pixelsPerTexel":10.0
+}

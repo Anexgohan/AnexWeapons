@@ -50,6 +50,16 @@
 		{"file":"sounds/anexweapons/fx/emp/emp_2sec_01.ogg","pitch":1.0,"volume":1.0},
 	],
 
+	"anexweapons_weapon_charging_sound_withFade_01":
+	[
+		{"file":"sounds/anexweapons/fx/charging/sci_fi_charging_2sec+fade.ogg","pitch":1.0,"volume":1.0},
+	],
+
+	"anexweapons_weapon_charging_sound_withFade_02":
+	[
+		{"file":"sounds/anexweapons/fx/charging/sci_fi_charging_2.5sec+fade.ogg","pitch":1.0,"volume":1.0},
+	],
+
 	"anexweapons_sci_fi_weapon_fire_sound_01":
 	[
 		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_01.ogg","pitch":0.25,"volume":0.65},

@@ -1,4 +1,4 @@
-package data.scripts.weapons.guided;
+package data.scripts.weapons.everyFrame;
 
 import com.fs.starfarer.api.combat.*;
 import data.scripts.weapons.ai.anexweapons_mtb_dhwij_turret_projectile_AI;
@@ -7,7 +7,7 @@ import org.lazywizard.lazylib.combat.CombatUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class anexweapons_mtb_dhwij_turret_guided implements EveryFrameWeaponEffectPlugin {
+public class anexweapons_mtb_dhwij_turret_everyFrame implements EveryFrameWeaponEffectPlugin {
 
 	private List<DamagingProjectileAPI> alreadyRegisteredProjectiles = new ArrayList<DamagingProjectileAPI>();
 

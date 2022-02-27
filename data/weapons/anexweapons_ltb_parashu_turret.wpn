@@ -1,0 +1,62 @@
+{
+  "id": "anexweapons_ltb_parashu_turret",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "mountTypeOverride":"HYBRID",
+  "specClass": "projectile",
+  "projectileSpecId": "anexweapons_ltb_parashu_turret_projectile",
+  "everyFrameEffect": "data.scripts.weapons.everyFrame.anexweapons_ltb_parashu_turret_everyFrame",
+  #"beamEffect":"data.scripts.weapons.beamEffect",
+  "turretSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_base.png",
+  "turretGunSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_base_barrel.png",
+  "turretGlowSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_base_glow.png",
+  "hardpointSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_hardpoint_barrel.png",
+  "hardpointGlowSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_hardpoint_glow.png",
+  #"turretUnderSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_base_under.png",
+  #"hardpointUnderSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_hardpoint_under.png",
+  "visualRecoil": 8,	# the gun sprites are only used if this is non-0
+  "renderHints":[RENDER_BARREL_BELOW],  # RENDER_BARREL_BELOW, RENDER_LOADED_MISSILES, RENDER_LOADED_MISSILES_UNLESS_HIDDEN, SUSPEND_RECOIL, RENDER_ADDITIVE
+  "displayArcRadius": 1100,
+  "renderAboveAllWeapons": 0,
+  "glowColor": [50,214,200,125],     # glowsprite color
+  #"numFrames":4,
+  #"frameRate":20,
+  "turretOffsets": [
+    20,
+    -10,
+    20,
+    10
+  ],
+  "turretAngleOffsets": [
+    0,
+    -0
+  ],
+  "hardpointOffsets": [
+    34,
+    -10,
+    34,
+    10
+  ],
+  "hardpointAngleOffsets": [
+    -0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",  # LINKED, ALTERNATING, ALTERNATING_BURST, DUAL, whether barrels fire at the same time or alternate.
+  "separateRecoilForLinkedBarrels":"TRUE",
+  #"interruptibleBurst": true,
+  "autocharge": true,	# whether the weapon will continue charging and fire if the LMB is tapped instead of held
+  "animationType": "GLOW_AND_FLASH",    # NONE, GLOW, MUZZLE_FLASH, GLOW_AND_FLASH, SMOKE
+  "muzzleFlashSpec": {
+    "length": 30,   # particle released after fire from barrel
+    "spread": 25,   # particle spread in arc 360 for circle
+    "particleSizeMin": 10,
+    "particleSizeRange": 25,    # Flash size
+    "particleDuration": 0.25,
+    "particleCount": 15,
+    "particleColor": [255,150,100,200]
+  },
+  #"textureType": ROUGH,
+  "fireSoundOne": "anexweapons_weapon_charging_sound_withFade_02", # continuous sound played during firing like beam
+  "fireSoundTwo": "anexweapons_wraith_weapon_fire_sound_01"	# sound played only when shot fired
+}

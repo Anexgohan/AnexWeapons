@@ -1,4 +1,4 @@
-package data.scripts.weapons.guided;
+package data.scripts.weapons.everyFrame;
 
 import com.fs.starfarer.api.combat.*;
 import data.scripts.weapons.ai.anexweapons_mtb_pinaka_turret_projectile_AI;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.awt.Color;
 
 // Contains (switch fired projectile AI) and (hide barrel on low ammo) scripts
-public class anexweapons_mtb_pinaka_turret_guided implements EveryFrameWeaponEffectPlugin {
+public class anexweapons_mtb_pinaka_turret_everyFrame implements EveryFrameWeaponEffectPlugin {
 
 	private List<DamagingProjectileAPI> alreadyRegisteredProjectiles = new ArrayList<DamagingProjectileAPI>();
 

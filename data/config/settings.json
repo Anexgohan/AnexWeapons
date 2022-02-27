@@ -1,7 +1,7 @@
 {
 	"graphics":{
 		"fx":{
-			"anexweapons_trail_fuzzy":"graphics/effects/fx/trails_fuzzy.png",
+			"anexweapons_trail_fuzzy":"graphics/effects/fx/beam/trails_fuzzy_01.png",
 		}
 	}
 }

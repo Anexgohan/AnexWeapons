@@ -5,7 +5,7 @@
   #"mountTypeOverride":"COMPOSITE",
   "specClass": "projectile",
   "projectileSpecId": "anexweapons_mtb_dhwij_turret_projectile",
-  "everyFrameEffect": "data.scripts.weapons.guided.anexweapons_mtb_dhwij_turret_guided",
+  "everyFrameEffect": "data.scripts.weapons.everyFrame.anexweapons_mtb_dhwij_turret_everyFrame",
   "turretSprite": "graphics/weapons/turret/anexweapons_mtb_dhwij_turret/anexweapons_mtb_dhwij_turret_base.png",
   "turretGunSprite": "graphics/weapons/turret/anexweapons_mtb_dhwij_turret/anexweapons_mtb_dhwij_turret_base_barrel.png",
   #"turretGlowSprite": "graphics/weapons/turret/.png",

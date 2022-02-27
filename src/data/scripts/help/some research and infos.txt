@@ -47,10 +47,10 @@ Reality Disruptor			30	-	holy shit, effect and what are shields
 Rift torpido launcher 		30	-	rift effects and trails
 Clestials Blossom 			28	-	Crimson beautiful trails
 Hekaton Repeater			26	-	beautiful smokey trails
-Kriegsmesser Launcher		26	-	crimson trails with wavy trails, eco's on explode
+Kriegsmesser Launcher		26	-	crimson trails with wavy trails, echo's on explode
 Onager MIRV Launcher 		26	-	MIRV which continues to hit target even after sub munitions discharge
-Curvy Laser					25	-	Mirv that spawns a ball that lanches guided projectile with long beam like effect
-Hurricane MIRV Launcher		25	-	Sexy no bs MIRV warhead dissapears after munitions launcher
+Curvy Laser					25	-	MIRV that spawns a ball that launches guided projectile with long beam like effect
+Hurricane MIRV Launcher		25	-	Sexy no bs MIRV warhead disappears after munitions launcher
 Trebuchet LRM Launcher		24	-	EMP arcs
 Heavy Ballista Launcher		24	-	Missiles accelerate after launch after a few seconds also controls	*****
 Jongleur ESAD Barrage		18	-	blue long trails
@@ -72,14 +72,21 @@ Heavy Mauler				12	-	standard 1 turret cannon with muzzle flash																-
 Assault Chaingun			10	-	rotary turret with muzzle flash, check for frame animation												- 32x22									40x40
 Vic Zlydzen						-	rotary turret with muzzle flash, check for frame animation, cool coloured glow							- 32x22									40x40
 Dual Flack Cannon			12	-	2 turret cannon with yellow muzzle flash																- 29x28									40x40
+Pastella Blaster			14	-	Plasma type projectile very nice
+
 
 -----------------
 Large Turrets
 -----------------
 Mjolnir Cannon				14	-	energy type projectile with muzzle flash
-Hephaestus Assault Gun		10	-	balistic type projectile with muzzle flash
-Mark IX Autocannon			8	-	3 quick fire dual turret fast fire
+Hephaestus Assault Gun		10	-	ballistic type projectile with muzzle flash
+Mark IX Autocannon			22	-	3 quick fire dual turret fast fire
 Volatile Particle Driver	30	-	energy type projectile with cool firing flashes like charging.
+BFG Ultra						-	energy turret that lights up after firing and slowly lights down until ready for next shot
+Hyperpulse Repeater				-	energy bolts very nice plasma projectiles
+Strahlhammer					-	laser beam that has built in expanding and contracting animation
+Shiva Disrupter beam			-	laser beam looks nice
+Heavy Plasma Driver			21	-	Laser type projectile very nice
 
 
 -----------------
@@ -139,8 +146,6 @@ AIHints {
 		NO_TURN_RATE_BOOST_WHEN_IDLE,
 		RESET_BARREL_INDEX_ON_BURST,
 		
-
-
 -----------------
 WeaponType {
 -----------------
@@ -157,7 +162,14 @@ WeaponType {
 		SYSTEM("System"),
 		STATION_MODULE("Station Module");
 		
-	
+-----------------
+ProjectileSpawnType for projectiles	{
+-----------------
+		BEAM,
+		BALLISTIC_AS_BEAM,
+		BALLISTIC,
+		PLASMA,
+
 -----------------	
 SYSTEM 				- The weapon will not spawn in markets, not drop as loot from killing a ship carrying it, and not show up in the Codex.
 
