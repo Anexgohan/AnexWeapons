@@ -1,4 +1,5 @@
-
+#	ignore from upload to GitHub repo. Do not include this file in this list.
+#	this is not ignore from release for that go to ..\.github\workflows\blacklist.txt
 # Created by https://www.gitignore.io/api/java,kotlin,intellij
 # Edit at https://www.gitignore.io/?templates=java,kotlin,intellij
 
@@ -171,8 +172,6 @@ gradlew.bat
 libs/starfarer/starfarer-api/1.0.0/starfarer-api-1.0.0-sources.jar
 libs/starfarer/starfarer-api/1.0.0/starfarer-api-1.0.0.jar
 libs/starfarer/starfarer-api/1.0.0/starfarer-api-1.0.0.pom
-LICENSE
-README.md
 readme_resources/debug_icon.png
 readme_resources/gradle_build.png
 readme_resources/runConfig.png
