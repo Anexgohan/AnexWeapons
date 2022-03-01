@@ -1,4 +1,4 @@
-name: GitHub Release zip
+name: GitHub Release zip & src
 
 on:
   # Triggers the workflow on pushing a tag only
