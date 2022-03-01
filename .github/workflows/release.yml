@@ -1,27 +1,47 @@
----
-name: "tagged-release"
+name: GitHub Release
 
 on:
+  # Triggers the workflow on pushing a tag only
   push:
-    tags:
-      - "v*"
+    tags: "*"
+    branches:
+      - "!*"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  tagged-release:
-    name: "Tagged Release"
-    runs-on: "ubuntu-latest"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
     steps:
-      # ...
-      - name: "Build & test"
+      # Checks-out repository under $GITHUB_WORKSPACE, so your job can access it
+      # GitHub Actions by default doesn't check out tags, so make sure those are included
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Fetch Tags
+        run: git fetch --prune --unshallow --tags
+        
+      - name: Set Variables
         run: |
-          echo "done!"
+          echo "VERSION=$(git describe --tags)" >> $GITHUB_ENV
+          git log --format=%B -n 1 $(git log -1 --pretty=format:"%h") | cat - > changes.txt
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Create Mod Zipfile
+        run: |
+          cd ./.github/workflows/
+          chmod +x ./runner.sh
+          ./runner.sh
+          
+      - name: Publish Release on GitHub
+        uses: "ncipollo/release-action@v1"
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          name: ${{ env.VERSION }}
+          tag: ${{ env.VERSION }}
+          bodyFile: changes.txt
+          draft: false
           prerelease: false
-          files: |
-            *.jar
-            data
-            *.json
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: ".github/workflows/artifacts/*"

@@ -17,7 +17,7 @@
   #"hardpointUnderSprite": "graphics/weapons/turret/anexweapons_ltb_parashu_turret/anexweapons_ltb_parashu_turret_hardpoint_under.png",
   "visualRecoil": 8,	# the gun sprites are only used if this is non-0
   "renderHints":[RENDER_BARREL_BELOW],  # RENDER_BARREL_BELOW, RENDER_LOADED_MISSILES, RENDER_LOADED_MISSILES_UNLESS_HIDDEN, SUSPEND_RECOIL, RENDER_ADDITIVE
-  "displayArcRadius": 1100,
+  "displayArcRadius": 1500,
   "renderAboveAllWeapons": 0,
   "glowColor": [50,214,200,125],     # glowsprite color
   #"numFrames":4,
