@@ -1,6 +1,6 @@
 name: GitHub Release zip & src
 
-on: push
+on: [workflow_dispatch]     #push
   # Triggers the workflow on pushing a tag only
   #push:
     #tags: "*"
