@@ -1,4 +1,4 @@
-name: Build Next.js web application
+name: Release manage
 on: push
 jobs:
   release-project:
@@ -20,7 +20,7 @@ jobs:
         id: create-new-release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{secrets.Anex_SSH_Token}}
+          GITHUB_TOKEN: ${{secrets.github_token}}
         with:
           tag_name: v${{github.run_number}}
           release_name: Release V${{github.run_number}}
@@ -28,7 +28,7 @@ jobs:
       - name: Upload Assets to GitHub Release
         uses: actions/upload-release-assets@v1
         env:
-          GITHUB_TOKEN: ${{secrets.Anex_SSH_Token}}
+          GITHUB_TOKEN: ${{secrets.github_token}}
         with:
           upload_url: ${{ steps.create-new-release.outputs.upload_url }}
           asset_path: ./AnexWeapons.zip
@@ -39,12 +39,13 @@ jobs:
     name: Build Project
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3.0.0
-      - name: Install NPM dependencies
-        run: npm install
-      - name: Build project assets
-        run: npm run build
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.0.0
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - run: npm test
       - name: Upload assets artifacts to GitHub
         uses: actions/upload-artifact@v2.3.1
         with:
