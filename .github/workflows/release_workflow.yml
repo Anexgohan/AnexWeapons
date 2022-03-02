@@ -1,5 +1,5 @@
 name: Release manage
-on: [workflow_dispatch]
+on: push
 jobs:
   build-linux:
     name: Build Project
