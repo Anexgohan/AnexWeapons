@@ -42,31 +42,31 @@ jobs:
     needs: [build-linux, build-windows]
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: clean previous binaries
-        run: |
-          rm -f \
-          ./bin/neutralino-linux_x64 \
-          ./bin/neutralino-win_x64 \
-      - name: Download Linux Build Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: linux_binary
-          path: ./bin/neutralino-linux_x64
-      - name: Download Windows Build Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: win_binary
-          path: ./bin/neutralino-win_x64
-      - name: Create Release zip
-        uses: vimtor/actions-zip@v1
-        with:
-          files:  ./bin/neutralino-linux_x64 ./bin/neutralino-win_x64.exe
-          dest: ./bin/neutralino-release.zip
-      -name:  Add, Commit and Push Release
-        uses: EndBug/add-and-commit@7.4.0
-        with:
-          default_author: github_actions
-          message: 'add to zip'
-          add:  './bin/neutralino-release.zip'
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: clean previous binaries
+      run: |
+        rm -f \
+        ./bin/neutralino-linux_x64 \
+        ./bin/neutralino-win_x64 \
+    - name: Download Linux Build Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: linux_binary
+        path: ./bin/neutralino-linux_x64
+    - name: Download Windows Build Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: win_binary
+        path: ./bin/neutralino-win_x64
+    - name: Create Release zip
+      uses: vimtor/actions-zip@v1
+      with:
+        files:  ./bin/neutralino-linux_x64 ./bin/neutralino-win_x64.exe
+        dest: ./bin/neutralino-release.zip
+    - name: Add, Commit and Push Release
+      uses: EndBug/add-and-commit@7.4.0
+      with:
+        default_author: github_actions
+        message: 'add to zip'
+        add:  './bin/neutralino-release.zip'
