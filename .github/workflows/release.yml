@@ -1,47 +1,31 @@
-name: GitHub Release zip & src
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-on: [workflow_dispatch]     #push
-  # Triggers the workflow on pushing a tag only
-  #push:
-    #tags: "*"
-    #branches:
-      #- "!*"
+name: Release Manager
 
-  # Allows you to run this workflow manually from the Actions tab
-  #workflow_dispatch:
+on:
+  push:
+    branches: [ main ]
+  #pull_request:
+    #branches: [ main ]
 
 jobs:
   build:
-    # The type of runner that the job will run on
+
     runs-on: ubuntu-latest
 
-    steps:
-      # Checks-out repository under $GITHUB_WORKSPACE, so your job can access it
-      # GitHub Actions by default doesn't check out tags, so make sure those are included
-      - name: Checkout
-        uses: actions/checkout@v2
-        
-      - name: Fetch Tags
-        run: git fetch --prune --unshallow --tags
-        
-      - name: Set Variables
-        run: |
-          echo "VERSION=$(git describe --tags)" >> $GITHUB_ENV
-          git log --format=%B -n 1 $(git log -1 --pretty=format:"%h") | cat - > changes.txt
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-      - name: Create Mod Zipfile
-        run: |
-          cd ./.github/workflows/
-          chmod +x ./runner.sh
-          ./runner.sh
-          
-      - name: Publish Release on GitHub
-        uses: "ncipollo/release-action@v1"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-          name: ${{ env.VERSION }}
-          tag: ${{ env.VERSION }}
-          bodyFile: changes.txt
-          draft: false
-          prerelease: false
-          token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: ".github/workflows/artifacts/*"
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
