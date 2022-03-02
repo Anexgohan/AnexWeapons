@@ -29,7 +29,6 @@ jobs:
           check-latest: true
           cache: 'npm'
           #cache-dependency-path: package-lock.json
-        name: Install dependencies
       #- run: npm ci
       #- run: npm run build --if-present
       #- run: npm test
