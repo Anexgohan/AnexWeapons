@@ -1,7 +1,7 @@
 name: Release manage
 on: push
 jobs:
-  build-project:
+  build:
     name: Build Project
     runs-on: ubuntu-latest
     steps:
