@@ -1,8 +1,8 @@
 name: GitHub Release zip & src
 
-on:
+on: push
   # Triggers the workflow on pushing a tag only
-  push: push
+  #push:
     #tags: "*"
     #branches:
       #- "!*"
