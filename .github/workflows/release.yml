@@ -27,14 +27,8 @@ jobs:
         with:
           node-version: '14'
           check-latest: true
-      - run: npm init
-      - name: setup NodeJS
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
           cache: 'npm'
-          cache-dependency-path: .github/package.json
+          cache-dependency-path: .github/package-lock.json
       - run: npm init
       - run: npm ci
       - run: npm run build --if-present
