@@ -7,8 +7,9 @@ jobs:
     steps:
       - name: Setup Node.js environment
       - uses: actions/setup-node@v3.0.0
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           node-version: '14'
       - run: npm install
       - run: npm test
