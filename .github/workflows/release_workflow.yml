@@ -45,10 +45,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: clean previous binaries
-        run:  |
+        run: |
           rm -f \
-          ./bin/neutralino-linux_x64
-          ./bin/neutralino-win_x64
+          ./bin/neutralino-linux_x64 \
+          ./bin/neutralino-win_x64 \
       - name: Download Linux Build Artifacts
         uses: actions/download-artifact@v2
         with:
