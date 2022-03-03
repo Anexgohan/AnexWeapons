@@ -28,7 +28,10 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: testarchive.zip
-          path: .github/workflows/
+          path: |
+            .github/workflows/
+            data
+            mod_info.json
 # --------------------  download artifact to working directory --------------------
   download-zip:
     runs-on: ubuntu-latest
