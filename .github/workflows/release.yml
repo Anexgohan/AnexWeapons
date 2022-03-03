@@ -41,20 +41,21 @@ jobs:
           args: zip -qq -r testarchive.zip data
 # --------------------  download artifact to working directory --------------------
 #      - uses: actions/checkout@v2
-#      - uses: actions/download-artifact@v3
-#        id: download
-#        with:
-#          name: testarchive.zip
-#          path: path/to/artifact
-#      - name: Display structure of downloaded files
-#        run: ls -R
-#        working-directory: path/to/artifact
+      - uses: actions/download-artifact@v3
+        id: download
+        with:
+          name: testarchive.zip
+          path: path/to/artifact/
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: path/to/artifact
 # -- display path of download  --
-#      - name: 'Echo download path'
-#        run: echo ${{steps.download.outputs.download-path}}
+      - name: 'Echo download path'
+        run: echo ${{steps.download.outputs.download-path}}
 # --------------------  upload built artifact --------------------
 #      - name: Upload a Build Artifact
       -  uses: actions/upload-artifact@v3.0.0
          with:
           name: testarchive.zip
           path: path/to/artifact/ # or path/to/artifact
+        
