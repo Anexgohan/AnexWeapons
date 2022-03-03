@@ -51,8 +51,6 @@ jobs:
           dest: customzip.zip
   # --------------------  Release Source  --------------------
       - uses: actions/checkout@v2
-      - name: Build
-        run: cargo build --release
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
