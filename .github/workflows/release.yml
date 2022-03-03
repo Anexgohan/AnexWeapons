@@ -50,6 +50,19 @@ jobs:
           files: data/ mod_info.json
           dest: customzip.zip
   # --------------------  Release Source  --------------------
+      - uses: actions/checkout@v2
+      - name: Build
+        run: cargo build --release
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: customzip.zip
+          asset_name: mything
+  #        release_name:
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "This is my release text"
 
   # --------------------  Create Artifact  --------------------
 
