@@ -23,6 +23,9 @@ jobs:
       - uses: montudor/action-zip@v1.0.0
         with:
           args: zip -qq -r testarchive.zip data
+      - uses: actions/upload-artifact@v2
+        with:
+          name: testarchive.zip
 # --------------------  download artifact to working directory --------------------
   download-zip:
     runs-on: ubuntu-latest
@@ -44,9 +47,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: download-zip
     steps:
-#      - name: Upload a Build Artifact
       - uses: actions/upload-artifact@v3.0.0
+        name: Upload a Build Artifact
         with:
           name: testarchive.zip
           path: path/to/artifact/ # or path/to/artifact
-        
