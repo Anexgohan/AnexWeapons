@@ -57,5 +57,5 @@ jobs:
       - uses: actions/upload-artifact@v3.0.0
         name: Upload a Build Artifact
         with:
- #         name: testarchive.zip
-          path: ${{ github.workspace }}/.github/workflows/
+          name: testarchive.zip
+          path: ${{ github.workspace }}/.github/workflows
