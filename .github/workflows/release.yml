@@ -40,7 +40,6 @@ jobs:
 
       - name: Zip output
         run: zip -qq -r testarchive.zip data src mod_info.json
-        working-directory: path/to/artifact/
       # --------------------  create zip --------------------
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.0.0
