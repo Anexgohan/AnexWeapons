@@ -26,6 +26,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: testarchive.zip
+          path: path/to/artifact/
 # --------------------  download artifact to working directory --------------------
   download-zip:
     runs-on: ubuntu-latest
