@@ -58,4 +58,4 @@ jobs:
         name: Upload a Build Artifact
         with:
           name: testarchive.zip
-          path: ${{ github.workspace }}
+          path: ${{ github.workspace }}.github/workflows/
