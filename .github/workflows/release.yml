@@ -4,6 +4,7 @@
 name: Release Manager
 
 on:
+  # only start if released on main branch and tagged with a tag starting with "v" without quotes e.g. v0.1.2
   push:
     branches:
       - main
@@ -13,6 +14,23 @@ on:
   #  branches: [ main ]
 
 jobs:
+  # --------------------  Release Source  --------------------
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Build & test"
+        run: |
+          echo "done!"
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            *.jar
+            data
+            *.json
+
+  # --------------------  setup NodeJS  --------------------
   build-npm:
     runs-on: ubuntu-latest
     # ----------  for multiple nodes use below  ----------
@@ -22,9 +40,8 @@ jobs:
     #     See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     #node-version: '14'
 
-    needs: create-release
+    needs: create-release       # make sure this job runs after "create-release" job is finished
     steps:
-    # --------------------  setup NodeJS  --------------------
       - uses: actions/checkout@v2
       - name: setup NodeJS
         uses: actions/setup-node@v2
@@ -42,22 +59,6 @@ jobs:
       #    npm install
       #    npm run build --if-present
       #    npm test
-
-    # --------------------  Release Source  --------------------
-  create-release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Build & test"
-        run: |
-          echo "done!"
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          files: |
-            *.jar
-            data
-            *.json
 
     # --------------------  Create Artifact  --------------------
       #- name: Archive production artifacts
