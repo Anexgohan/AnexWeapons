@@ -58,4 +58,4 @@ jobs:
         name: Upload a Build Artifact
         with:
           name: testarchive.zip
-          path: .github/workflows/
+          path: ${{steps.download-id.outputs.download-path}}
