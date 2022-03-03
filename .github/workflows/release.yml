@@ -50,7 +50,6 @@ jobs:
           files: data/ mod_info.json
           dest: ${{ github.workspace }}/customzip.zip
   # --------------------  Release Source  --------------------
-      - uses: actions/checkout@v2
       - uses: actions/upload-artifact@v3
         with:
           name: my-artifact
