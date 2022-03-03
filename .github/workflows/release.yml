@@ -14,7 +14,6 @@ on:
 
 jobs:
   build-npm:
-
     runs-on: ubuntu-latest
     # ----------  for multiple nodes use below  ----------
     #strategy:
@@ -23,6 +22,7 @@ jobs:
     #     See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     #node-version: '14'
 
+    needs: create-release
     steps:
     # --------------------  setup NodeJS  --------------------
       - uses: actions/checkout@v2
@@ -44,6 +44,9 @@ jobs:
       #    npm test
 
     # --------------------  Release Source  --------------------
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
       - name: "Build & test"
         run: |
           echo "done!"
