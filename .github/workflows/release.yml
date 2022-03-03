@@ -51,16 +51,12 @@ jobs:
           dest: temp/customzip.zip
   # --------------------  Release Source  --------------------
       - uses: actions/checkout@v2
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
+      - run: mkdir -p path/to/artifact
+      - run: echo hello > path/to/artifact/world.txt
+      - uses: actions/upload-artifact@v3
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: temp/customzip.zip
-          asset_name: mything
-  #        release_name:
-          tag: ${{ github.ref }}
-          overwrite: true
-          body: "This is my release text"
+          name: my-artifact
+          path: temp/customzip.zip
 
   # --------------------  Create Artifact  --------------------
 
