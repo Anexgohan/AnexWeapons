@@ -32,8 +32,8 @@ jobs:
   #          *.jar
   #          data
   #          *.json
-        id: step_version
-        run: echo "::set-output name=version::${{ steps.package_version.outputs.version }}"
+  #      id: step_version
+  #      run: echo "::set-output name=version::${{ steps.package_version.outputs.version }}"
   # --------------------  setup NodeJS  --------------------
   build-npm:
     runs-on: ubuntu-latest
