@@ -14,7 +14,9 @@
 .idea/**/dictionaries
 .idea/**/shelf
 .idea/kotlinScripting.xml
-
+.idea/.gitignore
+.idea/**/
+.idea/*
 # Generated files
 .idea/**/contentModel.xml
 
