@@ -1,0 +1,22 @@
+{
+  "name": "anexweapons",
+  "version": "1.0.0",
+  "description": "Weapons mod for StarSector.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anexgohan/AnexWeapons.git"
+  },
+  "keywords": [
+    "AnexWeapons"
+  ],
+  "author": "Anexgohan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anexgohan/AnexWeapons/issues"
+  },
+  "homepage": "https://github.com/Anexgohan/AnexWeapons#readme"
+}

@@ -1,27 +1,108 @@
----
-name: "tagged-release"
-
+# create-src-release - this will create two src.zip with source code ignoring files & folders listed in ".gitattributes"
+# build-npm - This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node.
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# create-zip-release - this will create a separate release zip file with only contents for end user, basically what you deliver to end user.
+name: Release Manager
 on:
+  # only start if released on main branch and tagged with a tag starting with "v" without quotes e.g. v0.1.2
   push:
+    branches:
+      - main
     tags:
-      - "v*"
-
+      - "v*.*.*"
+  #pull_request:
+  #  branches: [ main ]
 jobs:
-  tagged-release:
-    name: "Tagged Release"
-    runs-on: "ubuntu-latest"
-
+  # --------------------  Release Source  --------------------
+  create-src-release:
+    runs-on: ubuntu-latest
     steps:
-      # ...
       - name: "Build & test"
         run: |
           echo "done!"
-
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: "marvinpinto/action-automatic-releases@latest"    # Automatic Releases - https://github.com/marvinpinto/action-automatic-releases - https://github.com/marketplace/actions/automatic-releases
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+  #        automatic_release_tag: "latest"      #default is set to "latest", so removing this will also set to "latest"
           prerelease: false
-          files: |
-            *.jar
-            data
-            *.json
+  #        files: |
+  #          *.jar
+  #          data
+  #          *.json
+  # --------------------  setup NodeJS  --------------------
+  build-npm:
+    runs-on: ubuntu-latest
+  #   ----------  for multiple nodes use below  ----------
+  #  strategy:
+  #    matrix:
+  #      node-version: [12.x, 14.x, 16.x]
+  #       See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+  #  node-version: '14'
+    needs: create-src-release       # make sure this job runs after "create-release" job is finished
+    steps:
+      - uses: actions/checkout@v2     # Checkout - https://github.com/actions/checkout -https://github.com/marketplace/actions/checkout
+      - name: setup NodeJS
+        uses: actions/setup-node@v2   # Setup Node.js environment - https://github.com/actions/setup-node - https://github.com/marketplace/actions/setup-node-js-environment
+        with:
+          node-version: '16'
+          check-latest: true
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test       # in package.json put "npm version" under test to run a small test without any .js script, like this "test": "npm version"
+  #    - run: |
+  #        npm install
+  #        npm run build --if-present
+  #        npm test
+  # --------------------  Create Artifact  --------------------
+  #    - name: Archive production artifacts
+  #      uses: actions/upload-artifact@v2
+  #      with:
+  #        name: dist-without-markdown
+  #        path: |
+  #          dist
+  #          !dist/**/*.md
+  #    - name: Archive code coverage results
+  #      uses: actions/upload-artifact@v2
+  #      with:
+  #        name: code-coverage-report
+  #        path: output/test/code-coverage.html
+  # --------------------  Create Zip  --------------------
+  create-zip-release:
+    runs-on: ubuntu-latest
+    needs: create-src-release
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+  #        directory: 'zip'
+          filename: 'github-release-asset.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+  #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
+      - name: Checkout
+        uses: actions/checkout@v2
+  #    - name: Build
+  #      run: echo ${{ github.sha }} > release.zip
+      - name: Create Github Release
+        id: create_github_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Anex-Weapons-v${{ github.run_number }}
+      - name: Upload Asset zip to GitHub release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_github_release.outputs.upload_url }}
+          asste_path: ./github-release-asset.zip
+          asset_name: Anex-Weapons-v${{ github.run_number }}.zip
+          asset_content_type: application/zip
+  # --------------------  Upload Zip  -------------------- v${{ github.run_number }}

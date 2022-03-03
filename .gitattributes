@@ -1,11 +1,12 @@
 # ignore from source code zip
 
 .git export-ignore
+#.github export-ignore
 .gradle export-ignore
 .idea export-ignore
 .run export-ignore
-.src export-ignore
-.github export-ignore
-*LICENSE export-ignore
+#*LICENSE export-ignore
 *license.txt export-ignore
-*README.md export-ignore
+#README.md export-ignore
+#*package.json export-ignore
+#*package-lock.json export-ignore

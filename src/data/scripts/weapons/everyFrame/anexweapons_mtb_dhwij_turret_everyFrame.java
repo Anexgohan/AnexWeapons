@@ -42,6 +42,5 @@ public class anexweapons_mtb_dhwij_turret_everyFrame implements EveryFrameWeapon
 				alreadyRegisteredProjectiles.remove(proj);
 			}
 		}
-
 	}
 }
