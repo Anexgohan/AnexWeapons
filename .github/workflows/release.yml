@@ -5,9 +5,10 @@ name: Release Manager
 
 on:
   push:
-    branches: [ main ]
     tags:
       - "v*.*.*"
+    branches: [ main ]
+
   #pull_request:
   #  branches: [ main ]
 
