@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: "Test Echo"
         run: |
-        echo "done!"
+          echo "done!"
       - name: "Build & test"
       - id: create-github-release
         run: echo "::set-output name=version::${{ steps.package_version.outputs.version }}"
