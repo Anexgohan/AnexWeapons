@@ -23,6 +23,8 @@ jobs:
   #       See supported Node.js release schedule at https://nodejs.org/en/about/releases/
   #  node-version: '14'
   #  needs: create-src-release       # make sure this job runs after "create-release" job is finished
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v2     # Checkout - https://github.com/actions/checkout -https://github.com/marketplace/actions/checkout
       - name: setup NodeJS
@@ -41,11 +43,15 @@ jobs:
   #        npm install
   #        npm run build --if-present
   #        npm test
+  # --------------------  Create Zip  --------------------
+      - uses: actions/checkout@v2
+      - uses: papeloto/action-zip@v1
+        with:
+          files: data/ mod_info.json
+          dest: customzip.zip
   # --------------------  Release Source  --------------------
 
   # --------------------  Create Artifact  --------------------
-
-  # --------------------  Create Zip  --------------------
 
   # --------------------  Another different Release Source script  --------------------
 
