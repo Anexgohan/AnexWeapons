@@ -17,12 +17,12 @@ jobs:
   create-src-release:
     runs-on: ubuntu-latest
     outputs:
-      output1: ${{ steps.step1.outputs.test }}
-      output2: ${{ steps.step2.outputs.test }}
+      upload_url: ${{ steps.step_upload_url.outputs.upload_url }}
+      version: ${{ steps.step_version.outputs.version }}
     steps:
       - name: "Build & test"
-        id: step1
-        run: echo "::set-output name=test::hello"
+        id: step_upload_url
+        run: echo "::set-output name=upload_url::${{ steps.create_release.outputs.upload_url }}"
       - uses: "marvinpinto/action-automatic-releases@latest"    # Automatic Releases - https://github.com/marvinpinto/action-automatic-releases - https://github.com/marketplace/actions/automatic-releases
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -32,6 +32,8 @@ jobs:
   #          *.jar
   #          data
   #          *.json
+        id: step_version
+        run: echo "::set-output name=version::${{ steps.package_version.outputs.version }}"
   # --------------------  setup NodeJS  --------------------
   build-npm:
     runs-on: ubuntu-latest
@@ -105,7 +107,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create-github-release.outputs.upload_url }}
+          upload_url: ${{ needs.create-src-release.outputs.upload_url }}
           asset_path: github-release-asset.zip
           asset_name: Anex-Weapons-v${{ github.run_number }}.zip
           asset_content_type: application/zip
