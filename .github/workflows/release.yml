@@ -1,62 +1,50 @@
-# create-src-release - this will create two src.zip with source code ignoring files & folders listed in ".gitattributes"
-# build-npm - This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node.
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-# create-zip-release - this will create a separate release zip file with only contents for end user, basically what you deliver to end user.
-name: Release Manager
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
 on:
-  # only start if released on main branch and tagged with a tag starting with "v" without quotes e.g. v0.1.2
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches:
-      - main
-  #  tags:
-  #    - "v*.*.*"
-  #pull_request:
-  #  branches: [ main ]
+    branches: [ main ]
+  #  pull_request:
+  #    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # --------------------  setup NodeJS  --------------------
-  build-npm:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-  #   ----------  for multiple nodes use below  ----------
-  #  strategy:
-  #    matrix:
-  #      node-version: [12.x, 14.x, 16.x]
-  #       See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-  #  node-version: '14'
-  #  needs: create-src-release       # make sure this job runs after "create-release" job is finished
-    permissions:
-      contents: write
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2     # Checkout - https://github.com/actions/checkout -https://github.com/marketplace/actions/checkout
-      - name: setup NodeJS
-        uses: actions/setup-node@v2   # Setup Node.js environment - https://github.com/actions/setup-node - https://github.com/marketplace/actions/setup-node-js-environment
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          node-version: '16'
-          check-latest: true
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test       # in package.json put "npm version" under test to run a small test without any .js script, like this "test": "npm version"
-  #    - run: |
-  #        npm install
-  #        npm run build --if-present
-  #        npm test
-  # --------------------  Create Zip  --------------------
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: papeloto/action-zip@v1
-        with:
-          files: data/ mod_info.json
-          dest: ${{ github.workspace }}/customzip.zip
-  # --------------------  Release Source  --------------------
-      - uses: actions/upload-artifact@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+      # --------------------  create zip --------------------
+      - name: Install zip
+        uses: montudor/action-zip@v1
+
+      - name: Zip output
+        run: zip -qq -r testarchive.zip data src mod_info.json
+        working-directory: path/to/artifact/
+      # --------------------  create zip --------------------
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.0.0
         with:
           name: my-artifact
-          path: ${{ github.workspace }}/customzip.zip
-
-  # --------------------  Create Artifact  --------------------
-
-  # --------------------  Another different Release Source script  --------------------
-
-  # --------------------  Upload Zip  -------------------- v${{ github.run_number }}
+          path: path/to/artifact/ # or path/to/artifact
+        
