@@ -20,14 +20,14 @@ jobs:
       version: ${{ steps.step_version.outputs.version }}
       upload_url: ${{ steps.step_upload_url.outputs.upload_url }}
     steps:
+      - name: "Test Echo"
+        run: |
+        echo "done!"
       - name: "Build & test"
       - id: create-github-release
         run: echo "::set-output name=version::${{ steps.package_version.outputs.version }}"
       - id: step_upload_url
         run: echo "::set-output name=upload_url::${{ steps.create_release.outputs.upload_url }}"
-      - name: "Test Echo"
-        run: |
-          echo "done!"
       - uses: "marvinpinto/action-automatic-releases@latest"    # Automatic Releases - https://github.com/marvinpinto/action-automatic-releases - https://github.com/marketplace/actions/automatic-releases
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
