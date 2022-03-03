@@ -28,11 +28,11 @@ jobs:
           node-version: '16'
           check-latest: true
           cache: 'npm'
-          #cache-dependency-path: package-lock.json
+          cache-dependency-path: .github/package-lock.json
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
-          
+
       #- run: |
       #    npm install
       #    npm run build --if-present
