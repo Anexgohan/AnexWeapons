@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Build & test"
+        id: create-github-release
         run: |
           echo "done!"
       - uses: "marvinpinto/action-automatic-releases@latest"    # Automatic Releases - https://github.com/marvinpinto/action-automatic-releases - https://github.com/marketplace/actions/automatic-releases
@@ -88,20 +89,21 @@ jobs:
         uses: actions/checkout@v2
   #    - name: Build
   #      run: echo ${{ github.sha }} > release.zip
-      - name: Create Github Release
-        id: create_github_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ github.run_number }}
-          release_name: Anex-Weapons-v${{ github.run_number }}
+  # --------------------  Another different Release Source script  --------------------
+  #    - name: Create Github Release
+  #      id: create-github-release
+  #      uses: actions/create-release@v1
+  #      env:
+  #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #      with:
+  #        tag_name: v${{ github.run_number }}
+  #        release_name: Anex-Weapons-v${{ github.run_number }}
       - name: Upload Asset zip to GitHub release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_github_release.outputs.upload_url }}
+          upload_url: ${{ steps.create-github-release.outputs.upload_url }}
           asste_path: ./github-release-asset.zip
           asset_name: Anex-Weapons-v${{ github.run_number }}.zip
           asset_content_type: application/zip
