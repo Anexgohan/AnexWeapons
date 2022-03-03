@@ -6,14 +6,16 @@ name: Release Manager
 on:
   push:
     branches: [ main ]
+    tags:
+      - "v*.*.*"
   #pull_request:
   #  branches: [ main ]
 
 jobs:
-  build:
+  build-npm:
 
     runs-on: ubuntu-latest
-
+    # ----------  for multiple nodes use below  ----------
     #strategy:
     #  matrix:
     #    node-version: [12.x, 14.x, 16.x]
@@ -21,6 +23,7 @@ jobs:
     #node-version: '14'
 
     steps:
+    # --------------------  setup NodeJS  --------------------
       - uses: actions/checkout@v2
       - name: setup NodeJS
         uses: actions/setup-node@v2
@@ -39,6 +42,22 @@ jobs:
       #    npm run build --if-present
       #    npm test
 
+    # --------------------  Release Source  --------------------
+      - name: "Build & test"
+        run: |
+          echo "done!"
+
+      - name: Create Release
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            *.jar
+            data
+            *.json
+
+    # --------------------  Create Artifact  --------------------
       #- name: Archive production artifacts
       #  uses: actions/upload-artifact@v2
       #  with:
