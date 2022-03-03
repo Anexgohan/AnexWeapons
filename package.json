@@ -1,7 +1,7 @@
 {
-  "name": "AnexWeapons",
+  "name": "anexweapons",
   "version": "1.0.0",
-  "description": "Weapons Mod for Starsector",
+  "description": "Weapons mod for StarSector.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
     "AnexWeapons"
   ],
   "author": "Anexgohan",
-  "license": "gpl-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Anexgohan/AnexWeapons/issues"
   },
