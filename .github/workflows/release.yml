@@ -55,7 +55,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: customzip.zip
+          file: ./customzip.zip
           asset_name: mything
   #        release_name:
           tag: ${{ github.ref }}
