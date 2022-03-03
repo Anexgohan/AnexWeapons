@@ -48,7 +48,7 @@ jobs:
       - uses: papeloto/action-zip@v1
         with:
           files: data/ mod_info.json
-          dest: temp/customzip.zip
+          dest: ${{ github.workspace }}/customzip.zip
   # --------------------  Release Source  --------------------
       - uses: actions/checkout@v2
       - run: mkdir -p path/to/artifact
@@ -56,7 +56,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: ${{ github.workspace }}/temp/customzip.zip
+          path: ${{ github.workspace }}/customzip.zip
 
   # --------------------  Create Artifact  --------------------
 
