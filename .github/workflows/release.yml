@@ -80,15 +80,14 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-  #        directory: 'temp'
+          directory: 'zip'
           filename: 'release.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
   # --------------------  Upload Zip  --------------------v${{ github.run_number }}
       - name: Upload Release
-        uses: actions/checkout@v2
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "release.zip"
+          artifacts: "cz_release.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
   # --------------------  Upload Zip  --------------------v${{ github.run_number }}
   #upload-zip-release:
