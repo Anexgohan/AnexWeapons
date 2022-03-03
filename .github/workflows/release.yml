@@ -28,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: testarchive.zip
-          path: .github/workflows/artifacts
+          path: .github/workflows/
 # --------------------  download artifact to working directory --------------------
   download-zip:
     runs-on: ubuntu-latest
@@ -39,10 +39,10 @@ jobs:
         id: download-id
         with:
           name: testarchive.zip
-          path: .github/workflows/artifacts
+          path: .github/workflows/
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: .github/workflows/artifacts
+        working-directory: .github/workflows/
 # -- display path of download  --
       - name: 'Echo download path'
         run: echo ${{steps.download-id.outputs.download-path}}
@@ -55,5 +55,4 @@ jobs:
         name: Upload a Build Artifact
         with:
           name: testarchive.zip
-          path: .github/workflows/artifacts
-        
+          path: .github/workflows/
