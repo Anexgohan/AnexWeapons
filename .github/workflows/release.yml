@@ -8,33 +8,14 @@ on:
   push:
     branches:
       - main
-    tags:
-      - v*.*.*
+  #  tags:
+  #    - "v*.*.*"
   #pull_request:
   #  branches: [ main ]
 jobs:
-  # --------------------  Release Source  --------------------
-  create-src-release:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: "Build & test"
-        id: create-github-release
-        run: |
-          echo "done!"
-      - uses: "marvinpinto/action-automatic-releases@latest"    # Automatic Releases - https://github.com/marvinpinto/action-automatic-releases - https://github.com/marketplace/actions/automatic-releases
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-  #        automatic_release_tag: "latest"      #default is set to "latest", so removing this will also set to "latest"
-          prerelease: false
-  #        files: |
-  #          *.jar
-  #          data
-  #          *.json
   # --------------------  setup NodeJS  --------------------
-  #build-npm:
-  #  runs-on: ubuntu-latest
+  build-npm:
+    runs-on: ubuntu-latest
   #   ----------  for multiple nodes use below  ----------
   #  strategy:
   #    matrix:
@@ -42,10 +23,12 @@ jobs:
   #       See supported Node.js release schedule at https://nodejs.org/en/about/releases/
   #  node-version: '14'
   #  needs: create-src-release       # make sure this job runs after "create-release" job is finished
-  #  steps:
+    steps:
       - uses: actions/checkout@v2     # Checkout - https://github.com/actions/checkout -https://github.com/marketplace/actions/checkout
       - name: setup NodeJS
         uses: actions/setup-node@v2   # Setup Node.js environment - https://github.com/actions/setup-node - https://github.com/marketplace/actions/setup-node-js-environment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           node-version: '16'
           check-latest: true
@@ -58,55 +41,12 @@ jobs:
   #        npm install
   #        npm run build --if-present
   #        npm test
+  # --------------------  Release Source  --------------------
+
   # --------------------  Create Artifact  --------------------
-  #    - name: Archive production artifacts
-  #      uses: actions/upload-artifact@v2
-  #      with:
-  #        name: dist-without-markdown
-  #        path: |
-  #          dist
-  #          !dist/**/*.md
-  #    - name: Archive code coverage results
-  #      uses: actions/upload-artifact@v2
-  #      with:
-  #        name: code-coverage-report
-  #        path: output/test/code-coverage.html
+
   # --------------------  Create Zip  --------------------
-  #create-zip-release:
-  #  runs-on: ubuntu-latest
-  #  needs: create-github-release
-  #  permissions:
-  #    contents: write
-  #  steps:
-      - uses: actions/checkout@master
-      - name: Release Zip File
-        uses: thedoctor0/zip-release@master
-        with:
-          type: 'zip'
-  #        directory: 'zip'
-          filename: 'github-release-asset.zip'
-          exclusions: '*.git* /*node_modules/* .editorconfig'
-  #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
-      - name: Checkout
-        uses: actions/checkout@v2
-  #    - name: Build
-  #      run: echo ${{ github.sha }} > release.zip
+
   # --------------------  Another different Release Source script  --------------------
-  #    - name: Create Github Release
-  #      id: create-github-release
-  #      uses: actions/create-release@v1
-  #      env:
-  #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #      with:
-  #        tag_name: v${{ github.run_number }}
-  #        release_name: Anex-Weapons-v${{ github.run_number }}
-      - name: Upload Asset zip to GitHub release
-        uses: actions/upload-release-asset@v1.0.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create-github-release.outputs.upload_url }}
-          asset_path: github-release-asset.zip
-          asset_name: Anex-Weapons-v${{ github.run_number }}.zip
-          asset_content_type: application/zip
+
   # --------------------  Upload Zip  -------------------- v${{ github.run_number }}
