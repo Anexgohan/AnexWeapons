@@ -18,6 +18,8 @@ jobs:
 # --------------------  create zip --------------------
   creating-zip:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v2
       - uses: montudor/action-zip@v1.0.0
