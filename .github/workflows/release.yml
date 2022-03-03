@@ -82,7 +82,8 @@ jobs:
           type: 'zip'
           directory: 'zip'
           filename: 'release.zip'
-          exclusions: '*.git* /*node_modules/* .editorconfig *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+  #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
   # --------------------  Upload Zip  --------------------v${{ github.run_number }}
   #    - name: Upload Release
   #      uses: ncipollo/release-action@v1
