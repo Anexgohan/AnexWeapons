@@ -36,7 +36,6 @@ jobs:
           echo test, and deploy your project.
       # --------------------  create zip --------------------
       - uses: actions/checkout@v2
-      - run: composer install --ansi --no-progress --no-interaction --prefer-dist
       - uses: montudor/action-zip@v1.0.0
         with:
           args: zip -qq -r testarchive.zip data
