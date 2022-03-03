@@ -35,29 +35,28 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       # --------------------  create zip --------------------
-      - name: Install zip
-        uses: montudor/action-zip@v1
-
-      - name: Zip output
-        run: zip -qq -r testarchive.zip data src mod_info.json
-      # --------------------  download artifact to working directory --------------------
       - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v3
-        id: download
+      - run: composer install --ansi --no-progress --no-interaction --prefer-dist
+      - uses: montudor/action-zip@v1.0.0
         with:
-          name: testarchive.zip
-          path: path/to/artifact
-
-      - name: Display structure of downloaded files
-        run: ls -R
-        working-directory: path/to/artifact
-      # -- display path of download  --
-      - name: 'Echo download path'
-        run: echo ${{steps.download.outputs.download-path}}
-      # --------------------  create zip --------------------
-      - name: Upload a Build Artifact
+          args: zip -qq -r testarchive.zip data
+        # --------------------  download artifact to working directory --------------------
+        #      - uses: actions/checkout@v2
+        #      - uses: actions/download-artifact@v3
+        #        id: download
+        #        with:
+        #          name: testarchive.zip
+        #          path: path/to/artifact
+        #      - name: Display structure of downloaded files
+        #        run: ls -R
+        #        working-directory: path/to/artifact
+        # -- display path of download  --
+        #      - name: 'Echo download path'
+        #        run: echo ${{steps.download.outputs.download-path}}
+        # --------------------  upload built artifact --------------------
+        #      - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
-          name: my-artifact
-          path: path/to/artifact/ # or path/to/artifact
+          name: testarchive.zip
+        #         path: path/to/artifact/ # or path/to/artifact
         
