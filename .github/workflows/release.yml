@@ -16,6 +16,9 @@ jobs:
   # --------------------  Release Source  --------------------
   create-src-release:
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.step1.outputs.test }}
+      output2: ${{ steps.step2.outputs.test }}
     steps:
       - name: "Build & test"
         id: create-github-release
