@@ -20,7 +20,7 @@ jobs:
 #      contents: write
     steps:
       - uses: actions/checkout@v3
-        clean: 'false'        # if true checkout deletes everything after use and other jobs cannot access the files down the line
+#        clean: 'false'        # if true checkout deletes everything after use and other jobs cannot access the files down the line
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
