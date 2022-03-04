@@ -57,4 +57,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
-            ${{ steps.download-id.outputs.download-path }}
+            ${{ steps.download-id.outputs.download-path }}/*.zip
