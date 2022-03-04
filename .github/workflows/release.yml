@@ -21,7 +21,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/upload-artifact@v2
         with:
           name: testarchive.zip
@@ -33,3 +33,18 @@ jobs:
             src
             Anex_Weapons.version
             mod_info.json
+# --------------------  upload built artifact --------------------
+  release-zip:
+    name: "Release Files"
+    runs-on: "ubuntu-latest"
+    needs: creating-zip
+    steps:
+      - uses: actions/checkout@v3
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "willthiwork"
+          files: |
+            testarchive.zip
