@@ -62,5 +62,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: github-release-asset.zip
+          path: ./work/AnexWeapons/AnexWeapons
       - name: Display structure of downloaded files
         run: ls -R
+        working-directory: ./work/AnexWeapons/AnexWeapons
