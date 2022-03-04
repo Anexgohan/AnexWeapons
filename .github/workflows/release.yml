@@ -41,7 +41,7 @@ jobs:
       - uses: actions/download-artifact@v3
         id: download-id
         with:
-          name: testarchive.zip
+          name: testarchive
           path: .github/workflows/
       - name: Display structure of downloaded files
         run: ls -R
