@@ -49,6 +49,6 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          title: "release-file"
+#          title: "release-file"
           files: |
-            'testarchive/*.zip'
+            "testarchive/*.zip"
