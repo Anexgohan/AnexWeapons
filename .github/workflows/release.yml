@@ -14,7 +14,7 @@ jobs:
   pack-zip:
     defaults:
       run:
-        working-directory: .github/workflows/artifacts
+        working-directory: .github/workflows/
     runs-on: ubuntu-latest
 #    permissions:
 #      contents: write
