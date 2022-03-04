@@ -17,7 +17,7 @@ jobs:
       contents: write
     defaults:
       run:
-        working-directory: src
+        working-directory: .github/workflows/
     steps:
       - uses: actions/checkout@v2
       - uses: actions/upload-artifact@v2
@@ -34,7 +34,7 @@ jobs:
             mod_info.json
       - name: Display structure of downloaded files
         run: ls -R
-#        working-directory: src/
+#        working-directory: .github/workflows/
 # -- display path of download  --
       - name: 'Echo download path'
         run: echo ${{steps.download-id.outputs.download-path}}
