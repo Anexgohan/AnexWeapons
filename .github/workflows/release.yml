@@ -15,9 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    defaults:
+      run:
+        working-directory: ${{ env.src }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/upload-artifact@v2
+        id: download-id
         with:
           name: testarchive
           path: |
@@ -28,13 +32,19 @@ jobs:
             src
             Anex_Weapons.version
             mod_info.json
+      - name: Display structure of downloaded files
+        run: ls -R
+#        working-directory: src/
+# -- display path of download  --
+      - name: 'Echo download path'
+        run: echo ${{steps.download-id.outputs.download-path}}
 # --------------------  download artifact to working directory --------------------
       - uses: actions/checkout@v2
       - name: Upload files to a GitHub release
         uses: svenstaro/upload-release-action@2.2.1
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: testarchive
+          file: src/testarchive
           asset_name: willthiswork-$tag
           tag: latest
           overwrite: true
