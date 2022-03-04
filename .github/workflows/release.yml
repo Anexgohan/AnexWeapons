@@ -22,9 +22,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
-      - uses: montudor/action-zip@v1.0.0
-        with:
-          args: zip -qq -r testarchive.zip data
       - uses: actions/upload-artifact@v2
         with:
           name: testarchive.zip
