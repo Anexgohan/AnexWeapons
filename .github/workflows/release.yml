@@ -14,19 +14,20 @@ jobs:
   pack-zip:
     defaults:
       run:
-        working-directory: .github/workflows/
+        working-directory: AnexWeaponsArtifact
     runs-on: ubuntu-latest
 #    permissions:
 #      contents: write
     steps:
       - uses: actions/checkout@v3
 #        clean: 'false'        # if true checkout deletes everything after use and other jobs cannot access the files down the line
+      - run: mkdir -p AnexWeaponsArtifact
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
 #        directory: 'zip'
-          filename: 'github-release-asset.zip'
+          filename: 'github-release-asset'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
 # generates list of all files in root directory, download log from actions tab in github to view
@@ -34,10 +35,17 @@ jobs:
         run: |
           cd
           ls -R
-# --------------------  create zip folder --------------------
+# --------------------  move file to directory --------------------
+      - uses: actions/upload-artifact@v3
+        with:
+          name: github-release-asset
+          path: AnexWeaponsArtifact
+      - name: Display structure of downloaded files
+        run: ls -R
+# --------------------  Upload zip to Github Release --------------------
       - name: Upload Asset zip to GitHub release
         uses: actions/download-artifact@v3
         with:
-          name: my-artifact
+          name: github-release-asset
       - name: Display structure of downloaded files
         run: ls -R
