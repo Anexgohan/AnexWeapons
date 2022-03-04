@@ -34,6 +34,14 @@ jobs:
             mod_info.json
       - name: Display structure of downloaded files
         run: ls -R
+      - name: check directories
+        run: |
+          cd .github/workflows/
+          ls -R
+          cd .github/
+          ls -R
+          cd..
+          ls
 #        working-directory: .github/workflows/
 # -- display path of download  --
       - name: 'Echo download path'
@@ -44,7 +52,7 @@ jobs:
         uses: svenstaro/upload-release-action@2.2.1
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: src/testarchive
+          file: .github/workflows/testarchive
           asset_name: willthiswork-$tag
           tag: latest
           overwrite: true
