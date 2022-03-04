@@ -45,6 +45,8 @@ jobs:
       # -- display path of download  --
       - name: 'Echo download path'
         run: echo ${{steps.download-id.outputs.download-path}}
+      - name: 'Echo path 1'
+        run: echo ${{steps.download-id.outputs}}
   # --------------------  upload built artifact --------------------
   release-zip:
     name: "Release Files"
@@ -56,4 +58,4 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          files: ${{ steps.download-id.outputs.download-path}}./*.zip
+          files: mod_info.json
