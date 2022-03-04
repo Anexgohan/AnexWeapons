@@ -47,4 +47,4 @@ jobs:
           prerelease: true
           title: "willthiwork"
           files: |
-            testarchive.zip
+            ${{ github.workspace }}/.github/workflows/testarchive.zip
