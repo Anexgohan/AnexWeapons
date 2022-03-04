@@ -34,6 +34,8 @@ jobs:
             mod_info.json
       - name: Display structure of downloaded files
         run: ls -R
+      - name: Display structure of downloaded files
+        run: ls -R
       - name: check directories 1
         run: |
           cd .github/workflows/
