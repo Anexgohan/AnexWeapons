@@ -37,12 +37,9 @@ jobs:
       contents: write
     steps:
       - uses: actions/download-artifact@v2
-      - name: Display fetched artifacts
-        id: download-id
-
       - name: Display structure of downloaded files
+        id: download-id
         run: ls -R
-
 # -- display path of download  --
       - name: 'Echo download path'
         run: echo ${{steps.download-id.outputs.download-path}}
