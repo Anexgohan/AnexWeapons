@@ -29,7 +29,7 @@ jobs:
   pack-zip:
     defaults:
       run:
-        working-directory: AnexWeaponsArtifact
+        working-directory: .github/workflows/
     runs-on: ubuntu-latest
 #    permissions:
 #      contents: write
@@ -37,7 +37,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 #        clean: 'false'        # if true checkout deletes everything after use and other jobs cannot access the files down the line
-      - run: mkdir -p AnexWeaponsArtifact
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
@@ -55,7 +54,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: github-release-asset
-          path: AnexWeaponsArtifact
+          path: .github/workflows/
       - name: Display structure of downloaded files
         run: ls -R
 # --------------------  Upload zip to Github Release --------------------
