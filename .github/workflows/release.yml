@@ -29,6 +29,7 @@ jobs:
         uses: actions/checkout@v2
 #    - name: Build
 #      run: echo ${{ github.sha }} > release.zip
+      - name: check zip file log
         run: |
           cd
           ls -R
