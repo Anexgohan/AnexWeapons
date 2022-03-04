@@ -10,9 +10,32 @@ on:
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
+# --------------------  create zip file --------------------
+  pack-zip:
+    runs-on: ubuntu-latest
+#    permissions:
+#      contents: write
+    steps:
+      - uses: actions/checkout@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+#        directory: 'zip'
+          filename: 'github-release-asset.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+#       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
+      - name: Checkout
+        uses: actions/checkout@v2
+#    - name: Build
+#      run: echo ${{ github.sha }} > release.zip
+        run: |
+          cd
+          ls -R
 # --------------------  create zip folder --------------------
   creating-zip:
     runs-on: ubuntu-latest
+    needs: pack-zip
     permissions:
       contents: write
     defaults:
