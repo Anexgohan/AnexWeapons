@@ -51,16 +51,16 @@ jobs:
           cd
           ls -R
 # --------------------  move file to directory --------------------
-      - uses: actions/upload-artifact@v3
-        with:
-          name: github-release-asset
-          path: .github/workflows/
-      - name: Display structure of downloaded files
-        run: ls -R
+#      - uses: actions/upload-artifact@v3
+#        with:
+#          name: github-release-asset.zip
+#          path: ./work/AnexWeapons/AnexWeapons
+#      - name: Display structure of downloaded files
+#        run: ls -R
 # --------------------  Upload zip to Github Release --------------------
       - name: Upload Asset zip to GitHub release
         uses: actions/download-artifact@v3
         with:
-          name: github-release-asset
+          name: github-release-asset.zip
       - name: Display structure of downloaded files
         run: ls -R
