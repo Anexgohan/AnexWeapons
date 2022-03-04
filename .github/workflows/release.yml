@@ -25,6 +25,17 @@ jobs:
       - uses: montudor/action-zip@v1.0.0
         with:
           args: zip -qq -r testarchive.zip data
+      - uses: actions/upload-artifact@v2
+        with:
+          name: testarchive.zip
+          path: |
+            data
+            graphics
+            jars
+            sounds
+            src
+            Anex_Weapons.version
+            mod_info.json
 # --------------------  download artifact to working directory --------------------
   download-zip:
     runs-on: ubuntu-latest
@@ -48,16 +59,8 @@ jobs:
     needs: download-zip
     steps:
       - uses: actions/checkout@v2
-#      - uses: actions/upload-artifact@v3.0.0
-#        name: Upload a Build Artifact
-#        with:
-#          name: testarchive.zip
-#          path: ${{ github.workspace }}/.github/workflows
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3.0.0
+        name: Upload a Build Artifact
         with:
           name: testarchive.zip
-          path: |
-            .github/workflows/
-            data
-            mod_info.json
-            src
+          path: ${{ github.workspace }}/.github/workflows
