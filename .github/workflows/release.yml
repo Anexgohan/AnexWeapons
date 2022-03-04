@@ -5,12 +5,12 @@ on:
       - main
     tags:
       - "v*.*.*"
-#  pull_request:
-#    branches: [ main ]
-# Allows you to run this workflow manually from the Actions tab
+  #  pull_request:
+  #    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-# --------------------  create zip --------------------
+  # --------------------  create zip --------------------
   creating-zip:
     runs-on: ubuntu-latest
     permissions:
@@ -28,7 +28,7 @@ jobs:
             src
             Anex_Weapons.version
             mod_info.json
-# --------------------  download artifact to working directory --------------------
+  # --------------------  download artifact to working directory --------------------
   download-zip:
     runs-on: ubuntu-latest
     needs: creating-zip
@@ -42,10 +42,10 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: .github/workflows/
-# -- display path of download  --
+      # -- display path of download  --
       - name: 'Echo download path'
         run: echo ${{steps.download-id.outputs.download-path}}
-# --------------------  upload built artifact --------------------
+  # --------------------  upload built artifact --------------------
   release-zip:
     name: "Release Files"
     runs-on: "ubuntu-latest"
@@ -56,5 +56,4 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          files: |
-            ${{ steps.download-id.outputs.download-path }}/*.zip
+          files: ${{ steps.download-id.outputs.download-path}}./*.zip
