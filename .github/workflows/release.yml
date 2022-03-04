@@ -1,7 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Release Manager
-
 on:
   push:
     branches:
@@ -43,4 +40,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
-            ${{ github.workspace }}/.github/workflows/
+            testarchive.zip
