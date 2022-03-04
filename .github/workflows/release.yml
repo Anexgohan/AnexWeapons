@@ -10,7 +10,7 @@ on:
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-# --------------------  create zip --------------------
+# --------------------  create zip folder --------------------
   creating-zip:
     runs-on: ubuntu-latest
     permissions:
@@ -29,3 +29,21 @@ jobs:
             Anex_Weapons.version
             mod_info.json
 # --------------------  download artifact to working directory --------------------
+  release:
+    name: "Prelease"
+    needs: creating-zip
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+      - name: Display fetched artifacts
+        run: ls -R
+
+      - name: Emit a Github Release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            testarchive/*.zip
