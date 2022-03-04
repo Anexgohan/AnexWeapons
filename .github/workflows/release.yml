@@ -36,19 +36,20 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
       - name: Display structure of downloaded files
-        id: download-id
         run: ls -R
-# -- display path of download  --
-      - name: 'Echo download path'
-        run: echo ${{steps.download-id.outputs.download-path}}
+      - name: create Github Release
+        uses: marvinpinto/action-automatic-releases@v1.2.1
 
-      - name: Emit a Github Release
-        uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
 #          title: "release-file"
           files: |
-            "testarchive/*.zip"
+            testarchive/*.zip
+# -- display path of download  --
+        id: download-id
+      - name: 'Echo download path'
+        run: echo ${{steps.download-id.outputs.download-path}}
