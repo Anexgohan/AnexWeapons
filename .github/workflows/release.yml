@@ -65,11 +65,11 @@ jobs:
       - name: check directories 3
         run: |
           cd ..
-          ls
+          ls -R
       - name: check directories 4
         run: |
           cd
-          ls
+          ls -R
 #        working-directory: .github/workflows/
 # -- display path of download  --
       - name: 'Echo download path'
