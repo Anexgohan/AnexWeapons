@@ -50,4 +50,5 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           title: "release-file"
-          files: ./*
+          files: |
+            'testarchive/*.zip'
