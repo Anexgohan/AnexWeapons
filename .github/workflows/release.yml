@@ -19,7 +19,7 @@ jobs:
       - run: mkdir Anexweapons_02-${{ github.ref_name }}
       - uses: actions/upload-artifact@v2
         with:
-          name: AnexWeapons
+          name: AnexWeapons_01
           path: |
             data
             graphics
@@ -50,7 +50,7 @@ jobs:
 # --------------------  create zip file --------------------
       - name: Copy out file from volume
         run: |
-            sudo cp /AnexWeapons /Anexweapons_02-${{ github.ref_name }}/
+            sudo cp /${{ github.workspace }}/AnexWeapons_01 /Anexweapons_02-${{ github.ref_name }}/
       - name: check zip file log
         run: |
           cd
