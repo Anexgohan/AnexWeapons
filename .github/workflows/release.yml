@@ -17,9 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/upload-artifact@v2
-        id: download_id
         with:
-          name: testarchive.zip
+          name: AnexWeapons_01
           path: |
             data
             graphics
@@ -38,7 +37,9 @@ jobs:
             !readme_resources
 # -- display path of download  --
       - name: Echo download path
-        run: echo ${{steps.download_id.outputs.download-path}}
+        run: |
+          cd ${{ github.workspace }}
+          ls -R
       - name: List all folders
         run: ls -R
       - name: check zip file log
@@ -46,12 +47,12 @@ jobs:
           cd
           ls -R
 # --------------------  create zip file --------------------
-#      - name: Create Zip from Folders
-#        uses: thedoctor0/zip-release@master
-#        with:
-#          type: 'zip'
-#          filename: 'AnexWeapons'
-#          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+      - name: Create Zip from Folders
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: 'AnexWeapons_01'
+          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
 #      - name: check zip file log
 #        run: |
