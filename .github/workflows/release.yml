@@ -15,6 +15,8 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
+      - name: Make directory
+      - run: mkdir Anexweapons_02
       - uses: actions/checkout@v3
       - uses: actions/upload-artifact@v2
         with:
@@ -46,6 +48,15 @@ jobs:
         run: |
           cd
           ls -R
+# --------------------  download to folder --------------------
+      - uses: actions/download-artifact@v3
+        with:
+          name: my-artifact
+          path: path/to/artifact
+
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: path/to/artifact
 # --------------------  create zip file --------------------
       - name: Create Zip from Folders
         uses: thedoctor0/zip-release@master
