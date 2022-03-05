@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          clean: false
+          clean: false    #
       - run: mkdir Anexweapons_02-${{ github.ref_name }}
       - uses: actions/upload-artifact@v2
         with:
@@ -38,14 +38,9 @@ jobs:
             !build
             !libs
             !readme_resources
-      # -- display path of download  --
-      #      - name: Echo download path
-      #        run: |
-      #          cd ${{ github.workspace }}
-      #          ls -R
-#      - name: List all folders
+#      - name: List all upload-artifact folders only
 #        run: ls -R
-#      - name: check zip file log
+#      - name: check upload-artifact file log
 #        run: |
 #          cd
 #          ls -R
@@ -64,7 +59,7 @@ jobs:
           path: ${{ github.workspace }}/Anexweapons_02-${{ github.ref_name }}
       - name: 'Echo download path'
         run: echo ${{steps.download_id.outputs.download-path}}
-      - name: check zip file log
+      - name: check download-artifact file log
         run: |
           cd
           ls -R
@@ -77,10 +72,10 @@ jobs:
           filename: 'Anexweapons_02-${{ github.ref_name }}'
           exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
-#      - name: check zip file log
-#        run: |
-#          cd
-#          ls -R
+      - name: check thedoctor0 zip file log
+        run: |
+          cd
+          ls -R
 # --------------------  Upload zip to Github Release --------------------
       - name: Realease to Github Releases
         uses: ncipollo/release-action@v1
@@ -88,3 +83,7 @@ jobs:
           name: Anexweapons_nico-${{ github.ref_name }}
           artifacts: 'Anexweapons_02-${{ github.ref_name }}.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: check ncipollo file log
+        run: |
+          cd
+          ls -R
