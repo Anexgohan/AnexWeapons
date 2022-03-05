@@ -12,26 +12,47 @@ on:
 jobs:
 # --------------------  create zip file --------------------
   pack-zip:
-    name: Create Zip from Folders
+    name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+#      - uses: actions/checkout@v3
+#        with:
+#          clean: false    # if true checkout deletes everything after use and other jobs cannot access the files down the line
+      - name: Prepare Folder to zip
+        uses: actions/upload-artifact@v3
         with:
-          clean: false    # if true checkout deletes everything after use and other jobs cannot access the files down the line
-      - name: Archive Release
-        uses: thedoctor0/zip-release@master
-        with:
-          type: 'zip'
-          filename: 'AnexWeapons'
-          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+          name: AnexWeapons-${{ github.ref }}
+          path: |
+            path: |
+            data
+            graphics
+            jars
+            sounds
+            src
+            Anex_Weapons.version
+            mod_info.json
+            !.git
+            !.github
+            !.gradle
+            !.idea
+            !.run
+            !build
+            !libs
+            !readme_resources
+#      - name: Create Zip from Folders
+#        uses: thedoctor0/zip-release@master
+#        with:
+#          type: 'zip'
+#          filename: 'AnexWeapons'
+#          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
-      - name: check zip file log
-        run: |
-          cd
-          ls -R
+#      - name: check zip file log
+#        run: |
+#          cd
+#          ls -R
 # --------------------  Upload zip to Github Release --------------------
-      - name: Realease to Github Releases
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: 'AnexWeapons.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Realease to Github Releases
+#        uses: ncipollo/release-action@v1
+#        with:
+#          artifacts: 'AnexWeapons.zip'
+#          token: ${{ secrets.GITHUB_TOKEN }}
