@@ -83,7 +83,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           name: Anexweapons_nico-${{ github.ref_name }}
-          artifacts: Anexweapons_02
+          artifacts: Anexweapons_02.zip
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: check ncipollo file log
         run: |
