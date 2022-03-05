@@ -16,14 +16,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/upload-artifact@v2
         id: download_id
         with:
-          name: AnexWeapons_test
-      - name: Display structure of downloaded files
-        run: ls -R
-      # -- display path of download  --
-      - name: 'Echo download path'
+          name: testarchive.zip
+          path: |
+            data
+            graphics
+            jars
+            sounds
+            src
+            Anex_Weapons.version
+            mod_info.json
+            !.git
+            !.github
+            !.gradle
+            !.idea
+            !.run
+            !build
+            !libs
+            !readme_resources
+# -- display path of download  --
+      - name: Echo download path
         run: echo ${{steps.download_id.outputs.download-path}}
       - name: List all folders
         run: ls -R
