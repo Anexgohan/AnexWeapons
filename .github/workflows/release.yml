@@ -27,7 +27,7 @@ jobs:
         with:
           type: zip
 #          directory: '.github/workflows/'
-          path: github-release-asset
+          path: .github/workflows/
           filename: github-release-asset
           exclusions: '*.git* /*node_modules/* .editorconfig'
 #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
