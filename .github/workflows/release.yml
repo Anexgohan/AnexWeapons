@@ -65,14 +65,18 @@ jobs:
       - uses: actions/checkout@v3
         with:
           clean: false
-      - name: Create Zip from Folders
-        uses: thedoctor0/zip-release@master
+#      - name: Create Zip from Folders
+#        uses: thedoctor0/zip-release@master
+#        with:
+#          type: 'zip'
+#          filename: "Anexweapons_ppp"
+#          path: ${{github.workspace}}/Anexweapons
+#          directory: ${{github.workspace}}/Anexweapons
+#          exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+      - uses: papeloto/action-zip@v1
         with:
-          type: 'zip'
-          filename: "Anexweapons_ppp"
-          path: ${{github.workspace}}/Anexweapons
-          directory: ${{github.workspace}}/Anexweapons
-          exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+          files: Anexweapons/
+          dest: Anexweapons-${{ github.ref_name }}.zip
 # generates list of all files in root directory, download log from actions tab in github to view
       - name: check thedoctor0 zip file log
         run: |
@@ -86,7 +90,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           name: Anexweapons_fght-${{ github.ref_name }}
-          artifacts: Anexweapons_ppp.zip
+          artifacts: Anexweapons-${{ github.ref_name }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: check ncipollo file log
         run: |
