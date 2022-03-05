@@ -11,6 +11,12 @@ on:
   workflow_dispatch:
 jobs:
   # --------------------  Prepare folder to be zipped --------------------
+  Check-TAGs:
+    name: Check if not has release tags
+    runs-on: ubuntu-latest
+    if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
+    steps:
+      - run: echo No Release TAGs found, please provide a Release TAG
   pack-zip:
     name: Prepare Folder
     runs-on: ubuntu-latest
