@@ -56,7 +56,9 @@ jobs:
           name: testarchive.zip
           path: .github/workflows/
       - name: Display structure of downloaded files
-        run: ls -R
+        run: |
+          cd
+          ls -R
         working-directory: .github/workflows/
       # -- display path of download  --
       - name: 'Echo download path'
