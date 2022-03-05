@@ -15,9 +15,9 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
-#      - uses: actions/checkout@v3
-#        with:
-#          clean: false    # if true checkout deletes everything after use and other jobs cannot access the files down the line
+      - uses: actions/checkout@v3
+        with:
+          clean: false    # if true checkout deletes everything after use and other jobs cannot access the files down the line
       - name: Prepare Folder to zip
         uses: actions/upload-artifact@v3
         with:
