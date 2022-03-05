@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        run: mkdir Anexweapons_02
+      - run: mkdir Anexweapons_02
       - uses: actions/upload-artifact@v2
         with:
           name: AnexWeapons_01-${{ github.ref_name }}/AnexWeapons
