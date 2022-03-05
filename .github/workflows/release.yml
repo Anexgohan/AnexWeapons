@@ -71,6 +71,7 @@ jobs:
           type: 'zip'
           filename: "Anexweapons_ppp"
           path: ${{github.workspace}}/Anexweapons
+          directory: ${{github.workspace}}/Anexweapons
           exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
       - name: check thedoctor0 zip file log
