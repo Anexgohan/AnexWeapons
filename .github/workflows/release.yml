@@ -17,7 +17,6 @@ jobs:
     steps:
 #      - name: Make directory
 #        run: mkdir Anexweapons_02-${{ github.ref_name }}
-      - name: prepare folder for zipped
       - uses: actions/checkout@v3
       - uses: actions/upload-artifact@v2
         with:
