@@ -20,7 +20,7 @@ jobs:
         with:
           clean: false    # without this checkout deletes empty folders after each use
           #{{ github.ref_name }}
-      - run: mkdir Anexweapons_02
+      - run: mkdir Anexweapons-${{ github.ref_name }}
       - uses: actions/upload-artifact@v2
         with:
           name: AnexWeapons_01
@@ -54,7 +54,7 @@ jobs:
         id: download_id
         with:
           name: AnexWeapons_01
-          path: ${{ github.workspace }}/Anexweapons_02
+          path: ${{ github.workspace }}/Anexweapons-${{ github.ref_name }}
       - name: 'Echo download path'
         run: echo ${{steps.download_id.outputs.download-path}}
       - name: check download-artifact file log
