@@ -21,7 +21,7 @@ jobs:
       - name: Prepare Folder to zip
         uses: actions/upload-artifact@v3
         with:
-          name: AnexWeapons-${{ github.ref_name }}
+          name: AnexWeapons-test   #   "${{ github.ref_name }}"  this will add tag version number after name
           path: |
             path: |
             data
