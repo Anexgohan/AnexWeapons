@@ -15,13 +15,13 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Make directory
-        run: mkdir Anexweapons_02-${{ github.ref_name }}
+#      - name: Make directory
+#        run: mkdir Anexweapons_02-${{ github.ref_name }}
       - name: prepare folder for zipped
-        uses: actions/upload-artifact@v2
+      - uses: actions/checkout@v3
+      - uses: actions/upload-artifact@v2
         with:
-          name: AnexWeapons_01
+          name: AnexWeapons_01-${{ github.ref_name }}/AnexWeapons
           path: |
             data
             graphics
@@ -49,21 +49,12 @@ jobs:
         run: |
           cd
           ls -R
-# --------------------  download to folder --------------------
-      - uses: actions/download-artifact@v3
-        with:
-          name: my-artifact
-          path: path/to/artifact
-
-      - name: Display structure of downloaded files
-        run: ls -R
-        working-directory: path/to/artifact
 # --------------------  create zip file --------------------
       - name: Create Zip from Folders
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: 'AnexWeapons_01'
+          filename: 'AnexWeapons_01-${{ github.ref_name }}'
           exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
 #      - name: check zip file log
