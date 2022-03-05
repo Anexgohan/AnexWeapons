@@ -23,8 +23,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'AnexWeapons'
-          exclusions: '*.git* /*node_modules/* .editorconfig'
-#       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
+          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
       - name: check zip file log
         run: |
