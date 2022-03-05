@@ -48,6 +48,7 @@ jobs:
           cd
           ls -R
 # --------------------  create zip file --------------------
+      - uses: actions/checkout@v3
       - name: Copy out file from volume
         run: |
           sudo cp -r ${{ github.workspace }}/ /Anexweapons_02-${{ github.ref_name }}/
@@ -55,7 +56,8 @@ jobs:
         run: |
           cd
           ls -R
-      # --------------------  create zip file --------------------
+# --------------------  create zip file --------------------
+      - uses: actions/checkout@v3
       - name: Create Zip from Folders
         uses: thedoctor0/zip-release@master
         with:
