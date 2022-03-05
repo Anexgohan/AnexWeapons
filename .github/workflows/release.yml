@@ -50,7 +50,7 @@ jobs:
 # --------------------  create zip file --------------------
       - name: Copy out file from volume
         run: |
-            sudo cp ${{ github.workspace }}/AnexWeapons_01 /Anexweapons_02-${{ github.ref_name }}/
+            sudo cp $HOME/AnexWeapons_01 /Anexweapons_02-${{ github.ref_name }}/
       - name: check zip file log
         run: |
           cd
