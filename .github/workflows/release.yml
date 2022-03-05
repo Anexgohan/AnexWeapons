@@ -41,6 +41,10 @@ jobs:
             !readme_resources
       - name: List all folders
         run: ls -R
+      - name: check zip file log
+        run: |
+          cd
+          ls -R
 #      - name: Create Zip from Folders
 #        uses: thedoctor0/zip-release@master
 #        with:
