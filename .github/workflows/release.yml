@@ -38,7 +38,8 @@ jobs:
     needs: pack-zip
     steps:
       - name: Upload Release
-        uses: ncipollo/release-action@v1
+      - uses: actions/checkout@v3
+      - uses: ncipollo/release-action@v1
         with:
           artifacts: 'AnexWeapons.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
