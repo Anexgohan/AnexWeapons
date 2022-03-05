@@ -15,28 +15,27 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
-#      - name: Make directory
-#        run: mkdir Anexweapons_02-${{ github.ref_name }}
       - uses: actions/checkout@v3
+        run: mkdir Anexweapons_02
       - uses: actions/upload-artifact@v2
         with:
           name: AnexWeapons_01-${{ github.ref_name }}/AnexWeapons
           path: |
-            data
-            graphics
-            jars
-            sounds
-            src
-            Anex_Weapons.version
-            mod_info.json
-            !.git
-            !.github
-            !.gradle
-            !.idea
-            !.run
-            !build
-            !libs
-            !readme_resources
+            Anexweapons_02/data
+            Anexweapons_02/graphics
+            Anexweapons_02/jars
+            Anexweapons_02/sounds
+            Anexweapons_02/src
+            Anexweapons_02/Anex_Weapons.version
+            Anexweapons_02/mod_info.json
+            Anexweapons_02/!.git
+            Anexweapons_02/!.github
+            Anexweapons_02/!.gradle
+            Anexweapons_02/!.idea
+            Anexweapons_02/!.run
+            Anexweapons_02/!build
+            Anexweapons_02/!libs
+            Anexweapons_02/!readme_resources
 # -- display path of download  --
       - name: Echo download path
         run: |
