@@ -69,7 +69,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: 'Anexweapons-${{ github.ref_name }}'
+          filename: Anexweapons-${{github.ref_name}}
           exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
       - name: check thedoctor0 zip file log
