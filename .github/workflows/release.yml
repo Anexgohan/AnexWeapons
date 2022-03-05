@@ -23,7 +23,7 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     needs: Check-TAGs
-    if: ${{ github.ref_name }} == 'refs/tags/v')
+    if: ${{ github.ref_name }} == 'v')
     steps:
       - uses: actions/checkout@v3
         with:
