@@ -11,10 +11,19 @@ on:
   workflow_dispatch:
 jobs:
   # --------------------  Prepare folder to be zipped --------------------
+  Check-TAGs:
+    name: Check Tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if has no TAG
+        if: !startsWith(github.ref, 'refs/tags/v')
+        run: echo Needs a Tag to run
+      - name: Check if has no TAG
+        if: startsWith(github.ref, 'refs/tags/v')
   pack-zip:
     name: Prepare Folder
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
+    needs: Check-TAGs
     steps:
       - uses: actions/checkout@v3
         with:
