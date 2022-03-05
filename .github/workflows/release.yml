@@ -30,15 +30,20 @@ jobs:
         run: |
           cd
           ls -R
-
+      - name: Realease to Github Releases
+      -  uses: actions/checkout@v3
+      -  uses: ncipollo/release-action@v1
+         with:
+            artifacts: 'AnexWeapons.zip'
+            token: ${{ secrets.GITHUB_TOKEN }}
 # --------------------  Upload zip to Github Release --------------------
-  release-zip:
-    name: Realease to Github Releases
-    runs-on: ubuntu-latest
-    needs: pack-zip
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: 'AnexWeapons.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+#  release-zip:
+#    name: Realease to Github Releases
+#    runs-on: ubuntu-latest
+#    needs: pack-zip
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: ncipollo/release-action@v1
+#        with:
+#          artifacts: 'AnexWeapons.zip'
+#          token: ${{ secrets.GITHUB_TOKEN }}
