@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Make directory
-      - run: mkdir Anexweapons_02
+        run: mkdir Anexweapons_02
+      - name: prepare folder for zipped
       - uses: actions/checkout@v3
       - uses: actions/upload-artifact@v2
         with:
