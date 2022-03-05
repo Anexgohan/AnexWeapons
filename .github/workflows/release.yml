@@ -12,9 +12,9 @@ on:
 jobs:
 # --------------------  create zip file --------------------
   pack-zip:
-    defaults:
-      run:
-        working-directory: .github/workflows/
+#    defaults:
+#      run:
+#        working-directory: .github/workflows/
     runs-on: ubuntu-latest
 #    permissions:
 #      contents: write
@@ -26,8 +26,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          directory: '.github/workflows/'
-#          path: '.github/workflows/'
+#          directory: '.github/workflows/'
           filename: 'github-release-asset'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
@@ -44,6 +43,8 @@ jobs:
 #      - name: Display structure of downloaded files
 #        run: ls -R
 # --------------------  Upload zip to Github Release --------------------
+      - name: Display structure of downloaded files
+        run: ls -R
       - name: Upload Asset zip to GitHub release
         uses: actions/download-artifact@v3
         with:
