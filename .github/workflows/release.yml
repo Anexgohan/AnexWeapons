@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: mkdir Anexweapons_02
+      - run: mkdir Anexweapons_02-${{ github.ref_name }}
       - uses: actions/upload-artifact@v2
         with:
-          name: AnexWeapons_01-${{ github.ref_name }}/AnexWeapons
+          name: AnexWeapons
           path: |
             data
             graphics
@@ -37,12 +37,20 @@ jobs:
             !libs
             !readme_resources
 # -- display path of download  --
-      - name: Echo download path
+#      - name: Echo download path
+#        run: |
+#          cd ${{ github.workspace }}
+#          ls -R
+#      - name: List all folders
+#        run: ls -R
+      - name: check zip file log
         run: |
-          cd ${{ github.workspace }}
+          cd
           ls -R
-      - name: List all folders
-        run: ls -R
+# --------------------  create zip file --------------------
+      - name: Copy out file from volume
+        run: |
+            sudo cp /AnexWeapons /Anexweapons_02-${{ github.ref_name }}/
       - name: check zip file log
         run: |
           cd
@@ -52,7 +60,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: 'AnexWeapons_01-${{ github.ref_name }}'
+          filename: 'Anexweapons_02-${{ github.ref_name }}'
           exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
 #      - name: check zip file log
