@@ -18,7 +18,7 @@ jobs:
     steps:
       - run: |
           echo No Release TAGs found, please provide a Release TAG
-          Exit pack-zip
+          Exit 0
   pack-zip:
     name: Prepare Folder
     runs-on: ubuntu-latest
