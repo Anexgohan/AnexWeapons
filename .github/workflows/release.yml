@@ -12,12 +12,8 @@ on:
 jobs:
 # --------------------  create zip file --------------------
   pack-zip:
-#    defaults:
-#      run:
-#        working-directory: .github/workflows/
+    name: Create Zip from Folders
     runs-on: ubuntu-latest
-#    permissions:
-#      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -26,8 +22,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-#          directory: '.github/workflows/'
-          filename: 'github-release-asset'
+          filename: 'AnexWeapons'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
 # generates list of all files in root directory, download log from actions tab in github to view
@@ -35,26 +30,15 @@ jobs:
         run: |
           cd
           ls -R
-# --------------------  move file to directory --------------------
-#      - uses: actions/upload-artifact@v3
-#        with:
-#          name: github-release-asset.zip
-#          path: ./work/AnexWeapons/AnexWeapons
-#      - name: Display structure of downloaded files
-#        run: ls -R
+
 # --------------------  Upload zip to Github Release --------------------
-#      - name: Display structure of downloaded files
-#        run: ls -R
-#      - name: Upload Asset zip to GitHub release
-#        uses: actions/download-artifact@v3
-#        with:
-#          name: github-release-asset
-#          path: ${{ github.workspace }}/github-release-asset.zip
-#      - name: Display structure of downloaded files
-#        run: ls -R
-# --------------------  Upload zip to Github Release --------------------
+  release-zip:
+    name: Realease to Github Releases
+    runs-on: ubuntu-latest
+    needs: pack-zip
+    steps:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 'github-release-asset.zip'
+          artifacts: 'AnexWeapons.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
