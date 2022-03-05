@@ -77,6 +77,7 @@ jobs:
           cd
           ls -R
 # --------------------  Upload zip to Github Release --------------------
+      - uses: actions/checkout@v3
       - name: Realease to Github Releases
         uses: ncipollo/release-action@v1
         with:
