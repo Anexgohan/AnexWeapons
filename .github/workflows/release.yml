@@ -43,12 +43,18 @@ jobs:
 #      - name: Display structure of downloaded files
 #        run: ls -R
 # --------------------  Upload zip to Github Release --------------------
-      - name: Display structure of downloaded files
-        run: ls -R
-      - name: Upload Asset zip to GitHub release
-        uses: actions/download-artifact@v3
-        with:
+#      - name: Display structure of downloaded files
+#        run: ls -R
+#      - name: Upload Asset zip to GitHub release
+#        uses: actions/download-artifact@v3
+#        with:
 #          name: github-release-asset
-          path: ${{ github.workspace }}/github-release-asset.zip
-      - name: Display structure of downloaded files
-        run: ls -R
+#          path: ${{ github.workspace }}/github-release-asset.zip
+#      - name: Display structure of downloaded files
+#        run: ls -R
+# --------------------  Upload zip to Github Release --------------------
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'github-release-asset.zip'
+          token: ${{ secrets.GITHUB_TOKEN }}
