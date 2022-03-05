@@ -25,9 +25,10 @@ jobs:
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          type: 'zip'
+          type: zip
 #          directory: '.github/workflows/'
-          filename: 'github-release-asset'
+          path: github-release-asset
+          filename: github-release-asset
           exclusions: '*.git* /*node_modules/* .editorconfig'
 #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
 # generates list of all files in root directory, download log from actions tab in github to view
@@ -47,7 +48,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: github-release-asset.zip
-          path: ./work/AnexWeapons/AnexWeapons
+          path: github-release-asset
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: ./work/AnexWeapons/AnexWeapons/
