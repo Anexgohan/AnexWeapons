@@ -21,7 +21,7 @@ jobs:
       - name: Prepare Folder to zip
         uses: actions/upload-artifact@v3
         with:
-          name: AnexWeapons-${{ GITHUB.REF -replace "refs/tags/" }}
+          name: AnexWeapons-${{ github.ref_name }}
           path: |
             path: |
             data
