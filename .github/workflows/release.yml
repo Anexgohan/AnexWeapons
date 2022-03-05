@@ -15,7 +15,6 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
-      - name: Prepare Folder on server
       - uses: actions/checkout@v3
         with:
           clean: false    #
