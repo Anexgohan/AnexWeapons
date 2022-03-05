@@ -1,25 +1,33 @@
-name: Release Manager
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
 on:
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches:
-      - main
-    tags:
-      - "v*.*.*"
-#  pull_request:
-#    branches: [ main ]
-# Allows you to run this workflow manually from the Actions tab
+    branches: [ main ]
+  #  pull_request:
+  #    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-# --------------------  Prepare folder to be zipped --------------------
-  pack-zip:
-    name: Prepare Folder
+  # --------------------  create zip --------------------
+  creating-zip:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
-      - run: mkdir Anexweapons_02-${{ github.ref_name }}
+      - uses: actions/checkout@v2
+      - uses: montudor/action-zip@v1.0.0
+        with:
+          args: zip -qq -r testarchive.zip data
       - uses: actions/upload-artifact@v2
         with:
-          name: AnexWeapons_01
+          name: testarchive.zip
           path: |
             data
             graphics
@@ -35,41 +43,32 @@ jobs:
             !.run
             !build
             !libs
-            !readme_resources
-# -- display path of download  --
-#      - name: Echo download path
-#        run: |
-#          cd ${{ github.workspace }}
-#          ls -R
-      - name: List all folders
-        run: ls -R
-      - name: check zip file log
-        run: |
-          cd
-          ls -R
-# --------------------  create zip file --------------------
-      - name: Copy out file from volume
-        run: |
-            sudo cp $HOME/AnexWeapons_01 /Anexweapons_02-${{ github.ref_name }}/
-      - name: check zip file log
-        run: |
-          cd
-          ls -R
-# --------------------  create zip file --------------------
-      - name: Create Zip from Folders
-        uses: thedoctor0/zip-release@master
+            !readme_resources            
+  # --------------------  download artifact to working directory --------------------
+  download-zip:
+    runs-on: ubuntu-latest
+    needs: creating-zip
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v3
+        id: download-id
         with:
-          type: 'zip'
-          filename: 'Anexweapons_02-${{ github.ref_name }}'
-          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
-# generates list of all files in root directory, download log from actions tab in github to view
-#      - name: check zip file log
-#        run: |
-#          cd
-#          ls -R
-# --------------------  Upload zip to Github Release --------------------
-#      - name: Realease to Github Releases
-#        uses: ncipollo/release-action@v1
-#        with:
-#          artifacts: 'AnexWeapons.zip'
-#          token: ${{ secrets.GITHUB_TOKEN }}
+          name: testarchive.zip
+          path: .github/workflows/
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: .github/workflows/
+      # -- display path of download  --
+      - name: 'Echo download path'
+        run: echo ${{steps.download-id.outputs.download-path}}
+  # --------------------  upload built artifact --------------------
+  upload-zip:
+    runs-on: ubuntu-latest
+    needs: download-zip
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/upload-artifact@v3.0.0
+        name: Upload a Build Artifact
+        with:
+          name: testarchive.zip
+          path: ${{ github.workspace }}/.github/workflows
