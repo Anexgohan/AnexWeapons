@@ -10,41 +10,28 @@ on:
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-# --------------------  create zip file --------------------
+# --------------------  Prepare folder to be zipped --------------------
   pack-zip:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        id: download_id
         with:
-          clean: false    # if true checkout deletes everything after use and other jobs cannot access the files down the line
-      - name: Prepare Folder to zip
-        uses: actions/upload-artifact@v3
-        with:
-          name: AnexWeapons-test   #   "${{ github.ref_name }}"  this will add tag version number after name
-          path: |
-            path: |
-            data
-            graphics
-            jars
-            sounds
-            src
-            Anex_Weapons.version
-            mod_info.json
-            !.git
-            !.github
-            !.gradle
-            !.idea
-            !.run
-            !build
-            !libs
-            !readme_resources
+          name: AnexWeapons_test
+      - name: Display structure of downloaded files
+        run: ls -R
+      # -- display path of download  --
+      - name: 'Echo download path'
+        run: echo ${{steps.download_id.outputs.download-path}}
       - name: List all folders
         run: ls -R
       - name: check zip file log
         run: |
           cd
           ls -R
+# --------------------  create zip file --------------------
 #      - name: Create Zip from Folders
 #        uses: thedoctor0/zip-release@master
 #        with:
