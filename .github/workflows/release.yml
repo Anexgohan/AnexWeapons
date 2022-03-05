@@ -15,11 +15,11 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     steps:
-    - name: Check Tag
-      if: !startsWith(github.ref, 'refs/tags/v')
-      run: echo Needs a Tag to run
-    - name: Check if has no TAG
-      if: startsWith(github.ref, 'refs/tags/v')
+      - name: Check Tag
+        if: !startsWith(github.ref, 'refs/tags/v')
+        run: echo Needs a Tag to run
+      - name: Check if has no TAG
+        if: startsWith(github.ref, 'refs/tags/v')
   pack-zip:
     name: Prepare Folder
     runs-on: ubuntu-latest
