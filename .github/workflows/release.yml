@@ -39,6 +39,8 @@ jobs:
             !build
             !libs
             !readme_resources
+      - name: List all folders
+        run: ls -R
 #      - name: Create Zip from Folders
 #        uses: thedoctor0/zip-release@master
 #        with:
