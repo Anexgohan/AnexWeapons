@@ -20,10 +20,10 @@ jobs:
         with:
           clean: false    # without this checkout deletes empty folders after each use
           #{{ github.ref_name }}
-      - run: mkdir Anexweapons-${{ github.ref_name }}
+      - run: mkdir Anexweapons
       - uses: actions/upload-artifact@v2
         with:
-          name: AnexWeapons_01
+          name: AnexWeapons_temp
           path: |
             data
             graphics
@@ -53,8 +53,8 @@ jobs:
       - uses: actions/download-artifact@v3
         id: download_id
         with:
-          name: AnexWeapons_01
-          path: ${{ github.workspace }}/Anexweapons-${{ github.ref_name }}
+          name: AnexWeapons_temp
+          path: ${{ github.workspace }}/Anexweapons               # ${{ github.workspace }}/Anexweapons-${{ github.ref_name }}
       - name: 'Echo download path'
         run: echo ${{steps.download_id.outputs.download-path}}
       - name: check download-artifact file log
@@ -70,7 +70,7 @@ jobs:
         with:
           type: 'zip'
           filename: "Anexweapons"
-          exclusions: '*.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+          exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
 # generates list of all files in root directory, download log from actions tab in github to view
       - name: check thedoctor0 zip file log
         run: |
