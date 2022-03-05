@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          clean: false
       - run: mkdir Anexweapons_02-${{ github.ref_name }}
       - uses: actions/upload-artifact@v2
         with:
@@ -48,10 +50,20 @@ jobs:
           cd
           ls -R
 # --------------------  create zip file --------------------
+#      - uses: actions/checkout@v3
+#      - name: Copy out file from volume
+#        run: |
+#          sudo cp ${{ github.workspace }}/AnexWeapons_01/ /Anexweapons_02-${{ github.ref_name }}/
       - uses: actions/checkout@v3
-      - name: Copy out file from volume
-        run: |
-          sudo cp ${{ github.workspace }}/AnexWeapons_01/ /Anexweapons_02-${{ github.ref_name }}/
+        with:
+          clean: false
+      - uses: actions/download-artifact@v3
+        id: download_id
+        with:
+          name: AnexWeapons_01
+          path: path/to/artifact
+      - name: 'Echo download path'
+        run: echo ${{steps.download_id.outputs.download-path}}
       - name: check zip file log
         run: |
           cd
