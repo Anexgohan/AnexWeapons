@@ -61,7 +61,7 @@ jobs:
         id: download_id
         with:
           name: AnexWeapons_01
-          path: path/to/artifact
+          path: ${{ github.workspace }}/Anexweapons_02-${{ github.ref_name }}
       - name: 'Echo download path'
         run: echo ${{steps.download_id.outputs.download-path}}
       - name: check zip file log
