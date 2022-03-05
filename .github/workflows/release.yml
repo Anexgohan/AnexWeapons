@@ -20,7 +20,7 @@ jobs:
         with:
           clean: false    # without this checkout deletes empty folders after each use
           #{{ github.ref_name }}
-      - run: mkdir Anexweapons
+      - run: mkdir AnexWeapons_zipFolder
       - uses: actions/upload-artifact@v2
         with:
           name: AnexWeapons_temp
@@ -54,7 +54,7 @@ jobs:
         id: download_id
         with:
           name: AnexWeapons_temp
-          path: ${{ github.workspace }}/Anexweapons               # ${{ github.workspace }}/Anexweapons-${{ github.ref_name }}
+          path: "${{ github.workspace }}/AnexWeapons_zipFolder/Anex Weapons"               # ${{ github.workspace }}/Anexweapons-${{ github.ref_name }}
       - name: 'Echo download path'
         run: echo ${{steps.download_id.outputs.download-path}}
       - name: check download-artifact file log
@@ -75,7 +75,7 @@ jobs:
 #          exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
       - uses: papeloto/action-zip@v1
         with:
-          files: Anexweapons/
+          files: AnexWeapons_zipFolder/
           dest: Anexweapons-${{ github.ref_name }}.zip
 # generates list of all files in root directory, download log from actions tab in github to view
       - name: check thedoctor0 zip file log
@@ -89,8 +89,8 @@ jobs:
       - name: Realease to Github Releases
         uses: ncipollo/release-action@v1
         with:
-          name: Anexweapons_fght-${{ github.ref_name }}
-          artifacts: Anexweapons-${{ github.ref_name }}.zip
+          name: Anexweapons_fght-${{ github.ref_name }}             # Release post Title Name
+          artifacts: Anexweapons-${{ github.ref_name }}.zip         # Release File name
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: check ncipollo file log
         run: |
