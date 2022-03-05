@@ -21,21 +21,21 @@ jobs:
         with:
           name: AnexWeapons_01-${{ github.ref_name }}/AnexWeapons
           path: |
-            Anexweapons_02/data
-            Anexweapons_02/graphics
-            Anexweapons_02/jars
-            Anexweapons_02/sounds
-            Anexweapons_02/src
-            Anexweapons_02/Anex_Weapons.version
-            Anexweapons_02/mod_info.json
-            Anexweapons_02/!.git
-            Anexweapons_02/!.github
-            Anexweapons_02/!.gradle
-            Anexweapons_02/!.idea
-            Anexweapons_02/!.run
-            Anexweapons_02/!build
-            Anexweapons_02/!libs
-            Anexweapons_02/!readme_resources
+            data
+            graphics
+            jars
+            sounds
+            src
+            Anex_Weapons.version
+            mod_info.json
+            !.git
+            !.github
+            !.gradle
+            !.idea
+            !.run
+            !build
+            !libs
+            !readme_resources
 # -- display path of download  --
       - name: Echo download path
         run: |
