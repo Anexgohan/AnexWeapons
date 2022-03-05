@@ -47,10 +47,10 @@ jobs:
         run: |
           cd
           ls -R
-      # --------------------  create zip file --------------------
+# --------------------  create zip file --------------------
       - name: Copy out file from volume
         run: |
-          sudo cp $HOME/AnexWeapons_01 /Anexweapons_02-${{ github.ref_name }}/
+          sudo cp ${{ github.workspace }}/ /Anexweapons_02-${{ github.ref_name }}/
       - name: check zip file log
         run: |
           cd
