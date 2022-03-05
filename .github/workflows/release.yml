@@ -89,7 +89,7 @@ jobs:
       - name: Realease to Github Releases
         uses: ncipollo/release-action@v1
         with:
-          name: Anexweapons_fght-${{ github.ref_name }}             # Release post Title Name
+          name: Anexweapons-${{ github.ref_name }}             # Release post Title Name
           artifacts: Anexweapons-${{ github.ref_name }}.zip         # Release File name
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: check ncipollo file log
