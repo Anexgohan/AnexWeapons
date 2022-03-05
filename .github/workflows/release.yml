@@ -27,7 +27,7 @@ jobs:
         with:
           type: 'zip'
 #          directory: '.github/workflows/'
-          filename: 'github-release-asset'
+          filename: 'github-release-asset_01'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 #       *.git* *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md
 # generates list of all files in root directory, download log from actions tab in github to view
@@ -48,8 +48,7 @@ jobs:
       - name: Upload Asset zip to GitHub release
         uses: actions/download-artifact@v3
         with:
-          name: github-release-asset.zip
-          path: github-release-asset
+          name: github-release-asset
+          path: ${{ github.workspace }}/github-release-asset.zip
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: ./work/AnexWeapons/AnexWeapons/
