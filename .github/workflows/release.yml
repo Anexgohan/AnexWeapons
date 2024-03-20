@@ -124,15 +124,6 @@ jobs:
           artifacts: Anexweapons-${{ github.ref_name }}.zip         # Release File name
           token: ${{ secrets.GITHUB_TOKEN }}
           generateReleaseNotes: true
-          releaseNotes: |
-            # Release Notes
-            ## Version: ${{ github.ref_name }}
-            ### Changes:
-            - New Features
-            - Bug Fixes
-            - Performance Improvements
-            - Security Updates
-            - Other
       - name: check ncipollo file log
         run: |
           cd
