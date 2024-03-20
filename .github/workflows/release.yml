@@ -11,42 +11,20 @@ on:
   workflow_dispatch:
 jobs:
   # --------------------  Prepare folder to be zipped --------------------
-  Check-No-TAGs:
-    name: Check has no Release TAG
+  Check-TAGs:
+    name: Check Release TAGs
     runs-on: ubuntu-latest
     if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
     steps:
       - run: |
           echo No Release TAGs found, please provide a Release TAG
-          Exit 1
-  Check-Has-TAGs:
-    name: Check has a Release TAG
-    runs-on: ubuntu-latest
-    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
-    steps:
-      - run: echo TAGs found, continue to next step...
-  Evaluate-TAGs:
-    name: Evaluate Tags
-    runs-on: ubuntu-latest
-    if: ${{ always() && contains(join(needs.*.result, ','), 'success') }}
-    needs: [Check-No-TAGs, Check-Has-TAGs]
-    steps:
-      - name: Compare TAGs
-        env:
-          NEEDS: ${{ toJSON(needs) }}
-        run: |
-          echo "$NEEDS"
+          Exit 0
   pack-zip:
     name: Prepare Folder
     runs-on: ubuntu-latest
-    if: ${{ always() }}
-    needs: Evaluate-TAGs
+    needs: Check-TAGs
+    if: github.ref == 'refs/tags/v')
     steps:
-      - name: Hello World
-        env:
-          NEEDS: ${{ toJSON(needs) }}
-        run: |
-          echo "$NEEDS"
       - uses: actions/checkout@v3
         with:
           clean: false    # without this checkout deletes empty folders after each use
@@ -71,13 +49,13 @@ jobs:
             !build
             !libs
             !readme_resources
-#      - name: List all upload-artifact folders only
-#        run: ls -R
-#      - name: check upload-artifact file log
-#        run: |
-#          cd
-#          ls -R
-# --------------------  copy server folder to working folder --------------------
+      #      - name: List all upload-artifact folders only
+      #        run: ls -R
+      #      - name: check upload-artifact file log
+      #        run: |
+      #          cd
+      #          ls -R
+      # --------------------  copy server folder to working folder --------------------
       - uses: actions/checkout@v3
         with:
           clean: false
@@ -92,28 +70,28 @@ jobs:
         run: |
           cd
           ls -R
-# --------------------  create zip file --------------------
+      # --------------------  create zip file --------------------
       - uses: actions/checkout@v3
         with:
           clean: false
-#      - name: Create Zip from Folders
-#        uses: thedoctor0/zip-release@master
-#        with:
-#          type: 'zip'
-#          filename: "Anexweapons_ppp"
-#          path: ${{github.workspace}}/Anexweapons
-#          directory: ${{github.workspace}}/Anexweapons
-#          exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
+      #      - name: Create Zip from Folders
+      #        uses: thedoctor0/zip-release@master
+      #        with:
+      #          type: 'zip'
+      #          filename: "Anexweapons_ppp"
+      #          path: ${{github.workspace}}/Anexweapons
+      #          directory: ${{github.workspace}}/Anexweapons
+      #          exclusions: '*data* *graphics* *jars* *sounds* *src* *.git* /*node_modules/* .editorconfig *.github* *.gradle* *.idea* *.run* /*build/* /*gradle/* /*libs /*readme_resources .gitattributes .gitignore build.gradle.kts gradle* gradle.* package.json package-lock.json README.md'
       - uses: papeloto/action-zip@v1
         with:
           files: AnexWeapons_zipFolder/
           dest: Anexweapons-${{ github.ref_name }}.zip
-# generates list of all files in root directory, download log from actions tab in github to view
+      # generates list of all files in root directory, download log from actions tab in github to view
       - name: check thedoctor0 zip file log
         run: |
           cd
           ls -R
-# --------------------  Upload zip to Github Release --------------------
+      # --------------------  Upload zip to Github Release --------------------
       - uses: actions/checkout@v3
         with:
           clean: false
