@@ -1,0 +1,29 @@
+///////////////////////////////////////////// 
+for missiles
+/////////////////////////////////////////////
+
+data.scripts.weapons
+
+anex_achuk_mrm.wpn 					# .wpn file, weapon that fires the shot
+anex_achuk_mrm_projectile.proj		# .proj file, projectile or missile that .wpn fires	
+
+
+1.
+anexweapons_ModPlugin.java 			# switches MissileAIPlugin to custom anexweapons_achuk_mrm_AI missile AI
+
+2.							
+anexweapons_achuk_mrm_AI.java		# default MagicMissileAI.java provided in magic lib missile ai renamed to achuk_mrm_Guided.java to enable magic missile settings.
+									# called in "anexweapons_ModPlugin.java" see that for more info
+							
+3.
+anexweapons_achuk_mrm_OnHit.java	# enable effects like extra damage, emp arcs or visual effects on projectile hit.
+									# called in .proj file ("onHitEffect":"data.scripts.weapons.anexweapons_achuk_mrm_OnHit",)
+
+4.
+anexweapons_hide_on_lowAmmo.java	# hides the barrel when ammo is zero to hide wierd animation of barrel jerking back and forth, 
+									# called in .wpn file ("everyFrameEffect":"data.scripts.weapons.utility.anexweapons_hide_on_lowAmmo",)
+
+4.
+Sounds.json							# sound effects for missiles launch and hit. located in actual data/config
+
+/////////////////////////////////////////////
