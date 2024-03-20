@@ -8,7 +8,7 @@ import com.fs.starfarer.api.graphics.SpriteAPI;
 //import data.scripts.util.MagicLensFlare;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
-import data.scripts.plugins.MagicTrailPlugin;
+import org.magiclib.plugins.MagicTrailPlugin;
 import java.awt.*;
 import static org.lwjgl.opengl.GL11.GL_ONE;
 import static org.lwjgl.opengl.GL11.GL_SRC_ALPHA;
@@ -48,7 +48,7 @@ public class anexweapons_mm_trishul_missile_OnHit implements OnHitEffectPlugin {
                 //This is for "end fizzle"
                 float fizzleConstantSpeed = MathUtils.getRandomNumberInRange(-20f, 20f);
                 float fizzleConstantAngle = MathUtils.getRandomNumberInRange(-35f, 35f);
-                MagicTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, projectile.getLocation(),
+                MagicTrailPlugin.addTrailMemberAdvanced(null, id, spriteToUse, projectile.getLocation(),
                         startSpeed * ((float)i2 / 70f), fizzleConstantSpeed * (1f - (float)i2 / 70f),
                         angle, startAngularVelocity * ((float)i2 / 70f), fizzleConstantAngle * (1f - (float)i2 / 70f), startSize, 0f,
                         colorToUse, colorToUse,0.45f, 0f, 0.5f * ((float)i2 / 70f) * lifetimeMult, 1.1f * ((float)i2 / 70f) * lifetimeMult,
