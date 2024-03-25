@@ -1,7 +1,7 @@
 {
 	"anexweapons_mm_sound_fire_01":
 	[
-		{"file":"sounds/anexweapons/weapons/reaper_fire_01.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/reaper_fire_01.ogg","pitch":1.0,"volume":1.0}
 	],
 	
 	"anexweapons_mm_sound_onhit_01":
@@ -9,12 +9,12 @@
 		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":1.0,"volume":1.0},
 		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":0.95,"volume":1.0},
 		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":0.9,"volume":1.0},
-		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":1.05,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/collision_asteroid_vs_asteroid_02.ogg","pitch":1.05,"volume":1.0}
 	],
 
 	"anexweapons_rocket_launch_away_sound_01":
 	[
-		{"file":"sounds/anexweapons/weapons/rocket_launch_away_01.ogg","pitch":0.75,"volume":0.5},
+		{"file":"sounds/anexweapons/weapons/rocket_launch_away_01.ogg","pitch":0.75,"volume":0.5}
 	],
 
 	"anexweapons_rocket_launch_whoosh_sound_01":
@@ -23,41 +23,50 @@
 		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_02.ogg","pitch":0.75,"volume":0.75},
 		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_03.ogg","pitch":0.75,"volume":0.75},
 		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_04.ogg","pitch":0.75,"volume":0.75},
-		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_05.ogg","pitch":0.75,"volume":0.75},
+		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_05.ogg","pitch":0.75,"volume":0.75}
+	],
+
+	"anexweapons_rocket_launch_whoosh_sound_trishul_missile":
+	[
+		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_01.ogg","pitch":1.10,"volume":0.65},
+		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_02.ogg","pitch":1.15,"volume":0.60},
+		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_03.ogg","pitch":1.20,"volume":0.65},
+		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_04.ogg","pitch":1.25,"volume":0.60},
+		{"file":"sounds/anexweapons/weapons/rocket_launch_whoosh_05.ogg","pitch":1.30,"volume":0.65}
 	],
 
 	"anexweapons_rocket_hit_bass_sound_01":
 	[
-		{"file":"sounds/anexweapons/weapons/rocket_hit_bass_01.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/rocket_hit_bass_01.ogg","pitch":1.0,"volume":1.0}
 	],
 
 	"anexweapons_metal_away_sound_01":
 	[
 		{"file":"sounds/anexweapons/weapons/metal_away_01.ogg","pitch":0.05,"volume":0.15},
 		{"file":"sounds/anexweapons/weapons/metal_away_02.ogg","pitch":0.05,"volume":0.15},
-		{"file":"sounds/anexweapons/weapons/metal_away_03.ogg","pitch":0.05,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/metal_away_03.ogg","pitch":0.05,"volume":0.15}
 	],
 
 	"anexweapons_metal_hit_sound_01":
 	[
 		{"file":"sounds/anexweapons/weapons/metal_hit_01.ogg","pitch":1.0,"volume":1.0},
 		{"file":"sounds/anexweapons/weapons/metal_hit_02.ogg","pitch":1.0,"volume":1.0},
-		{"file":"sounds/anexweapons/weapons/metal_hit_03.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/weapons/metal_hit_03.ogg","pitch":1.0,"volume":1.0}
 	],
 
 	"anexweapons_emp_2sec_01":
 	[
-		{"file":"sounds/anexweapons/fx/emp/emp_2sec_01.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/fx/emp/emp_2sec_01.ogg","pitch":1.0,"volume":1.0}
 	],
 
 	"anexweapons_weapon_charging_sound_withFade_01":
 	[
-		{"file":"sounds/anexweapons/fx/charging/sci_fi_charging_2sec+fade.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/fx/charging/sci_fi_charging_2sec+fade.ogg","pitch":1.0,"volume":1.0}
 	],
 
 	"anexweapons_weapon_charging_sound_withFade_02":
 	[
-		{"file":"sounds/anexweapons/fx/charging/sci_fi_charging_2.5sec+fade.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/anexweapons/fx/charging/sci_fi_charging_2.5sec+fade.ogg","pitch":1.0,"volume":1.0}
 	],
 
 	"anexweapons_sci_fi_weapon_fire_sound_01":
@@ -65,7 +74,7 @@
 		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_01.ogg","pitch":0.25,"volume":0.65},
 		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_02.ogg","pitch":0.25,"volume":0.65},
 		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_03.ogg","pitch":0.25,"volume":0.65},
-		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_04.ogg","pitch":0.25,"volume":0.65},
+		{"file":"sounds/anexweapons/weapons/sci_fi_weapon_04.ogg","pitch":0.25,"volume":0.65}
 	],
 
 	"anexweapons_sci_fi_sw_weapon_fire_sound_01":
@@ -74,35 +83,67 @@
 		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_02.ogg","pitch":0.75,"volume":0.5},
 		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_03.ogg","pitch":0.75,"volume":0.5},
 		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_04.ogg","pitch":0.75,"volume":0.5},
-		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_05.ogg","pitch":0.75,"volume":0.5},
+		{"file":"sounds/anexweapons/weapons/sci_fi_sw_weapon_05.ogg","pitch":0.75,"volume":0.5}
 	],
 
 	"anexweapons_wraith_weapon_fire_sound_01":
 	[
 		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.90,"volume":0.20},
 		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.75,"volume":0.20},
-		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.85,"volume":0.20},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.85,"volume":0.20}
 	],
 
 	"anexweapons_wraith_weapon_fire_sound_02":
 	[
 		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.35,"volume":0.07},
 		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.55,"volume":0.07},
-		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.45,"volume":0.07},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.45,"volume":0.07}
+	],
+
+	"anexweapons_wraith_weapon_fire_sound_dhwij":
+	[
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.90,"volume":0.11},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.75,"volume":0.10},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.85,"volume":0.10},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.70,"volume":0.11},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.75,"volume":0.10},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.85,"volume":0.11},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":0.95,"volume":0.10}
+	],
+
+	"anexweapons_wraith_weapon_fire_sound_pinaka":
+	[
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.10,"volume":0.04},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.15,"volume":0.04},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.20,"volume":0.04},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.25,"volume":0.03},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.20,"volume":0.03},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.15,"volume":0.03},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.10,"volume":0.04},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_01.ogg","pitch":1.05,"volume":0.03}
+	],
+
+	"anexweapons_canister_flak_explosion_sound_pinaka":
+	[
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_01.ogg","pitch":1.0,"volume":0.04},
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_02.ogg","pitch":1.0,"volume":0.03},
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_03.ogg","pitch":1.0,"volume":0.05},
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_04.ogg","pitch":1.05,"volume":0.03},
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_05.ogg","pitch":0.95,"volume":0.03}
 	],
 
 	"anexweapons_wraith_weapon_fire_sound_03":
 	[
 		{"file":"sounds/anexweapons/weapons/wraith_shoot_02.ogg","pitch":0.95,"volume":0.15},
-		{"file":"sounds/anexweapons/weapons/wraith_shoot_02.ogg","pitch":0.85,"volume":0.15},
+		{"file":"sounds/anexweapons/weapons/wraith_shoot_02.ogg","pitch":0.85,"volume":0.15}
 	],
 
 	"anexweapons_canister_flak_explosion_sound_01":
 	[
 		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_01.ogg","pitch":1.0,"volume":0.75},
-		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_02.ogg","pitch":1.0,"volume":0.75},
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_02.ogg","pitch":1.0,"volume":0.70},
 		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_03.ogg","pitch":1.0,"volume":0.75},
-		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_04.ogg","pitch":1.0,"volume":0.75},
-		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_05.ogg","pitch":1.0,"volume":0.75},
-	],
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_04.ogg","pitch":1.0,"volume":0.70},
+		{"file":"sounds/anexweapons/weapons/canister_flak_explosion_05.ogg","pitch":1.0,"volume":0.75}
+	]
 }

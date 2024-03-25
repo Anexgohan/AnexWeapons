@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Anex Weapons:jar">
+    <output-path>$PROJECT_DIR$/jars</output-path>
+    <root id="archive" name="anexweapons.jar">
+      <element id="module-output" name="Anex Weapons" />
+    </root>
+  </artifact>
+</component>

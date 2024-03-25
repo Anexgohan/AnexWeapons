@@ -60,5 +60,5 @@
   },
   #"textureType": ROUGH,
   #"fireSoundOne": "anexweapons_wraith_weapon_fire_sound_02", # continuous sound played during firing like beam
-  "fireSoundTwo": "anexweapons_wraith_weapon_fire_sound_02"	# sound played only when shot fired
+  "fireSoundTwo": "anexweapons_wraith_weapon_fire_sound_pinaka"	# sound played only when shot fired
 }

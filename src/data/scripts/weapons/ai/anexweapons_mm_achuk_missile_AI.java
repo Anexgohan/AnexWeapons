@@ -241,8 +241,10 @@ public class anexweapons_mm_achuk_missile_AI implements MissileAIPlugin, GuidedM
         if (WAVE_AMPLITUDE > 0) {
             //waving
             float multiplier = 1;
-            if (WAVE_ECCM_AFFECT && ECCM <= 1) {
-                multiplier = 0.3f;  //0.3f original, 1 is not effect
+            if (WAVE_ECCM_AFFECT) {
+                if (ECCM <= 1) {
+                    multiplier = 0.3f;  //0.3f original, 1 is not effect
+                }
             }
             correctAngle += multiplier * WAVE_AMPLITUDE * check * Math.cos(OFFSET + MISSILE.getElapsed() * (2 * MathUtils.FPI / WAVE_TIME));
         }

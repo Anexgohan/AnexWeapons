@@ -18,10 +18,10 @@
 	#"glowColor":[125,125,100,255],
 	#"glowRadius":25,
 	"engineSpec":{
-				  "turnAcc":105,		# accuracy of missile turn rate less value makes missile sine wave.
-				  "turnRate":135,	# rate of turning to achieve bearing can over shoot if turnAcc is low.
-				  "acc":25,		# how fast missile ramps up speed after starting its engines
-				  "dec":25,			# how fast it will slow down to catch a missed target. 0 cannot slow down.
+				  "turnAcc":110,		# accuracy of missile turn rate less value makes missile sine wave.
+				  "turnRate":140,	# rate of turning to achieve bearing can over shoot if turnAcc is low.
+				  "acc":35,		# how fast missile ramps up speed after starting its engines
+				  "dec":35,			# how fast it will slow down to catch a missed target. 0 cannot slow down.
 				  "maxSpeed":1200	#probably does not work
 				  },
 	"engineSlots":[{"id":"ES1",

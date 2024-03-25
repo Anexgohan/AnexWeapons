@@ -12,7 +12,7 @@ import org.lwjgl.util.vector.Vector2f;
 
 public class anexweapons_mtb_pinaka_turret_OnHit implements OnHitEffectPlugin {
 
-    private final Color EXPLOSION_COLOR = new Color(111, 126, 135, 125);    //  (180, 229, 255, 100)
+    private final Color EXPLOSION_COLOR = new Color(200, 150, 50, 128);    //  (111, 126, 135, 125)
     private final Color PARTICLE_COLOR = new Color(255, 0, 0, 255);      //  (255, 151, 35, 150)
     private final int NUM_PARTICLES = 25;
 

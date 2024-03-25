@@ -37,7 +37,7 @@
             "particleCount": 25,
             "particleColor": [167,181,188,255],      # particle color of proximity detonated shell, this is only used for when shell explodes on proximity
             "explosionColor":[134,126,34,15],       # core color of proximity detonated shell, this is only used for when shell explodes on proximity
-            "sound": "anexweapons_canister_flak_explosion_sound_01"
+            "sound": "anexweapons_canister_flak_explosion_sound_pinaka"
         }
     }
 }

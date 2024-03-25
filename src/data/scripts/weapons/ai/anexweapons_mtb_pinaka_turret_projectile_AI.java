@@ -36,7 +36,7 @@ public class anexweapons_mtb_pinaka_turret_projectile_AI extends BaseEveryFrameC
     //	- "DUMBCHASER_SWARM" : As DUMBCHASER, but targets a random point on the target instead of the center, determined at target acquisition
     //	- "INTERCEPT" : Heads for an approximate intercept point of the target at all times. Becomes more accurate as distance to target decreases
     //	- "INTERCEPT_SWARM" : As INTERCEPT, but targets a random point on the target instead of the center, determined at target acquisition
-    private static final String GUIDANCE_MODE_PRIMARY = "DUMBCHASER";
+    private static final String GUIDANCE_MODE_PRIMARY = "INTERCEPT_SWARM";
 
     //Sets behaviour when the original target is lost; if this is a target re-acquiring method, GUIDANCE_MODE_PRIMARY takes effect again with the new target.
     //Note that if there is no target within TARGET_REACQUIRE_RANGE, "NONE" is the default behaviour for re-acquires until a target is found
@@ -60,10 +60,11 @@ public class anexweapons_mtb_pinaka_turret_projectile_AI extends BaseEveryFrameC
     //	- "CAPITAL"
     private static final List<String> VALID_TARGET_TYPES = new ArrayList<>();
     static {
-        VALID_TARGET_TYPES.add("FIGHTER");
         VALID_TARGET_TYPES.add("MISSILE");
+        VALID_TARGET_TYPES.add("FIGHTER");
         VALID_TARGET_TYPES.add("ASTEROID");
         VALID_TARGET_TYPES.add("FRIGATE");
+        VALID_TARGET_TYPES.add("DESTROYER");
     }
 
     //The maximum range a target can be re-acquired at, in SU.
@@ -72,10 +73,10 @@ public class anexweapons_mtb_pinaka_turret_projectile_AI extends BaseEveryFrameC
 
     //The maximum angle a target can be re-acquired at, in degrees.
     //90 means 90 degrees to either side, I.E. a hemisphere in front of the projectile. Values 180 and above turns off the limitation altogether
-    private static final float TARGET_REACQUIRE_ANGLE = 30f;
+    private static final float TARGET_REACQUIRE_ANGLE = 20f;
 
     //How fast the projectile is allowed to turn, in degrees/second
-    private static final float TURN_RATE = 70f;
+    private static final float TURN_RATE = 60f;
 
     //If non-zero, the projectile will sway back-and-forth by this many degrees during its guidance (with a sway period determined by SWAY_PERIOD).
     //High values, as one might expect, give very poor tracking. Also, high values will decrease effective range (as the projectiles travel further) so be careful

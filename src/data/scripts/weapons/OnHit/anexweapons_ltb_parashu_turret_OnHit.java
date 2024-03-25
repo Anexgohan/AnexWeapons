@@ -2,7 +2,7 @@ package data.scripts.weapons.OnHit;
 
 import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import org.lazywizard.lazylib.MathUtils;
-import org.lazywizard.lazylib.VectorUtils;
+// import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 import com.fs.starfarer.api.combat.CombatAsteroidAPI;
 import com.fs.starfarer.api.combat.CombatEngineAPI;

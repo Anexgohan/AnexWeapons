@@ -1,12 +1,15 @@
 {
     "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
+    "java.project.outputPath": "out/vscode/bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "D:\\Games\\Space-4x\\Starsector\\starsector-core\\starfarer.api.jar",
-        "D:\\Games\\Space-4x\\Starsector\\mods\\LazyLib-2.8b\\jars\\LazyLib.jar",
-        "D:\\Games\\Space-4x\\Starsector\\mods\\MagicLib-1.4.1\\jars\\MagicLib.jar",
-        "D:\\Games\\Space-4x\\Starsector\\mods\\zz GraphicsLib-1.9.0\\jars\\GraphicsLib.jar"
+        "d:\\Games\\Space-4x\\Starsector\\starsector-core\\starfarer.api.jar",
+        "d:\\Games\\Space-4x\\Starsector\\starsector-core\\lwjgl.jar",
+        "d:\\Games\\Space-4x\\Starsector\\starsector-core\\lwjgl_util.jar",
+        "d:\\Games\\Space-4x\\Starsector\\starsector-core\\xstream-1.4.10.jar",
+        "d:\\Games\\Space-4x\\Starsector\\mods\\LazyLib\\jars\\LazyLib.jar",
+        "d:\\Games\\Space-4x\\Starsector\\mods\\MagicLib\\jars\\MagicLib.jar",
+        "d:\\Games\\Space-4x\\Starsector\\mods\\zz GraphicsLib\\jars\\Graphics.jar"
     ],
     "java.configuration.runtimes": [
         {
@@ -16,11 +19,11 @@
         {
             "name":"JavaSE-1.7",
             "path":"C:\\Program Files\\Java\\JDK7",
-            "default": true
         },
         {
             "name":"JavaSE-1.8",
             "path":"C:\\Program Files\\Java\\azul-1.8.0_402",
+            "default": true
         }
     ]
 }
