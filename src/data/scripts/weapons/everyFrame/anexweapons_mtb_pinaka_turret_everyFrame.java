@@ -57,15 +57,17 @@ public class anexweapons_mtb_pinaka_turret_everyFrame implements EveryFrameWeapo
 		final float remainingAmmoToDisappear = 7;  //the number of ammo remaining when disappear starts (ammo count cannot have a decimal value)
 
 		if (engine.isPaused()) return;
-		if (weapon.getAmmo() < remainingAmmoToDisappear) {
-			weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, Math.round(255 * alpha)));
-			if (alpha > 0){
-				alpha -= 1/timeToDisappear * amount;
+		if (weapon.getBarrelSpriteAPI() != null) {
+			if (weapon.getAmmo() < remainingAmmoToDisappear) {
+				weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, Math.round(255 * alpha)));
+				if (alpha > 0){
+					alpha -= 1/timeToDisappear * amount;
+				}
+				if (alpha < 0) alpha = 0;
+			} else {
+				weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, 255));
+				alpha = 1;
 			}
-			if (alpha < 0) alpha = 0;
-		} else {
-			weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, 255));
-			alpha = 1;
 		}
 		// end of hide barrel on low ammo
 	}
