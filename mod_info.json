@@ -3,19 +3,17 @@
     "name": "Anex Weapons",
     "author": "Anexgohan",
     "utility": "false",
-    "version": { "major":"0", "minor": "2", "patch": "4" },
+    "version": { "major":"0", "minor": "2", "patch": "9f" },
     "description": "Weapons for Starsector.",
     "gameVersion": "0.97a-RC11",
     "dependencies": [
         {
             "id": "lw_lazylib",
-            "name": "LazyLib",
-            #"version": "2.6"
+            "name": "LazyLib"
         },
         {
             "id": "MagicLib",
-            "name": "MagicLib",
-            #"version": "2.6"
+            "name": "MagicLib"
         }
     ],
     "jars":["jars/anexweapons.jar"],
