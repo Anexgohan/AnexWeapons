@@ -18,17 +18,39 @@ public class anexweapons_hide_on_lowAmmo implements EveryFrameWeaponEffectPlugin
     final float timeToDisappear = 2.25f;        //time it takes to disappear
     final float remainingAmmoToDisappear = 2;  //the number of ammo remaining when disappear starts (ammo count cannot have a decimal value)
 
+// -----old code-----
+    // @Override
+    // public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
+    //     if (engine.isPaused()) return;
+    //     if (weapon.getAmmo() < remainingAmmoToDisappear) {
+    //         weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, Math.round(255 * alpha)));
+    //         if (alpha > 0){
+    //             alpha -= 1/timeToDisappear * amount;
+    //         }
+    //         if (alpha < 0) alpha = 0;
+    //     } else {
+    //         weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, 255));
+    //         alpha = 1;
+    //     }
+    // }
+// -----old code-----
+    
+    //  below is a fix for the above code, which was causing a null pointer exception, delete above after testing
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
         if (engine.isPaused()) return;
         if (weapon.getAmmo() < remainingAmmoToDisappear) {
-            weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, Math.round(255 * alpha)));
+            if (weapon.getBarrelSpriteAPI() != null) {
+                weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, Math.round(255 * alpha)));
+            }
             if (alpha > 0){
                 alpha -= 1/timeToDisappear * amount;
             }
             if (alpha < 0) alpha = 0;
         } else {
-            weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, 255));
+            if (weapon.getBarrelSpriteAPI() != null) {
+                weapon.getBarrelSpriteAPI().setColor(new Color(255, 255, 255, 255));
+            }
             alpha = 1;
         }
     }
