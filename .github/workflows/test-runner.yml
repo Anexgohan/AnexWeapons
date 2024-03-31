@@ -22,7 +22,6 @@ jobs:
       - name: list current directory 1
         run: |
           cd ${{ github.workspace }}
-          cd ../..
           ls -R
       - name: update version checker numbers
         run: |
