@@ -165,4 +165,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add Anex_Weapons.version
           git commit -m "Update version checker numbers" -a
-          git push origin HEAD:refs/heads/main
+          git push -f origin HEAD:refs/heads/main
