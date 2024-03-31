@@ -140,8 +140,9 @@ jobs:
 # --------------------  update Anex_Weapons.version file and push changes to github --------------------
   version-checker-update:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    name: Update Version Checker
     needs: pack-zip
+    runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
