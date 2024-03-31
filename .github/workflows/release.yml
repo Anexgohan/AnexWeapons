@@ -146,7 +146,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          ref: origin # name of the branch to checkout
+          clean: false    # without this checkout deletes empty folders after each use
+          #ref: main # name of the branch to checkout
       # Install jq
       - name: Install jq
         run: sudo apt-get install -y jq
