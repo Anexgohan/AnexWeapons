@@ -147,7 +147,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           clean: false    # without this checkout deletes empty folders after each use
-          #ref: main # name of the branch to checkout
+          ref: main # name of the branch to checkout
       # Install jq
       - name: Install jq
         run: sudo apt-get install -y jq
@@ -165,4 +165,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add Anex_Weapons.version
           git commit -m "Update version checker numbers" -a
-          git push
+          git push origin HEAD:main
