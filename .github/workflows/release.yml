@@ -23,7 +23,7 @@ jobs:
     name: Check has a Release TAG
     needs: Check-No-TAGs
     runs-on: ubuntu-latest
-    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    if: ${{ startsWith(github.ref, 'refs/tags/v') && !needs.Check-No-TAGs.result == 'skipped' }}
     steps:
       - run: echo TAGs found, continue to next step...
   Evaluate-TAGs:
