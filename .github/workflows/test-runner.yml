@@ -20,6 +20,8 @@ jobs:
       - name: Install jq
         run: sudo apt-get install -y jq
       - name: list current directory 1
+        run: ls -R
+      - name: list current directory 2
         run: |
           cd ${{ github.workspace }}
           ls -R
@@ -27,7 +29,7 @@ jobs:
         run: |
           chmod +x ./update-version-checker.sh
           ./update-version-checker.sh
-      - name: list current directory 2
+      - name: list current directory 3
         run: |
           ls -R
           cd
