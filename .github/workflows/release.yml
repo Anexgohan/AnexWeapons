@@ -115,12 +115,12 @@ jobs:
         run: |
           cd
           ls -R
-      # --------------------  Upload zip to Github Release --------------------
-      - name: Generate Changelog
+      # --------------------  Generate Changelog --------------------
+      - name: Install and run github-changelog-generator
         run: |
-          sudo gem install github_changelog_generator
-          github_changelog_generator -u Anexgohan -p AnexWeapons
-      
+          gem install github_changelog_generator
+          github_changelog_generator -u ${{ github.repository_owner }} -p ${{ github.repository }} --token ${{ secrets.GITHUB_TOKEN }}
+      # --------------------  Upload zip to Github Release --------------------      
       - uses: actions/checkout@v3
         with:
           clean: false
@@ -130,7 +130,6 @@ jobs:
           name: Anexweapons-${{ github.ref_name }}             # Release post Title Name
           artifacts: Anexweapons-${{ github.ref_name }}.zip         # Release File name
           token: ${{ secrets.GITHUB_TOKEN }}
-          bodyFile: CHANGELOG.md  # This is the path to the changelog file
           generateReleaseNotes: true
       - name: check ncipollo file log
         run: |
@@ -147,7 +146,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          ref: main # name of the branch to checkout
+          ref: origin # name of the branch to checkout
       # Install jq
       - name: Install jq
         run: sudo apt-get install -y jq
