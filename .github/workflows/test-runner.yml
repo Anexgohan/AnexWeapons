@@ -1,0 +1,25 @@
+name: test_runner
+
+on:
+  # # Triggers the workflow on pushing a tag only
+  # push:
+  #   tags: "*"
+  #   branches:
+  #     - "!*"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install jq
+        run: sudo apt-get install -y jq
+      - name: update version checker numbers
+        run: |
+          cd ./.github/workflows/
+          chmod +x ./update-version-checker.sh
+          ./update-version-checker.sh
