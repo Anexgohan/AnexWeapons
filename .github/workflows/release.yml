@@ -39,9 +39,9 @@ jobs:
           echo "$NEEDS"
   pack-zip:
     name: Prepare Folder
+    needs: Evaluate-TAGs
     runs-on: ubuntu-latest
     if: ${{ always() }}
-    needs: Check-No-TAGs
     steps:
       - name: Hello World
         env:

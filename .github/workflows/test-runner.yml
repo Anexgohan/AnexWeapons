@@ -20,6 +20,5 @@ jobs:
         run: sudo apt-get install -y jq
       - name: update version checker numbers
         run: |
-          cd ./.github/workflows/
           chmod +x ./update-version-checker.sh
           ./update-version-checker.sh
