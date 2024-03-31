@@ -21,6 +21,7 @@ jobs:
           exit 1
   Check-Has-TAGs:
     name: Check has a Release TAG
+    needs: Check-No-TAGs
     runs-on: ubuntu-latest
     if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     steps:
@@ -40,7 +41,7 @@ jobs:
     name: Prepare Folder
     runs-on: ubuntu-latest
     if: ${{ always() }}
-    needs: Evaluate-TAGs
+    needs: Check-No-TAGs
     steps:
       - name: Hello World
         env:
@@ -116,7 +117,7 @@ jobs:
       # --------------------  Upload zip to Github Release --------------------
       - name: Generate Changelog
         run: |
-          gem install github_changelog_generator
+          sudo gem install github_changelog_generator
           github_changelog_generator -u Anexgohan -p AnexWeapons
       
       - uses: actions/checkout@v3
