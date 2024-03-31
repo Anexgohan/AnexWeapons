@@ -16,4 +16,7 @@ sed -i "s/\"major\":.*/\"major\":$VC_major,/g" Anex_Weapons.version
 sed -i "s/\"minor\":.*/\"minor\":$VC_minor,/g" Anex_Weapons.version
 sed -i "s/\"patch\":.*/\"patch\":$VC_patch,/g" Anex_Weapons.version
 
+# update "directDownloadURL": "https://github.com/Anexgohan/AnexWeapons/releases/download/v"VC_major."VC_minor"."VC_patch"/Anexweapons-v"VC_major."VC_minor"."VC_patch".zip
+sed -i "s/\"directDownloadURL\":.*/\"directDownloadURL\": \"https:\/\/github.com\/Anexgohan\/AnexWeapons\/releases\/download\/v$VC_major.$VC_minor.$VC_patch\/Anexweapons-v$VC_major.$VC_minor.$VC_patch.zip\",/g" Anex_Weapons.version
+
 cat Anex_Weapons.version
