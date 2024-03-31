@@ -18,10 +18,9 @@ jobs:
     steps:
       - name: Install jq
         run: sudo apt-get install -y jq
-      - name: check download-artifact file log
+      - name: list current directory
         run: |
-          ls -R
-          cd
+          cd ${{ github.workspace }}
           ls -R
       - name: update version checker numbers
         run: |

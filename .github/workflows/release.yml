@@ -41,7 +41,6 @@ jobs:
     name: Prepare Folder
     needs: Evaluate-TAGs
     runs-on: ubuntu-latest
-    if: ${{ always() }}
     steps:
       - name: Hello World
         env:
