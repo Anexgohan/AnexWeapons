@@ -22,11 +22,12 @@ jobs:
       - name: list current directory 1
         run: |
           ls
-          ls -R
+          ls -aR
       - name: update version checker numbers
         run: |
           cd ./.github/workflows
+          ls -aR
           chmod +x ./update-version-checker.sh
           ./update-version-checker.sh
       - name: list current directory 2
-        run: ls -R
+        run: ls -aR
