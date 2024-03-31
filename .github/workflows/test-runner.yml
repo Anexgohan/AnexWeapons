@@ -18,7 +18,17 @@ jobs:
     steps:
       - name: Install jq
         run: sudo apt-get install -y jq
+      - name: check download-artifact file log
+        run: |
+          ls -R
+          cd
+          ls -R
       - name: update version checker numbers
         run: |
           chmod +x ./update-version-checker.sh
           ./update-version-checker.sh
+      - name: check download-artifact file log
+        run: |
+          ls -R
+          cd
+          ls -R
