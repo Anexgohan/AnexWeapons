@@ -18,15 +18,16 @@ jobs:
     steps:
       - name: Install jq
         run: sudo apt-get install -y jq
-      - name: list current directory
+      - name: list current directory 1
         run: |
           cd ${{ github.workspace }}
+          cd ../..
           ls -R
       - name: update version checker numbers
         run: |
           chmod +x ./update-version-checker.sh
           ./update-version-checker.sh
-      - name: check download-artifact file log
+      - name: list current directory 2
         run: |
           ls -R
           cd
