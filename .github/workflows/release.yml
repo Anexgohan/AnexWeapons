@@ -118,8 +118,8 @@ jobs:
       # --------------------  Generate Changelog --------------------
       - name: Install and run github-changelog-generator
         run: |
-          gem install github_changelog_generator
-          github_changelog_generator -u ${{ github.repository_owner }} -p ${{ github.repository }} --token ${{ secrets.GITHUB_TOKEN }}
+          sudo gem install github_changelog_generator
+          github_changelog_generator -u ${{ github.repository_owner }} -p ${{ github.repository }} --token ${{ secrets.GITHUB_TOKEN }} --since-tag <last_release_tag>
       # --------------------  Upload zip to Github Release --------------------      
       - uses: actions/checkout@v3
         with:
