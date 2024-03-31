@@ -6,8 +6,6 @@
     <option name="PARENT_ENVS" value="true" />
     <option name="SCRIPT_NAME" value="starsector.bat" />
     <option name="PARAMETERS" value="" />
-    <method v="2">
-      <option name="Make" enabled="true" />
-    </method>
+    <method v="2" />
   </configuration>
 </component>

@@ -114,6 +114,11 @@ jobs:
           cd
           ls -R
       # --------------------  Upload zip to Github Release --------------------
+      - name: Generate Changelog
+        run: |
+          gem install github_changelog_generator
+          github_changelog_generator -u Anexgohan -p AnexWeapons
+      
       - uses: actions/checkout@v3
         with:
           clean: false
@@ -123,6 +128,7 @@ jobs:
           name: Anexweapons-${{ github.ref_name }}             # Release post Title Name
           artifacts: Anexweapons-${{ github.ref_name }}.zip         # Release File name
           token: ${{ secrets.GITHUB_TOKEN }}
+          bodyFile: CHANGELOG.md  # This is the path to the changelog file
           generateReleaseNotes: true
       - name: check ncipollo file log
         run: |

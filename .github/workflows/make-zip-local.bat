@@ -5,11 +5,36 @@ setlocal enabledelayedexpansion
 :: Set the input and 7zip directories
 set "sevenZip=C:\Program Files\7-Zip\7z.exe"
 set "sourceDir=D:\Games\Space-4x\Starsector-mod-dev\mods\Anex Weapons"
+set "modsDirectory=D:\Games\Space-4x\Starsector\mods"
 
 :: get the name of the mod from the sourceDir
-for %%i in ("!sourceDir!") do set "modName=%%~nxi"
+:: for %%i in ("!sourceDir!") do set "modName=%%~nxi"
 
 set "mod_info-filePath=!sourceDir!\mod_info.json"
+:: if the above file is not fount prompt user and exit the script with any key
+if not exist "%mod_info-filePath%" (
+    echo File not found: %mod_info-filePath%
+    pause
+    exit /b
+)
+
+:: there are multiple lines in mod_info-filePath with the format "name": "*.*", save the first line to a variable
+for /f "delims=" %%i in ('findstr /C:"name" "%mod_info-filePath%"') do (
+    set "nameLine=%%i"
+    goto :break
+)
+:break
+:: Extract everything after ["name":] and save it to a variable "modFolderName"
+for /f "tokens=2 delims=:," %%i in ("!nameLine!") do set "modFolderName=%%i"
+:: remove the quotes from the variable
+set "modFolderName=!modFolderName:"=!"
+
+REM set "modFolderName=!modFolderName:~1,-1!"
+
+:: remove the first and last space from the variable, do not delete the spaces in the middle or any characters
+for /f "tokens=*" %%i in ("!modFolderName!") do set "modFolderName=%%i"
+
+:: echo Mod folder name:!modFolderName!
 
 :: Search for the string and save it to a variable
 for /f "delims=" %%i in ('findstr /C:"version" "%mod_info-filePath%"') do set "versionLine=%%i"
@@ -28,34 +53,46 @@ set "vMajor=!major:"=!"
 set "vMinor=!minor:"=!"
 set "vPatch=!patch:"=!"
 :: set a variable to the version number with the format "Anex Weapons-major.minor.patch"
-set "versionFormat=!modName!-!vMajor!.!vMinor!.!vPatch!"
-echo !versionFormat!
+set "versionFormat=!modFolderName!-!vMajor!.!vMinor!.!vPatch!"
+:: display mod info taken from the mod_info-filePath file
+echo.
+echo    Mod Name: "!modFolderName!"
+echo    Version:
+echo    Major: "!vMajor!" Minor: "!vMinor!" Patch: "!vPatch!"
+echo    Mod Folder will be created as: "!versionFormat!"
 
 :: Set the output and extract directories using the modName
-set "outputDir=D:\Games\Space-4x\Starsector-mod-dev\mods\Anex Weapons\out\zip-temp-delete-if-too-large\!versionFormat!.zip"
-set "extractDir=D:\Games\Space-4x\Starsector\mods\!versionFormat!"
+set "outputDir=D:\Games\Space-4x\Starsector-mod-dev\mods\Anex Weapons\out\zip-temp_delete_if_too_large\!versionFormat!.zip"
+:: set outputDirVar to the outputDir without the !versionFormat!.zip
+set "outputDirVar=D:\Games\Space-4x\Starsector-mod-dev\mods\Anex Weapons\out\zip-temp_delete_if_too_large"
+set "extractDir=%modsDirectory%\!versionFormat!"
 
 
 :: print multiple lines of text to the console\
 echo _______________________________________________________________
-echo.
-echo This will create the zip file at: 
-echo    %outputDir%
-echo with the zip name %versionFormat%.zip
+echo    Source Directory: 
+echo    "%sourceDir%"
 echo _______________________________________________________________
 echo.
-echo Extracting the zip file to: 
-echo    %extractDir% 
-echo with the folder name "%versionFormat%"
+echo    This will create the zip file in a temporary folder: 
+echo    "%outputDir%\%versionFormat%.zip"
+echo    this temporary folder will be deleted after extraction
 echo _______________________________________________________________
 echo.
-echo any folder with the name : %versionFormat% will be deleted
+echo    zip file will be extracted to the mods folder: 
+echo    "%extractDir% "
+echo    with the folder name "%versionFormat%"
+echo _______________________________________________________________
+echo.
+echo    any folder with the name : "%versionFormat%" or matching "!modFolderName!-*.*.*" will be deleted
 echo _______________________________________________________________
 echo.
 set /p userInput=" Press Enter to continue..."
 
 :: delete the extractDir if it exists
 if exist "%extractDir%" rd /s /q "%extractDir%"
+:: delete any folder in "modsDirectory" that matches "modFolderName-*.*.*"
+for /d %%i in ("%modsDirectory%\!modFolderName!*") do rd /s /q "%%i"
 
 :: use the 7zip command to create a zip file from the source directory
 "%sevenZip%" a -tzip -bb1 "%outputDir%" "%sourceDir%\data" "%sourceDir%\graphics" "%sourceDir%\jars" "%sourceDir%\sounds" "%sourceDir%\src" "%sourceDir%\Anex_Weapons.version" "%sourceDir%\mod_info.json"
@@ -71,4 +108,8 @@ for /r "%extractDir%" %%A in (*) do set /a "dirSize+=%%~zA"
 set /a "dirSizeMB=%dirSize% / 1024 / 1024"
 set /a "dirSizeRemainder=%dirSize% %% (1024 * 1024) * 1000 / (1024 * 1024)"
 echo Size of the extracted directory is %dirSizeMB%.%dirSizeRemainder% MB
+
+:: delete the "outputDirVar" if it exists
+if exist "%outputDirVar%" rd /s /q "%outputDirVar%"
+
 pause
