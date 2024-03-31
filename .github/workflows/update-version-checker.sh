@@ -15,3 +15,5 @@ echo "Version Checker version of Anex Weapons is: major='$VC_major', minor='$VC_
 sed -i "s/\"major\":.*/\"major\":$VC_major,/g" Anex_Weapons.version
 sed -i "s/\"minor\":.*/\"minor\":$VC_minor,/g" Anex_Weapons.version
 sed -i "s/\"patch\":.*/\"patch\":$VC_patch,/g" Anex_Weapons.version
+
+cat Anex_Weapons.version
