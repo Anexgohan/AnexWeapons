@@ -1,3 +1,4 @@
+# always update "mod_info.json" and "Anex_Weapons.version" (version checker) file with the latest version number
 name: Release Manager
 on:
   push:
@@ -65,6 +66,7 @@ jobs:
             src
             Anex_Weapons.version
             mod_info.json
+            icon.png
             !.git
             !.github
             !.gradle

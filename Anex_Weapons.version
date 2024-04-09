@@ -7,8 +7,8 @@
     {
         "major":0,
         "minor":2,
-        "patch":9j,
+        "patch":9k,
     },
     # Optional support for mod managers to allow users to update with one click, without visiting a mod page.
-    "directDownloadURL": "https://github.com/Anexgohan/AnexWeapons/releases/download/v0.2.9j/Anexweapons-v0.2.9j.zip"
+    "directDownloadURL": "https://github.com/Anexgohan/AnexWeapons/releases/download/v0.2.9k/Anexweapons-v0.2.9k.zip"
 }

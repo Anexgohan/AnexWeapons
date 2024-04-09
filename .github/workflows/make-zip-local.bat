@@ -94,8 +94,8 @@ if exist "%extractDir%" rd /s /q "%extractDir%"
 :: delete any folder in "modsDirectory" that matches "modFolderName-*.*.*"
 for /d %%i in ("%modsDirectory%\!modFolderName!*") do rd /s /q "%%i"
 
-:: use the 7zip command to create a zip file from the source directory
-"%sevenZip%" a -tzip -bb1 "%outputDir%" "%sourceDir%\data" "%sourceDir%\graphics" "%sourceDir%\jars" "%sourceDir%\sounds" "%sourceDir%\src" "%sourceDir%\Anex_Weapons.version" "%sourceDir%\mod_info.json"
+:: use the 7zip command to create a zip file from the source directory, files and folders are defined below:
+"%sevenZip%" a -tzip -bb1 "%outputDir%" "%sourceDir%\data" "%sourceDir%\graphics" "%sourceDir%\jars" "%sourceDir%\sounds" "%sourceDir%\src" "%sourceDir%\Anex_Weapons.version" "%sourceDir%\mod_info.json" "%sourceDir%\icon.png"
 "%sevenZip%" x -bb0 "%outputDir%" -o"%extractDir%"
 :: set the size of the zip file and the extracted directory
 for %%A in ("%outputDir%") do set "size=%%~zA"
