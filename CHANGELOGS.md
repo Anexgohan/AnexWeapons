@@ -1,7 +1,32 @@
-v0.2.9m
-Changes for version v0.2.9m
+v0.2.9n
+Changes for version v0.2.9n
 ===========================
-HEAD, v0.2.9m, origin/main
+HEAD, v0.2.9n, origin/main
+Title: v0.2.9n
+
+Commits:
+```
+fix: trishul missile glow
+fix: backend update```
+>By: Anexgohan
+>Hash: fc26ba6
+>Date: 2024-05-19 02:09:31 +0530 
+
+----------------------------------------------
+
+
+Title: v0.2.9m - Auto Bot Updated CHANGELOGS.md
+
+Commits:
+```
+```
+>By: github-actions[bot]
+>Hash: 7111dee
+>Date: 2024-05-18 19:47:40 +0000 
+
+----------------------------------------------
+
+v0.2.9m
 Title: testing
 
 Commits:
