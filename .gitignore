@@ -82,3 +82,4 @@ fabric.properties
 # ignore these custom paths - anex
 bin/
 out/
+**/.~lock.*

@@ -24,7 +24,7 @@
 	"behaviorSpec": {
         "behavior": "PROXIMITY_FUSE",
         "range": 0,
-        "vsMissileRange": 25, # by Alex "Added "vsMissileRange" to the shot behavior spec, goes on the same level as "range". So in your case you'd set that to whatever, and set "range" to 0 to make the proximity fuse not get triggered by ships."
+        "vsMissileRange": 50, # by Alex "Added "vsMissileRange" to the shot behavior spec, goes on the same level as "range". So in your case you'd set that to whatever, and set "range" to 0 to make the proximity fuse not get triggered by ships."
         "explosionSpec": {
             "duration": 0.15f,
             "radius": 70,       # 65

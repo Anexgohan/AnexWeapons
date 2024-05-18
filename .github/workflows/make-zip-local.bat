@@ -62,9 +62,9 @@ echo    Major: "!vMajor!" Minor: "!vMinor!" Patch: "!vPatch!"
 echo    Mod Folder will be created as: "!versionFormat!"
 
 :: Set the output and extract directories using the modName
-set "outputDir=D:\Games\Space-4x\Starsector-mod-dev\mods\Anex Weapons\out\zip-temp_delete_if_too_large\!versionFormat!.zip"
+set "outputDir=%sourceDir%\out\zip-temp_delete_if_too_large\!versionFormat!.zip"
 :: set outputDirVar to the outputDir without the !versionFormat!.zip
-set "outputDirVar=D:\Games\Space-4x\Starsector-mod-dev\mods\Anex Weapons\out\zip-temp_delete_if_too_large"
+set "outputDirVar=%sourceDir%\out\zip-temp_delete_if_too_large"
 set "extractDir=%modsDirectory%\!versionFormat!"
 
 
@@ -109,7 +109,21 @@ set /a "dirSizeMB=%dirSize% / 1024 / 1024"
 set /a "dirSizeRemainder=%dirSize% %% (1024 * 1024) * 1000 / (1024 * 1024)"
 echo Size of the extracted directory is %dirSizeMB%.%dirSizeRemainder% MB
 
-:: delete the "outputDirVar" if it exists
-if exist "%outputDirVar%" rd /s /q "%outputDirVar%"
+:: delete all but the most recent .zip files in a specified directory
+:: Initialize a counter
+set /a "count=0"
 
+:: Loop over the .zip files in reverse date order
+for /f "delims=" %%A in ('dir /b /o-d /a-d "%outputDirVar%\*.zip"') do (
+    :: Increment the counter
+    set /a "count+=1"
+
+    :: Skip the first file (the latest .zip file)
+    if !count! gtr 1 (
+        :: Delete the file
+        del "%outputDirVar%\%%A"
+    )
+)
+
+endlocal
 pause
