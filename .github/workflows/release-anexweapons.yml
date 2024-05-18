@@ -10,9 +10,8 @@ on:
   workflow_dispatch:  # allows manual trigger of the workflow
 
 env:
-  file_name: "Anex_Weapons"
+  file_name: "AnexWeapons"
   folder_name: "Anex Weapons"
-  asset_name: "AnexWeapons"
 
 jobs:
 
@@ -56,7 +55,7 @@ jobs:
         echo ${{ github.ref_name }} > folder_changelog/full/CHANGELOGS.md
         echo "Changes for version ${{ github.ref_name }}" >> folder_changelog/full/CHANGELOGS.md
         echo "===========================" >> folder_changelog/full/CHANGELOGS.md
-        git log -1000 --pretty="format:%D%nTitle: %s%n%nCommits:%n\`\`\`%n%b\`\`\`%n>By: %cn%n>Hash: %h%n>Date: %ci %n%n----------------------------------------------%n" | sed 's/tag: //g' >> folder_changelog/full/CHANGELOGS.md
+        git log -1000 --pretty="format:%D%nTitle: %s%n%nCommits:%n\`\`\`%n%b%n\`\`\`%n>By: %cn%n>Hash: %h%n>Date: %ci %n%n----------------------------------------------%n" | sed 's/tag: //g' >> folder_changelog/full/CHANGELOGS.md
 
   # <---------------------------------------------- create short changelogs ---------------------------------------------->
   # make a CHANGELOGS.md file for the release and mod manager
@@ -66,7 +65,7 @@ jobs:
         echo ${{ github.ref_name }} > folder_changelog/short/CHANGELOGS.md
         echo "Changes for version ${{ github.ref_name }}" >> folder_changelog/short/CHANGELOGS.md
         echo "===========================" >> folder_changelog/short/CHANGELOGS.md
-        git log HEAD^..${{ github.ref_name }} --pretty="format:Title: %s%n%nCommits:%n\`\`\`%n%b\`\`\`%n>By: %cn%n>Hash: %h%n>Date: %ci %n%n----------------------------------------------%n" | sed 's/tag: //g' >> folder_changelog/short/CHANGELOGS.md
+        git log HEAD^..${{ github.ref_name }} --pretty="format:Title: %s%n%nCommits:%n\`\`\`%n%b%n\`\`\`%n>By: %cn%n>Hash: %h%n>Date: %ci %n%n----------------------------------------------%n" | sed 's/tag: //g' >> folder_changelog/short/CHANGELOGS.md
 
     - name: Show CHANGELOGS main repository, full
       run: cat folder_changelog/full/CHANGELOGS.md
@@ -163,7 +162,7 @@ jobs:
       run: |
         ls -R
         echo "1-----------------1"
-        find ./ | grep -iE "CHANGELOGS.md|folder_changelog_repository|folder_changelog_release"
+        find ./ | grep -iE "CHANGELOGS.md|folder_changelog"
         echo "2-----------------2"
         find ./ | grep -iE "${{ env.folder_name }}|${{ env.file_name }}-${{ github.ref_name }}.zip"
 
@@ -194,7 +193,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         make_latest: true
         files: |
-          folder_zipped/${{ env.asset_name }}.zip
+          folder_zipped/${{ env.file_name }}.zip
           folder_changelog/short/CHANGELOGS.md
     
     - name: list files tag:4
