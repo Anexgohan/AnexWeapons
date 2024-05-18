@@ -4,7 +4,7 @@
     "author": "Anexgohan",
     "utility": "false",
     "version": { "major": "0", "minor": "2", "patch": "9p" },
-    "description": "Anex_Weapons is a comprehensive weapons mod for Starsector. It introduces a variety of unique, balanced weapons that enhance gameplay and provide new strategic options for players.",
+    "description": "Anex Weapons is a comprehensive weapons mod for Starsector. It introduces a variety of unique, balanced weapons that enhance gameplay and provide new strategic options for players.",
     "gameVersion": "0.97a-RC11",
     "dependencies": [
         {
