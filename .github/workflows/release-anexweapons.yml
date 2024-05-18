@@ -9,6 +9,10 @@ on:
 
   workflow_dispatch:  # allows manual trigger of the workflow
 
+env:
+  file_name: "Anex_Weapons"
+  folder_name: "Anex Weapons"
+
 jobs:
 
 # <================================================ Check tags Job ================================================>
@@ -109,9 +113,6 @@ jobs:
   # <---------------------------------------------- Upload artifact of mod to be zipped ---------------------------------------------->
   # upload the release artifact to memory, this is whats seen on the actions summary page under Artifacts
     - name: Upload artifact
-      env:
-        file_name: "Anex_Weapons"
-        folder_name: "Anex Weapons"
       id: upload-artifact-id
       uses: actions/upload-artifact@v4
       with:
@@ -181,7 +182,7 @@ jobs:
 
   # <---------------------------------------------- Release ---------------------------------------------->
   # create a release with the CHANGELOGS.md file
-    - name: Release
+    - name: Release artifacts
       uses: softprops/action-gh-release@v2
       with:
         name: ${{ github.ref_name }}
