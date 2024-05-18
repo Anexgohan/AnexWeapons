@@ -1,13 +1,70 @@
-v0.2.9n
-Changes for version v0.2.9n
+v0.2.9p
+Changes for version v0.2.9p
 ===========================
-HEAD, v0.2.9n, origin/main
+HEAD, v0.2.9p, origin/main
+Title: stable release
+
+Commits:
+```
+fix: trishul missile glow
+fix: backend update
+
+```
+>By: Anexgohan
+>Hash: 36589e5
+>Date: 2024-05-19 03:26:34 +0530 
+
+----------------------------------------------
+
+
+Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
+
+Commits:
+```
+
+```
+>By: Anexgohan
+>Hash: 0cb615d
+>Date: 2024-05-19 03:17:01 +0530 
+
+----------------------------------------------
+
+
+Title: v0.2.9p
+
+Commits:
+```
+fix: trishul missile glow
+fix: backend update
+
+```
+>By: Anexgohan
+>Hash: eaea9df
+>Date: 2024-05-19 03:16:28 +0530 
+
+----------------------------------------------
+
+
+Title: v0.2.9n - Auto Bot Updated CHANGELOGS.md
+
+Commits:
+```
+
+```
+>By: github-actions[bot]
+>Hash: 1e2ba87
+>Date: 2024-05-18 21:10:17 +0000 
+
+----------------------------------------------
+
+v0.2.9n
 Title: v0.2.9n
 
 Commits:
 ```
 fix: trishul missile glow
-fix: backend update```
+fix: backend update
+```
 >By: Anexgohan
 >Hash: fc26ba6
 >Date: 2024-05-19 02:09:31 +0530 
@@ -19,6 +76,7 @@ Title: v0.2.9m - Auto Bot Updated CHANGELOGS.md
 
 Commits:
 ```
+
 ```
 >By: github-actions[bot]
 >Hash: 7111dee
@@ -32,6 +90,7 @@ Title: testing
 Commits:
 ```
 fix: release action auto asset generation
+
 ```
 >By: Anexgohan
 >Hash: 24cee8d
@@ -45,6 +104,7 @@ Title: testing
 Commits:
 ```
 fix: release action auto asset generation
+
 ```
 >By: Anexgohan
 >Hash: ecacfbb
@@ -57,6 +117,7 @@ Title: v0.2.9l
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: f0a39bb
@@ -69,6 +130,7 @@ Title: staging
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 9a746dd
@@ -81,6 +143,7 @@ Title: push v0.2.9k
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: f27e920
@@ -93,6 +156,7 @@ Title: Update Anex_Weapons.version
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 915fced
@@ -105,6 +169,7 @@ Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 2279af0
@@ -117,6 +182,7 @@ Title: Update Anex_Weapons.version
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 86b101d
@@ -129,6 +195,7 @@ Title: all done
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 168b588
@@ -141,6 +208,7 @@ Title: push release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: bdf85fa
@@ -153,6 +221,7 @@ Title: fix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 2ddade8
@@ -165,6 +234,7 @@ Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 97e0d2d
@@ -177,6 +247,7 @@ Title: Update Anex_Weapons.version
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: aaa26fe
@@ -189,6 +260,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 620ad47
@@ -201,6 +273,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: d24cf61
@@ -213,6 +286,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 3eb89f1
@@ -225,6 +299,7 @@ Title: hotfix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 35a0195
@@ -237,6 +312,7 @@ Title: release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: b59f4db
@@ -249,6 +325,7 @@ Title: release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 3881d90
@@ -261,6 +338,7 @@ Title: tag
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 4ca1910
@@ -273,6 +351,7 @@ Title: tag fix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 865aa7c
@@ -285,6 +364,7 @@ Title: fix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: ca8c772
@@ -297,6 +377,7 @@ Title: hotfix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: e42253a
@@ -309,6 +390,7 @@ Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 64de651
@@ -321,6 +403,7 @@ Title: release v0.2.9j
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: e286468
@@ -333,6 +416,7 @@ Title: Update version checker numbers
 
 Commits:
 ```
+
 ```
 >By: GitHub Action
 >Hash: 68fb802
@@ -345,6 +429,7 @@ Title: release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 6812a90
@@ -357,6 +442,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 08cbced
@@ -369,6 +455,7 @@ Title: release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 3751980
@@ -381,6 +468,7 @@ Title: release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 36df932
@@ -393,6 +481,7 @@ Title: Merge branch 'release/v0.2.9h' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: f424714
@@ -405,6 +494,7 @@ Title: Merge branch 'hotfix/crash-fix' into develop
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: d9d41a5
@@ -417,6 +507,7 @@ Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: bb2d753
@@ -429,6 +520,7 @@ Title: Final update to version checker
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 44ffcec
@@ -441,6 +533,7 @@ Title: Update version checker numbers
 
 Commits:
 ```
+
 ```
 >By: GitHub Action
 >Hash: 65ab221
@@ -453,6 +546,7 @@ Title: push changes
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 5c4b1de
@@ -465,6 +559,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: aaafa27
@@ -477,6 +572,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 2ae91c9
@@ -489,6 +585,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: cc5bc77
@@ -501,6 +598,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 4af9123
@@ -513,6 +611,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 579d4eb
@@ -525,6 +624,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: a44878e
@@ -537,6 +637,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c0ba2fc
@@ -549,6 +650,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 483c984
@@ -561,6 +663,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 1ba0e01
@@ -573,6 +676,7 @@ Title: github actions fix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 42ea81b
@@ -585,6 +689,7 @@ Title: fix for release action
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 5b9fbc9
@@ -597,6 +702,7 @@ Title: version checker fix
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 52de405
@@ -612,6 +718,7 @@ Commits:
 Balanced Pinaka and Dhwij
 Github Actions update
 Version Checker fix
+
 ```
 >By: Anexgohan
 >Hash: 714e0b3
@@ -624,6 +731,7 @@ Title: Fix: null exception reported by player
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 18f7502
@@ -636,6 +744,7 @@ Title: Update issue templates
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 81e41f2
@@ -648,6 +757,7 @@ Title: version change reflected in mod_info.json
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 2a15469
@@ -666,6 +776,7 @@ many fixes for projectiles, turrets and missiles
 
 This should be the last in v0.2.* tag unless more hotfixes.
 Next will be v0.3.* tag with new content.
+
 ```
 >By: Anexgohan
 >Hash: 7d24520
@@ -697,6 +808,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a94563d
@@ -709,6 +821,7 @@ Title: testing
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 87cbfb3
@@ -721,6 +834,7 @@ Title: testing
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 6d1ed55
@@ -733,6 +847,7 @@ Title: change to github actions
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: d216411
@@ -767,6 +882,7 @@ https://github.com/Anexgohan/AnexWeapons
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
 427ad7
+
 ```
 >By: Anexgohan
 >Hash: 0cb215b
@@ -779,6 +895,7 @@ Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 492e8d3
@@ -791,6 +908,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 9a45f65
@@ -803,6 +921,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 55c67aa
@@ -816,6 +935,7 @@ Title: 0.97a-RC11 - compatiblity added
 Commits:
 ```
 beta release
+
 ```
 >By: Anexgohan
 >Hash: 980fdab
@@ -829,6 +949,7 @@ Title: 0.97a-RC11 - compatiblity added
 Commits:
 ```
 beta release
+
 ```
 >By: Anexgohan
 >Hash: 1d24e6f
@@ -863,6 +984,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: da655a7
@@ -897,6 +1019,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6622428
@@ -931,6 +1054,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4627e4c
@@ -965,6 +1089,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 68912fa
@@ -999,6 +1124,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e365002
@@ -1033,6 +1159,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5207c96
@@ -1067,6 +1194,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d5ca941
@@ -1101,6 +1229,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f471769
@@ -1135,6 +1264,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7d95a78
@@ -1169,6 +1299,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 27bae2b
@@ -1203,6 +1334,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 842df30
@@ -1237,6 +1369,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b2ba403
@@ -1271,6 +1404,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a3e3dd8
@@ -1305,6 +1439,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7db7c41
@@ -1339,6 +1474,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 10e25de
@@ -1373,6 +1509,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 97d2244
@@ -1407,6 +1544,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 98a3492
@@ -1441,6 +1579,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 706be14
@@ -1475,6 +1614,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6319908
@@ -1509,6 +1649,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 31a3488
@@ -1543,6 +1684,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: c3e64fa
@@ -1577,6 +1719,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 981a99d
@@ -1611,6 +1754,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ab2a9da
@@ -1645,6 +1789,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4e94af1
@@ -1679,6 +1824,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6ed30e1
@@ -1713,6 +1859,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a4874b2
@@ -1747,6 +1894,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cba0fdb
@@ -1781,6 +1929,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0acbf46
@@ -1815,6 +1964,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 070cc9a
@@ -1849,6 +1999,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: df85d69
@@ -1883,6 +2034,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 95a4b09
@@ -1917,6 +2069,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0af6912
@@ -1951,6 +2104,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4e57d25
@@ -1985,6 +2139,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0c8d2c8
@@ -2019,6 +2174,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 345a7e8
@@ -2053,6 +2209,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 20172a5
@@ -2087,6 +2244,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1a856e0
@@ -2121,6 +2279,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 524d070
@@ -2155,6 +2314,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b331263
@@ -2189,6 +2349,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b07c69b
@@ -2223,6 +2384,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 90543b9
@@ -2257,6 +2419,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ac77291
@@ -2291,6 +2454,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 04ba482
@@ -2325,6 +2489,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0a6b618
@@ -2359,6 +2524,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b23f89d
@@ -2393,6 +2559,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: bcb5360
@@ -2427,6 +2594,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f9b2666
@@ -2461,6 +2629,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 90710ca
@@ -2495,6 +2664,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 33246dc
@@ -2529,6 +2699,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ac48384
@@ -2563,6 +2734,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9a5b250
@@ -2597,6 +2769,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4eb456e
@@ -2631,6 +2804,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f17296b
@@ -2665,6 +2839,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1d2ae4c
@@ -2699,6 +2874,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d113a46
@@ -2733,6 +2909,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: eeb8e5d
@@ -2767,6 +2944,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8ff66ee
@@ -2801,6 +2979,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 682acbe
@@ -2835,6 +3014,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1bab0b2
@@ -2869,6 +3049,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 44f52e1
@@ -2903,6 +3084,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 18093fe
@@ -2937,6 +3119,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5f93787
@@ -2971,6 +3154,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 3e13bde
@@ -3005,6 +3189,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: c5d59fe
@@ -3039,6 +3224,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7666122
@@ -3073,6 +3259,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: eacdf52
@@ -3107,6 +3294,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: fa09317
@@ -3141,6 +3329,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 34d02f2
@@ -3175,6 +3364,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b4419ad
@@ -3209,6 +3399,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: fec86a6
@@ -3243,6 +3434,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8e7c410
@@ -3277,6 +3469,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b639dad
@@ -3311,6 +3504,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6b185d5
@@ -3345,6 +3539,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e3a892b
@@ -3379,6 +3574,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 63517f6
@@ -3413,6 +3609,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b005d5b
@@ -3447,6 +3644,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0d3c691
@@ -3481,6 +3679,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cb55c35
@@ -3515,6 +3714,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0f41a8a
@@ -3549,6 +3749,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1febfa6
@@ -3583,6 +3784,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1934977
@@ -3617,6 +3819,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0d1f6f7
@@ -3651,6 +3854,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 52d4de6
@@ -3685,6 +3889,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ce783d1
@@ -3719,6 +3924,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 843e94c
@@ -3753,6 +3959,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7cb26bd
@@ -3787,6 +3994,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7482cf3
@@ -3821,6 +4029,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e015c09
@@ -3855,6 +4064,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f01d329
@@ -3889,6 +4099,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5e7f48a
@@ -3923,6 +4134,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: eb0eb8e
@@ -3957,6 +4169,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 43c83f5
@@ -3991,6 +4204,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 753e7be
@@ -4025,6 +4239,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2e42864
@@ -4059,6 +4274,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 405757e
@@ -4093,6 +4309,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6df7182
@@ -4127,6 +4344,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 15f5c7d
@@ -4161,6 +4379,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e72651f
@@ -4195,6 +4414,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 143f292
@@ -4229,6 +4449,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e45c17a
@@ -4263,6 +4484,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: deffb6c
@@ -4297,6 +4519,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 45bc7bf
@@ -4331,6 +4554,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d4845de
@@ -4365,6 +4589,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 225c071
@@ -4399,6 +4624,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8ae0470
@@ -4433,6 +4659,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5a2d197
@@ -4467,6 +4694,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 41837ba
@@ -4501,6 +4729,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2a21b2a
@@ -4535,6 +4764,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f3cc721
@@ -4569,6 +4799,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 81d6c0d
@@ -4603,6 +4834,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0a1b20f
@@ -4637,6 +4869,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4c688d1
@@ -4671,6 +4904,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 43c0638
@@ -4705,6 +4939,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4833689
@@ -4739,6 +4974,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 10fcd34
@@ -4773,6 +5009,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 67fd0ca
@@ -4807,6 +5044,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6de61f4
@@ -4841,6 +5079,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 61f6d2e
@@ -4875,6 +5114,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f5ad262
@@ -4909,6 +5149,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 885475b
@@ -4943,6 +5184,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e37f27f
@@ -4977,6 +5219,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 02512e2
@@ -5011,6 +5254,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5a740de
@@ -5045,6 +5289,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 30741a5
@@ -5079,6 +5324,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6e193a7
@@ -5113,6 +5359,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 264fd92
@@ -5147,6 +5394,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 85f9097
@@ -5181,6 +5429,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: dd8f932
@@ -5215,6 +5464,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 078f832
@@ -5249,6 +5499,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8d83b9c
@@ -5283,6 +5534,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d60cd57
@@ -5317,6 +5569,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0937f1b
@@ -5351,6 +5604,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f6cbb19
@@ -5385,6 +5639,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6aaa4af
@@ -5419,6 +5674,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 25e37d5
@@ -5453,6 +5709,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f1746ca
@@ -5487,6 +5744,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 05f379f
@@ -5521,6 +5779,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: bc41cc2
@@ -5555,6 +5814,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d7a0244
@@ -5589,6 +5849,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: be3cefd
@@ -5623,6 +5884,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7626cd4
@@ -5657,6 +5919,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5abda12
@@ -5691,6 +5954,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d17c751
@@ -5725,6 +5989,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9059634
@@ -5759,6 +6024,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 216c782
@@ -5793,6 +6059,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 443e05b
@@ -5827,6 +6094,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4e94484
@@ -5861,6 +6129,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1afc78b
@@ -5895,6 +6164,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e62a0d6
@@ -5929,6 +6199,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2e7545c
@@ -5963,6 +6234,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 825d357
@@ -5997,6 +6269,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: eac914b
@@ -6031,6 +6304,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e52975b
@@ -6065,6 +6339,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9447827
@@ -6099,6 +6374,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8247f20
@@ -6133,6 +6409,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: c53f946
@@ -6167,6 +6444,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: c619111
@@ -6201,6 +6479,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ec13873
@@ -6235,6 +6514,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 543da38
@@ -6269,6 +6549,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7629198
@@ -6303,6 +6584,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: c15070a
@@ -6337,6 +6619,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1a711eb
@@ -6371,6 +6654,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 38223b0
@@ -6405,6 +6689,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9122876
@@ -6439,6 +6724,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 53e0905
@@ -6473,6 +6759,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b6eb92b
@@ -6507,6 +6794,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 537f098
@@ -6541,6 +6829,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 65aaedd
@@ -6575,6 +6864,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e8957c9
@@ -6609,6 +6899,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a2ce1c1
@@ -6643,6 +6934,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 3cd3de1
@@ -6677,6 +6969,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2f36529
@@ -6711,6 +7004,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f38a2e5
@@ -6745,6 +7039,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b68bde6
@@ -6779,6 +7074,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 836f39c
@@ -6813,6 +7109,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6f1bc52
@@ -6847,6 +7144,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f749a8c
@@ -6881,6 +7179,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a213af0
@@ -6915,6 +7214,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d6e4aad
@@ -6949,6 +7249,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 303c3b8
@@ -6983,6 +7284,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 3e97ee2
@@ -7017,6 +7319,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d21baa2
@@ -7051,6 +7354,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 09370fc
@@ -7085,6 +7389,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f0002d0
@@ -7119,6 +7424,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1eea0b2
@@ -7153,6 +7459,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a319d3e
@@ -7187,6 +7494,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4be4c18
@@ -7221,6 +7529,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 036fefe
@@ -7255,6 +7564,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: aff176b
@@ -7289,6 +7599,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1674230
@@ -7323,6 +7634,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: eab3e56
@@ -7357,6 +7669,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5ac0c35
@@ -7391,6 +7704,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f57c545
@@ -7425,6 +7739,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 35e77e4
@@ -7459,6 +7774,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 05ead47
@@ -7493,6 +7809,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 47f44ca
@@ -7527,6 +7844,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b38b0f0
@@ -7561,6 +7879,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: fa519ff
@@ -7595,6 +7914,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6b40828
@@ -7629,6 +7949,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 601029e
@@ -7663,6 +7984,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 88eb38c
@@ -7697,6 +8019,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 67b5f56
@@ -7731,6 +8054,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 508b523
@@ -7765,6 +8089,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e51aec5
@@ -7799,6 +8124,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9114e30
@@ -7833,6 +8159,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e2b03d4
@@ -7867,6 +8194,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: be1132b
@@ -7901,6 +8229,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: c49bdf8
@@ -7935,6 +8264,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 33bb923
@@ -7969,6 +8299,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b620804
@@ -7981,6 +8312,7 @@ Title: Merge remote-tracking branch 'origin/main' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: cc75aff
@@ -7993,6 +8325,7 @@ Title: InteliJ reset
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: f23eb3f
@@ -8027,6 +8360,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 37d7ae9
@@ -8061,6 +8395,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0d99e48
@@ -8095,6 +8430,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cfee890
@@ -8129,6 +8465,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0184e85
@@ -8163,6 +8500,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 32feee5
@@ -8197,6 +8535,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 06a86cf
@@ -8231,6 +8570,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6681a15
@@ -8265,6 +8605,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ba88a46
@@ -8299,6 +8640,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6746482
@@ -8333,6 +8675,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 385551a
@@ -8367,6 +8710,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 296af4f
@@ -8401,6 +8745,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: aafb8b0
@@ -8435,6 +8780,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d313856
@@ -8469,6 +8815,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2e985ba
@@ -8503,6 +8850,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ce74f80
@@ -8537,6 +8885,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 69cbef9
@@ -8571,6 +8920,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f3c251c
@@ -8605,6 +8955,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d35fbe5
@@ -8639,6 +8990,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ee9c752
@@ -8673,6 +9025,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: dde4f6c
@@ -8707,6 +9060,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7155f3c
@@ -8741,6 +9095,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a38158b
@@ -8775,6 +9130,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 314bedb
@@ -8809,6 +9165,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7678f0c
@@ -8843,6 +9200,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 32e1df9
@@ -8877,6 +9235,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 85e15c2
@@ -8911,6 +9270,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9a3a110
@@ -8945,6 +9305,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 904cc92
@@ -8979,6 +9340,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8c8e3e2
@@ -9013,6 +9375,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 958a18b
@@ -9047,6 +9410,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 982f384
@@ -9081,6 +9445,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d5322b0
@@ -9115,6 +9480,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: bf47897
@@ -9149,6 +9515,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 28e31ea
@@ -9183,6 +9550,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 45cb562
@@ -9217,6 +9585,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d0dbb5b
@@ -9229,6 +9598,7 @@ Title: Merge remote-tracking branch 'origin/main' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: cd487bd
@@ -9263,6 +9633,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 34ef75f
@@ -9297,6 +9668,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5e44616
@@ -9331,6 +9703,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 04bb45a
@@ -9365,6 +9738,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2ec3ff4
@@ -9399,6 +9773,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 194a141
@@ -9433,6 +9808,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 641c232
@@ -9467,6 +9843,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: aa1a953
@@ -9501,6 +9878,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6a1c738
@@ -9535,6 +9913,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b6e8d25
@@ -9569,6 +9948,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d1dc537
@@ -9603,6 +9983,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 76b7c28
@@ -9637,6 +10018,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 4454c26
@@ -9671,6 +10053,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f8384c7
@@ -9705,6 +10088,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cba36cb
@@ -9739,6 +10123,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 10335ef
@@ -9773,6 +10158,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cc3e963
@@ -9807,6 +10193,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6420444
@@ -9841,6 +10228,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e392e1b
@@ -9875,6 +10263,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9729276
@@ -9909,6 +10298,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cf7549b
@@ -9943,6 +10333,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a7e8954
@@ -9977,6 +10368,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 70e95f5
@@ -10011,6 +10403,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 38dfde8
@@ -10045,6 +10438,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 8cb5263
@@ -10079,6 +10473,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 90a424c
@@ -10113,6 +10508,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5e6ae3d
@@ -10147,6 +10543,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 03477f5
@@ -10181,6 +10578,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 419b086
@@ -10215,6 +10613,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 20c186d
@@ -10249,6 +10648,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: f6e5d21
@@ -10283,6 +10683,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: dea2bac
@@ -10317,6 +10718,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 94ab759
@@ -10351,6 +10753,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 504ee7d
@@ -10385,6 +10788,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: cd7d72e
@@ -10419,6 +10823,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d6d7d28
@@ -10453,6 +10858,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: fb5b7a6
@@ -10487,6 +10893,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: aa8b164
@@ -10521,6 +10928,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 5961227
@@ -10555,6 +10963,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 383b283
@@ -10589,6 +10998,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d857ae0
@@ -10623,6 +11033,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 1e59230
@@ -10657,6 +11068,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 08204f8
@@ -10691,6 +11103,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: da3d4f7
@@ -10725,6 +11138,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 7e1d426
@@ -10759,6 +11173,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 6d72180
@@ -10793,6 +11208,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 9ce50d8
@@ -10805,6 +11221,7 @@ Title: Merge branch 'feature/Weapons_Lab' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: a747e21
@@ -10839,6 +11256,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: ec79594
@@ -10873,6 +11291,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: e057ce5
@@ -10885,6 +11304,7 @@ Title: Merge branch 'develop' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 4c5509a
@@ -10897,6 +11317,7 @@ Title: Merge branch 'main' into develop
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: bca335c
@@ -10931,6 +11352,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: fe349b6
@@ -10965,6 +11387,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: d82f12a
@@ -10999,6 +11422,7 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 34c2bcb
@@ -11039,6 +11463,7 @@ https://github.com/Anexgohan/AnexWeapons
 # ISSUE_KEY
 # ISSUE_KEY
  ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 2133fc5
@@ -11060,7 +11485,8 @@ https://github.com/Anexgohan/AnexWeapons
 * Anexgohan - Mod Author.
 * BCBC - Thanks to BCBC on Starsector discord, all weapons now have awesome lore related flavor text, feast your eyes at some professional writing.
 
- ---------------------------------------------------------------------------------```
+ ---------------------------------------------------------------------------------
+```
 >By: Anexgohan
 >Hash: 1ccb508
 >Date: 2022-03-02 03:03:40 +0530 
@@ -11104,6 +11530,7 @@ Commits:
 # ISSUE_KEY #comment This is a comment
 # ISSUE_KEY #done 
 # ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 0fad66f
@@ -11116,6 +11543,7 @@ Title: Merge remote-tracking branch 'origin/main' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c9762eb
@@ -11162,7 +11590,8 @@ commit template
 # ISSUE_KEY #comment This is a comment
 # ISSUE_KEY #done 
 # ---------------------------------------------------------------------------------
-c92d8c```
+c92d8c
+```
 >By: Anexgohan
 >Hash: 4aa438e
 >Date: 2022-03-02 02:43:33 +0530 
@@ -11174,6 +11603,7 @@ Title: Merge branch 'develop' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 662cf1e
@@ -11218,6 +11648,7 @@ Commits:
 # ISSUE_KEY #comment This is a comment
 # ISSUE_KEY #done 
 # ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: b7e92f1
@@ -11230,6 +11661,7 @@ Title: Merge branch 'feature/test' into develop
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c92d8c5
@@ -11242,6 +11674,7 @@ Title: Merge remote-tracking branch 'origin/feature/smallBallisticTurret' into f
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 98e931e
@@ -11286,6 +11719,7 @@ Commits:
 # ISSUE_KEY #comment This is a comment
 # ISSUE_KEY #done 
 # ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: 493951b
@@ -11330,6 +11764,7 @@ Commits:
 # ISSUE_KEY #comment This is a comment
 # ISSUE_KEY #done 
 # ---------------------------------------------------------------------------------
+
 ```
 >By: Anexgohan
 >Hash: a5e0a41
@@ -11342,6 +11777,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 02eab58
@@ -11354,6 +11790,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 4633b3e
@@ -11366,6 +11803,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 12d898b
@@ -11378,6 +11816,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: d18b229
@@ -11390,6 +11829,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 1275d49
@@ -11402,6 +11842,7 @@ Title: zip success
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 4a17414
@@ -11414,6 +11855,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 34c4e37
@@ -11426,6 +11868,7 @@ Title: test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 225e321
@@ -11438,6 +11881,7 @@ Title: Merge remote-tracking branch 'origin/main' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 0cdc130
@@ -11450,6 +11894,7 @@ Title: v0.2.4 - Parashu Twin Mag Rail
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c42cecd
@@ -11462,6 +11907,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: ffe1b2f
@@ -11474,6 +11920,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 90c0222
@@ -11486,6 +11933,7 @@ Title: Merge remote-tracking branch 'origin/main' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 38010f0
@@ -11504,7 +11952,8 @@ Dwij Turret added - Slow Firing Main turret.
 Pinaka PD smart - Flak turret with dual barrels and unprecedented rate of fire. High DPS homing flak shells that mimic actual CIWS in sound and feel.
 Sound Updates and added new sounds for both fire and hit sounds
 bug fixes, so many bug fixes
-now includes a bit of heightmap trickery I learned in photoshop to make sprites appear 3d, first pass will polish more```
+now includes a bit of heightmap trickery I learned in photoshop to make sprites appear 3d, first pass will polish more
+```
 >By: Anexgohan
 >Hash: d2bb783
 >Date: 2022-02-23 22:36:30 +0530 
@@ -11516,6 +11965,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 8f8658f
@@ -11528,7 +11978,8 @@ Title: Djwij Turret added
 
 Commits:
 ```
-Slow turret with a smart tracking projectile```
+Slow turret with a smart tracking projectile
+```
 >By: Anexgohan
 >Hash: 48202ad
 >Date: 2022-02-21 13:26:51 +0530 
@@ -11540,6 +11991,7 @@ Title: fixed all issues download this.
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 3dd1eb0
@@ -11552,6 +12004,7 @@ Title: added excludes to .gitattributes
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 569c2f0
@@ -11564,6 +12017,7 @@ Title: added to .gitattributes
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 5d9dd6c
@@ -11576,6 +12030,7 @@ Title: added .gitattributes  file
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: ec23be7
@@ -11588,6 +12043,7 @@ Title: deleted redundant files
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 7202c04
@@ -11600,6 +12056,7 @@ Title: roll back due to errors
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 9bffcde
@@ -11612,6 +12069,7 @@ Title: test other release script_02
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 376ea27
@@ -11624,6 +12082,7 @@ Title: test other release script_01
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 04b20a6
@@ -11636,6 +12095,7 @@ Title: test auto zip v7
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: d8b5431
@@ -11648,6 +12108,7 @@ Title: test auto zip v6
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: aebb17b
@@ -11660,6 +12121,7 @@ Title: test auto zip v5
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 040dea3
@@ -11672,6 +12134,7 @@ Title: test auto zip v4
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c8ed9ae
@@ -11684,6 +12147,7 @@ Title: test auto zip v3
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: e2da54c
@@ -11696,6 +12160,7 @@ Title: test auto zip v2
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c2a3521
@@ -11708,6 +12173,7 @@ Title: testing auto release
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 96515ab
@@ -11720,6 +12186,7 @@ Title: release.yml test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 5ea4642
@@ -11732,6 +12199,7 @@ Title: v 0.2.0 release - Breaks saves
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: c094847
@@ -11744,6 +12212,7 @@ Title: Merge remote-tracking branch 'origin/main' into main
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 0959e57
@@ -11756,6 +12225,7 @@ Title: v0.1.3 auto release test
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 53069b5
@@ -11768,6 +12238,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 28ebde1
@@ -11780,6 +12251,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: b62bf13
@@ -11792,6 +12264,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 471f56d
@@ -11804,6 +12277,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 366d6b4
@@ -11816,6 +12290,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 592d746
@@ -11828,6 +12303,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 599eeeb
@@ -11840,6 +12316,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 2645418
@@ -11852,6 +12329,7 @@ Title: Fixed crashes caused by formatting error
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 1d95aca
@@ -11864,6 +12342,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 38e5a9c
@@ -11876,6 +12355,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 9ebede1
@@ -11893,7 +12373,8 @@ Lakshay Anti-Fighter Missile added, Medium range low speed tracking swarm missil
 Fixed scaling issues
 Added few new sounds
 Increased variety of launch and hit sounds and randomization
-reduced screen effects for low end machines```
+reduced screen effects for low end machines
+```
 >By: Anexgohan
 >Hash: 38346e5
 >Date: 2022-02-17 10:40:36 +0530 
@@ -11905,6 +12386,7 @@ Title: fixed mod_info
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: bdeec83
@@ -11917,6 +12399,7 @@ Title: Bhairav Missile added
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 4abd409
@@ -11929,6 +12412,7 @@ Title: setup mod_info.json
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 7ae7352
@@ -11941,6 +12425,7 @@ Title: added readme and fixed color
 
 Commits:
 ```
+
 ```
 >By: Anexgohan
 >Hash: 6bd5b42
@@ -11953,6 +12438,7 @@ Title: Update README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: f82d8b0
@@ -11965,6 +12451,7 @@ Title: Create README.md
 
 Commits:
 ```
+
 ```
 >By: GitHub
 >Hash: 2a2a5ae
@@ -11978,6 +12465,7 @@ Title: First Release Alpha testing
 Commits:
 ```
 Open for testing
+
 ```
 >By: Anexgohan
 >Hash: 85aad1e
