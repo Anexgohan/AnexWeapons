@@ -1,0 +1,240 @@
+name: Release Workflow
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+
+  workflow_dispatch:  # allows manual trigger of the workflow
+
+jobs:
+
+# <================================================ Check tags Job ================================================>
+# check if the push is a release tag
+  check-tags:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check for release tag
+      run: |
+        if [[ "${{ github.ref }}" != refs/tags/v* ]]; then
+          echo "This is not a release tag. Exiting..."
+          exit 1
+        fi
+
+
+# <================================================ Create changelog Job ================================================>
+# we are creating two separate changelog files, one for the repository and one for the release page:
+  create-changelog:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    needs: check-tags
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        # clean: false      # without this checkout deletes empty folders after each use. # Default: true
+        fetch-depth: 0    # Number of commits to fetch. 0 indicates all history for all branches and tags. # Default: 1
+        fetch-tags: true  # Whether to fetch tags, even if fetch-depth > 0. # Default: false
+    
+    # make a directory to download the artifact to
+    - name: make directories
+      run: mkdir -p folder_changelog/full folder_changelog/short
+        
+  # <---------------------------------------------- create full changelogs ---------------------------------------------->
+  # make a CHANGELOGS.md file for the main repository
+  # folder_changelog/full/CHANGELOGS.md <--- this changelog is the main changelog file that will be updated on the repository, it contains last 1000 commits
+    - name: Create CHANGELOGS file for repository
+      run: |
+        echo ${{ github.ref_name }} > folder_changelog/full/CHANGELOGS.md
+        echo "Changes for version ${{ github.ref_name }}" >> folder_changelog/full/CHANGELOGS.md
+        echo "===========================" >> folder_changelog/full/CHANGELOGS.md
+        git log -1000 --pretty="format:%D%nTitle: %s%n%nCommits:%n\`\`\`%n%b\`\`\`%n>By: %cn%n>Hash: %h%n>Date: %ci %n%n----------------------------------------------%n" | sed 's/tag: //g' >> folder_changelog/full/CHANGELOGS.md
+
+  # <---------------------------------------------- create short changelogs ---------------------------------------------->
+  # make a CHANGELOGS.md file for the release and mod manager
+  # folder_changelog/short/CHANGELOGS.md <--- this changelog is the changelog file that will be released on the release page, it only contains the changes of the current release, (HEAD^..HEAD) means between previous and current commit. 
+    - name: Create CHANGELOGS file for release
+      run: |
+        echo ${{ github.ref_name }} > folder_changelog/short/CHANGELOGS.md
+        echo "Changes for version ${{ github.ref_name }}" >> folder_changelog/short/CHANGELOGS.md
+        echo "===========================" >> folder_changelog/short/CHANGELOGS.md
+        git log HEAD^..${{ github.ref_name }} --pretty="format:Title: %s%n%nCommits:%n\`\`\`%n%b\`\`\`%n>By: %cn%n>Hash: %h%n>Date: %ci %n%n----------------------------------------------%n" | sed 's/tag: //g' >> folder_changelog/short/CHANGELOGS.md
+
+    - name: Show CHANGELOGS main repository, full
+      run: cat folder_changelog/full/CHANGELOGS.md
+    - name: Show CHANGELOGS for release, short
+      run: cat folder_changelog/short/CHANGELOGS.md
+
+  # <---------------------------------------------- Upload artifact of full changelogs ---------------------------------------------->
+    - name: Archive the repository changelogs
+      uses: actions/upload-artifact@v4
+      with:
+        name: changelog-full
+        path: folder_changelog/full/CHANGELOGS.md
+
+  # <---------------------------------------------- Upload artifact of short changelogs ---------------------------------------------->
+    - name: Archive the release changelogs
+      uses: actions/upload-artifact@v4
+      with:
+        name: changelog-short
+        path: folder_changelog/short/CHANGELOGS.md
+
+    - name: list files tag:1
+      run: |
+        ls -R
+        echo "1-----------------1"
+        find ./ | grep -iE "CHANGELOGS.md|folder_changelog"
+        echo "2-----------------2"
+        ls -R ${{ github.workspace }}
+
+
+# <================================================ Release Job ================================================>
+# start the release jobs
+  release:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    needs: create-changelog
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        clean: false      # without this checkout deletes empty folders after each use. # Default: true
+        # fetch-depth: 0    # Number of commits to fetch. 0 indicates all history for all branches and tags. # Default: 1
+        # fetch-tags: true  # Whether to fetch tags, even if fetch-depth > 0. # Default: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+  # <---------------------------------------------- Upload artifact of mod to be zipped ---------------------------------------------->
+  # upload the release artifact to memory, this is whats seen on the actions summary page under Artifacts
+    - name: Upload artifact
+      env:
+        file_name: "Anex_Weapons"
+        folder_name: "Anex Weapons"
+      id: upload-artifact-id
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.file_name }}-${{ github.ref_name }}
+        path: |
+          data
+          graphics
+          jars
+          mod_pictures
+          sounds
+          src
+          Anex_Weapons.version
+          mod_info.json
+          icon.png
+          !.git
+          !.github
+          !.gradle
+          !.idea
+          !.run
+          !build
+          !libs
+          !readme_resources
+          !out
+
+  # <---------------------------------------------- Download artifacts ---------------------------------------------->
+
+  # download the artifact to the directory
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: ${{ env.file_name }}-${{ github.ref_name }}
+        path: "${{ env.folder_name }}"
+    
+    - name: Download changelog-full artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: changelog-full
+        path: "folder_changelog/full"
+      
+    - name: Download changelog-short artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: changelog-short
+        path: "folder_changelog/short"
+
+    - name: list files tag:2
+      run: |
+        ls -R
+        echo "1-----------------1"
+        find ./ | grep -iE "CHANGELOGS.md|folder_changelog_repository|folder_changelog_release|${{ env.folder_name }}|${{ env.file_name }}-${{ github.ref_name }}.zip"
+        echo "2-----------------2"
+        echo ${{ env.file_name }}
+        echo ${{ env.folder_name }}-${{ github.ref_name }}.zip
+
+  # <---------------------------------------------- Zip artifact ---------------------------------------------->
+  # zip the artifact with name "${{ env.file_name }}.zip", create a folder first called "folder_zipped" if not exist
+    - name: zip artifact
+      run: mkdir -p folder_zipped && zip -r ./folder_zipped/${{ env.file_name }}.zip "${{ env.folder_name }}"
+
+    - name: list files tag:3
+      run: |
+        ls -R
+        echo "1-----------------1"
+        find ./ | grep -iE "CHANGELOGS.md|folder_zipped|${{ env.folder_name }}|${{ env.file_name }}.zip"
+        echo "2-----------------2"
+        ls -R ${{ github.workspace }}
+
+  # <---------------------------------------------- Release ---------------------------------------------->
+  # create a release with the CHANGELOGS.md file
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        name: ${{ github.ref_name }}
+        tag_name: ${{ github.ref }}
+        body_path: folder_changelog/short/CHANGELOGS.md
+        generate_release_notes: true
+        append_body: true
+        repository: ${{ github.repository }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        make_latest: true
+        files: |
+          folder_zipped/${{ env.file_name }}.zip
+          folder_changelog/short/CHANGELOGS.md
+    
+    - name: list files tag:4
+      run: ls -R
+
+      
+# <================================================ Update-Repository ================================================>
+# start the release jobs
+  Update-Repository:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    needs: release
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.PAT_ANEXGOHAN }}
+        repository: ${{ github.repository }}
+        # ref: refs/heads/main
+  
+  # <---------------------------------------------- Download artifacts ---------------------------------------------->
+    - name: Download changelog-full artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: changelog-full
+        path: "folder_changelog/full"
+    - name: list files tag:5
+      run: |
+        ls -R
+        echo "1-----------------1"
+        find ./ | grep -iE "CHANGELOGS.md|folder_changelog"
+
+  # <---------------------------------------------- Update CHANGELOGS.md on the origin repository ---------------------------------------------->
+    - name: Replace and push CHANGELOGS.md
+      run: |
+        echo ${{ github.ref }}
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email 'no-reply@dontmailme.org'
+        cp folder_changelog/full/CHANGELOGS.md CHANGELOGS.md
+        git add CHANGELOGS.md
+        git commit -m "${{ github.ref_name }} - Auto Bot Updated CHANGELOGS.md"
+        git push origin HEAD:refs/heads/main
+
+    # git pull origin main
