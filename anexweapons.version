@@ -6,8 +6,8 @@
     "modVersion":
     {
         "major":0,
-        "minor":2,
-        "patch":9p,
+        "minor":3,
+        "patch":1,
     },
     # Optional support for mod managers to allow users to update with one click, without visiting a mod page.
     "directDownloadURL": "https://github.com/Anexgohan/AnexWeapons/releases/latest/download/AnexWeapons.zip",
