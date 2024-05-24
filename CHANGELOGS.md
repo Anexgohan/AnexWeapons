@@ -1,7 +1,62 @@
-v0.2.9p
-Changes for version v0.2.9p
+v0.3.1
+Changes for version v0.3.1
 ===========================
-HEAD, v0.2.9p, origin/main
+HEAD, v0.3.1, origin/main
+Title: hotfix
+
+Commits:
+```
+fix: trishul missile glow
+fix: backend update
+fix: release action auto asset generation
+
+```
+>By: Anexgohan
+>Hash: ae45ccb
+>Date: 2024-05-25 01:36:46 +0530 
+
+----------------------------------------------
+
+
+Title: Merge branch 'main' of https://github.com/Anexgohan/AnexWeapons
+
+Commits:
+```
+
+```
+>By: Anexgohan
+>Hash: a7c5698
+>Date: 2024-05-25 01:34:01 +0530 
+
+----------------------------------------------
+
+
+Title: v0.2.9p - Auto Bot Updated CHANGELOGS.md
+
+Commits:
+```
+
+```
+>By: Anexgohan
+>Hash: 8d1646e
+>Date: 2024-05-25 01:31:24 +0530 
+
+----------------------------------------------
+
+
+Title: v0.2.9p - Auto Bot Updated CHANGELOGS.md
+
+Commits:
+```
+
+```
+>By: github-actions[bot]
+>Hash: 69a2ea9
+>Date: 2024-05-18 21:58:39 +0000 
+
+----------------------------------------------
+
+v0.2.9p
 Title: stable release
 
 Commits:
